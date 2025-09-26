@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Target, Award, Rocket } from 'lucide-react';
-import techPattern from '@/assets/tech-pattern.jpg';
+
 import { Briefcase, Globe, School, Store, CalendarDays } from "lucide-react";
 
 const ConfianceSection = () => {
@@ -28,10 +28,7 @@ const ConfianceSection = () => {
     return (
 
         <section className="py-20 relative overflow-hidden bg-background">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-5">
-                <img src={techPattern} alt="" className="w-full h-full object-cover" />
-            </div>
+
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
