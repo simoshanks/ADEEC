@@ -5,15 +5,18 @@ import AboutSection from '@/components/AboutSection';
 import Footer from '@/components/Footer';
 import ConfianceSection from '@/components/ConfianceSection';
 import Carousel from '@/components/Carousel';
+import Test from '@/components/Test';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
+      <Test />
       
 
       <AboutSection />
+      
       <OtherSection />
       <ConfianceSection />
       
