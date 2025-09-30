@@ -26,6 +26,8 @@ export const carouselItems = [
   { title: "Green Energy Projects", image: ocp },
 ];
 
+// les projet actuel
+
 export const projetsActuels = [
   {
     id: 1,
@@ -108,3 +110,80 @@ export const projetsActuels = [
     ]
   }
 ];
+
+// les projet realise
+
+
+
+
+
+export const domainsData = [
+  {
+    id: 1,
+    title: "art",
+    slug: "art",
+    image: agadir,
+    projects: [
+      { id: 1, title: "shi3r", slug: "shi3r", image: zagora, description: "مشروع في الشعر والفنون الأدبية.", gallery: [agadir, zagora] },
+      { id: 2, title: "raqs", slug: "raqs", image: agadir, description: "مشروع لتعليم الرقص والفنون التعبيرية.", gallery: [zagora, agadir] },
+      { id: 3, title: "taswir", slug: "taswir", image: zagora, description: "مشروع للتصوير الفوتوغرافي والفيديو.", gallery: [agadir, zagora] },
+      { id: 4, title: "musique", slug: "musique", image: agadir, description: "مشروع الموسيقى والعزف على الآلات.", gallery: [zagora, agadir] },
+      { id: 5, title: "theatre", slug: "theatre", image: zagora, description: "مشروع المسرح والفنون الأدائية.", gallery: [agadir, zagora] },
+    ],
+  },
+  {
+    id: 2,
+    title: "cultir",
+    slug: "cultir",
+    image: agadir,
+    projects: [
+      { id: 1, title: "festival", slug: "festival", image: zagora, description: "مشروع تنظيم المهرجانات والفعاليات الثقافية.", gallery: [agadir, zagora] },
+      { id: 2, title: "cinema", slug: "cinema", image: agadir, description: "مشروع عرض الأفلام السينمائية وتنظيم ورشات.", gallery: [zagora, agadir] },
+      { id: 3, title: "musique_trad", slug: "musique_trad", image: zagora, description: "مشروع الموسيقى التقليدية والفلكلورية.", gallery: [agadir, zagora] },
+      { id: 4, title: "exposition", slug: "exposition", image: agadir, description: "مشروع المعارض الفنية والثقافية.", gallery: [zagora, agadir] },
+      { id: 5, title: "literature", slug: "literature", image: zagora, description: "مشروع الأدب وورشات الكتابة الإبداعية.", gallery: [agadir, zagora] },
+    ],
+  },
+  {
+    id: 3,
+    title: "education",
+    slug: "education",
+    image: agadir,
+    projects: [
+      { id: 1, title: "hadr_school", slug: "hadr_school", image: zagora, description: "مشروع لمحاربة الهدر المدرسي.", gallery: [agadir, zagora] },
+      { id: 2, title: "after_class", slug: "after_class", image: agadir, description: "أنشطة موازية للدعم المدرسي.", gallery: [zagora, agadir] },
+      { id: 3, title: "digital_learning", slug: "digital_learning", image: zagora, description: "مشروع التعلم الرقمي للطلاب.", gallery: [agadir, zagora] },
+      { id: 4, title: "library", slug: "library", image: agadir, description: "مشروع إنشاء مكتبات مدرسية.", gallery: [zagora, agadir] },
+      { id: 5, title: "teacher_training", slug: "teacher_training", image: zagora, description: "تكوين المعلمين في طرق التدريس الحديثة.", gallery: [agadir, zagora] },
+    ],
+  },
+  {
+    id: 4,
+    title: "health",
+    slug: "health",
+    image: agadir,
+    projects: [
+      { id: 1, title: "blood_donation", slug: "blood_donation", image: zagora, description: "حملة للتبرع بالدم.", gallery: [agadir, zagora] },
+      { id: 2, title: "vaccination", slug: "vaccination", image: agadir, description: "مشروع حملات التلقيح.", gallery: [zagora, agadir] },
+      { id: 3, title: "awareness", slug: "awareness", image: zagora, description: "التوعية الصحية في القرى.", gallery: [agadir, zagora] },
+      { id: 4, title: "nutrition", slug: "nutrition", image: agadir, description: "مشروع التغذية للأطفال.", gallery: [zagora, agadir] },
+      { id: 5, title: "mental_health", slug: "mental_health", image: zagora, description: "التوعية بالصحة النفسية.", gallery: [agadir, zagora] },
+    ],
+  },
+  {
+    id: 5,
+    title: "environment",
+    slug: "environment",
+    image: agadir,
+    projects: [
+      { id: 1, title: "tree_planting", slug: "tree_planting", image: zagora, description: "مشروع التشجير وحماية الغابات.", gallery: [agadir, zagora] },
+      { id: 2, title: "recycling", slug: "recycling", image: agadir, description: "إعادة تدوير النفايات.", gallery: [zagora, agadir] },
+      { id: 3, title: "clean_rivers", slug: "clean_rivers", image: zagora, description: "تنظيف الأنهار والمجاري المائية.", gallery: [agadir, zagora] },
+      { id: 4, title: "eco_workshops", slug: "eco_workshops", image: agadir, description: "ورشات تعليمية للبيئة.", gallery: [zagora, agadir] },
+      { id: 5, title: "sustainable_energy", slug: "sustainable_energy", image: zagora, description: "مشروع الطاقة المستدامة.", gallery: [agadir, zagora] },
+    ],
+  },
+];
+
+
+
