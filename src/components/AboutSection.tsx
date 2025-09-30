@@ -1,4 +1,5 @@
-import aboutImg from '@/assets/hero.jpg';
+import aboutImg from '@/assets/greenbg.jpg';
+import about from '@/assets/hero.jpg';
 import { useEffect, useState } from 'react';
 
 export default function AboutSection() {
@@ -71,7 +72,7 @@ export default function AboutSection() {
           {/* الصورة الجانبية */}
           <div className="w-full md:w-3/5 h-[30rem] order-2 md:order-1">
             <img
-              src={aboutImg}
+              src={about}
               alt="Nature"
               className="rounded-xl object-cover w-full h-full shadow-lg"
             />

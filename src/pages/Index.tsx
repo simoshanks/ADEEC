@@ -1,10 +1,11 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
-import OtherSection from '@/components/OtherSection';
+import OtherSection from '@/components/ProjectSection';
 
 import Footer from '@/components/Footer';
 import ConfianceSection from '@/components/ConfianceSection';
 import AboutSection from '@/components/AboutSection';
+import ProjectSection from '@/components/ProjectSection';
 
 const Index = () => {
   return (
@@ -16,7 +17,7 @@ const Index = () => {
 
       <AboutSection/>
       
-      <OtherSection />
+      <ProjectSection/>
       <ConfianceSection />
       
       <Footer />
