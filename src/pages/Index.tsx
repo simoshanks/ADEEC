@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import ConfianceSection from '@/components/ConfianceSection';
 import AboutSection from '@/components/AboutSection';
 import ProjectSection from '@/components/ProjectSection';
+import CoverflowSwiper from '@/components/CoverflowSwiper';
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       
       <ProjectSection/>
       <ConfianceSection />
+      <CoverflowSwiper />
       
       <Footer />
     </div>

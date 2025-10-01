@@ -19,14 +19,14 @@ const ConfianceSection = () => {
           {confianceCards.map((card, index) => (
             <div
               key={index}
-              className="rounded-lg shadow-md text-center p-6 max-w-sm mx-auto relative bg-cover bg-center"
+              className="rounded-lg shadow-md text-center p-6 max-w-sm mx-auto relative bg-cover bg-center border" // 🚫 نحينا overflow-hidden
               style={{ backgroundImage: `url(${bg})` }}
             >
-              {/* overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+              {/* glass overlay */}
+              <div className="absolute inset-0 bg-white/20 backdrop-blur-md rounded-lg z-0"></div>
 
               {/* Circle image */}
-              <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-lg z-10">
+              <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-36 h-36 rounded-full overflow-hidden border-4 border-white shadow-lg z-20">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -35,11 +35,13 @@ const ConfianceSection = () => {
               </div>
 
               {/* Content */}
-              <div className="relative z-20 mt-24">
+              <div className="relative z-10 mt-24">
                 <h3 className="text-xl font-semibold mb-2 capitalize text-[#14A44D]">
                   {card.title}
                 </h3>
-                <p className="text-base text-gray-200">{card.description}</p>
+                <p className="text-base text-gray-700 font-medium">
+                  {card.description}
+                </p>
               </div>
             </div>
           ))}
