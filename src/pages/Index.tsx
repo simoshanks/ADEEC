@@ -7,10 +7,12 @@ import ConfianceSection from '@/components/ConfianceSection';
 import AboutSection from '@/components/AboutSection';
 import ProjectSection from '@/components/ProjectSection';
 import CoverflowSwiper from '@/components/CoverflowSwiper';
+import Topbar from '@/components/Topbar';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Topbar/>
       <Navigation />
       <HeroSection />
       

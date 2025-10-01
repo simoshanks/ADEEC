@@ -17,9 +17,9 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-4 left-0 right-0 z-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="bg-white/20 backdrop-blur-md rounded-2xl border border-[#000] shadow-md">
+    <nav className="fixed top-8 left-0 right-0 z-50">
+      <div className="w-full mx-auto">
+        <div className="bg-white/60 backdrop-blur-md border border-[#000] shadow-md rounded-xl">
           <div className="flex justify-between items-center h-16 px-6">
             {/* Logo */}
             <div className="flex items-center">
@@ -40,7 +40,7 @@ const Navigation = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center">
               <Button
                 variant="ghost"
                 size="icon"
