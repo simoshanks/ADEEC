@@ -12,9 +12,12 @@ const Projects = ({ domainSlug }) => {
 
   return (
     <div className="max-w-6xl mx-auto py-12 px-4">
-      <h2 className="text-3xl md:text-4xl font-extrabold mb-10 text-center text-[#146C2D]">
-        {domain.title}
-      </h2>
+            <div className="flex justify-center mb-10">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] uppercase tracking-wider relative">
+            {domain.title}
+            <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-20 h-1 bg-[#146C2D] rounded-full"></span>
+          </h2>
+        </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {domain.projects.map(project => (
           <div

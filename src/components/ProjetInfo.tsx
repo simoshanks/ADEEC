@@ -5,22 +5,41 @@ const ProjetInfo = () => {
   const { domainSlug, projectSlug } = useParams();
 
   const domain = domainsData.find(d => d.slug === domainSlug);
-  if (!domain) return <p className="text-red-600">❌ Domaine introuvable</p>;
+  if (!domain) return <p className="text-red-600 text-center py-6">❌ Domaine introuvable</p>;
 
   const project = domain.projects.find(p => p.slug === projectSlug);
-  if (!project) return <p className="text-red-600">❌ Projet introuvable</p>;
+  if (!project) return <p className="text-red-600 text-center py-6">❌ Projet introuvable</p>;
 
   return (
-    <div>
-      <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg shadow mb-6" />
-      <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-      <p className="text-gray-700 text-lg leading-relaxed">{project.description}</p>
-      <div className="mt-6 grid grid-cols-2 gap-4">
-        {project.gallery.map((img, idx) => (
-          <img key={idx} src={img} alt={`${project.title} ${idx}`} className="w-full h-40 object-cover rounded-lg" />
-        ))}
+    <section className="bg-gradient-to-b from-[#e6f2ed] to-[#f5fcf8] py-16 px-4 md:px-12 min-h-screen">
+      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+
+        {/* Titre */}
+        <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] mb-6 text-center">
+          {project.title}
+        </h2>
+
+        {/* Description */}
+        <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-10 text-center">
+          {project.description}
+        </p>
+
+        {/* Gallery */}
+        {project.gallery && project.gallery.length > 0 && (
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            {project.gallery.map((img, idx) => (
+              <div key={idx} className="overflow-hidden rounded-lg shadow-md cursor-pointer transform transition hover:scale-105 hover:shadow-xl">
+                <img
+                  src={img}
+                  alt={`${project.title} ${idx + 1}`}
+                  className="w-full h-40 object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
-    </div>
+    </section>
   );
 };
 

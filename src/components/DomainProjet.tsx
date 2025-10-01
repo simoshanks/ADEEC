@@ -8,9 +8,12 @@ const Domains = () => {
   return (
     <div className="relative py-12 bg-[#F5FCF8]">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-extrabold mb-12 text-center text-[#146C2D]">
-          Les domaines des projets
-        </h2>
+            <div className="flex justify-center mb-10">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] uppercase tracking-wider relative">
+            LES DOMAINS DES PROJETS
+            <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-20 h-1 bg-[#146C2D] rounded-full"></span>
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {domainsData.map((domain) => (
