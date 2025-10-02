@@ -11,33 +11,30 @@ const ProjetInfo = () => {
   if (!project) return <p className="text-red-600 text-center py-6">❌ Projet introuvable</p>;
 
   return (
-    <section className="bg-gradient-to-b from-[#e6f2ed] to-[#f5fcf8] py-16 px-4 md:px-12 min-h-screen">
-      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+    <section className="max-w-5xl mx-auto py-12 px-6 bg-white shadow-xl rounded-xl">
+      {/* العنوان */}
+      <h1 className="text-4xl font-extrabold mb-6 text-green-800 text-center">{project.title}</h1>
+      
+      {/* الصورة */}
+      <div className="overflow-hidden rounded-xl shadow-md mb-8">
+        <img 
+          src={project.image} 
+          alt={project.title} 
+          className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+        />
+      </div>
 
-        {/* Titre */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] mb-6 text-center">
-          {project.title}
-        </h2>
+      {/* الوصف */}
+      <p className="mb-6 text-gray-700 leading-relaxed text-lg">{project.description}</p>
 
-        {/* Description */}
-        <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-10 text-center">
-          {project.description}
-        </p>
-
-        {/* Gallery */}
-        {project.gallery && project.gallery.length > 0 && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-            {project.gallery.map((img, idx) => (
-              <div key={idx} className="overflow-hidden rounded-lg shadow-md cursor-pointer transform transition hover:scale-105 hover:shadow-xl">
-                <img
-                  src={img}
-                  alt={`${project.title} ${idx + 1}`}
-                  className="w-full h-40 object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        )}
+      {/* التفاصيل */}
+      <div className="flex flex-wrap gap-6 text-gray-600 font-medium">
+        <div className="flex items-center gap-2">
+          <span className="font-bold text-green-700">📅 السنة:</span> {project.year}
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="font-bold text-green-700">📍 المكان:</span> {project.location}
+        </div>
       </div>
     </section>
   );

@@ -1,25 +1,79 @@
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
-import logo from '@/assets/logo.png';
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, ChevronDown } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // mobile menu
+  const [isMegaOpen, setIsMegaOpen] = useState(false); // mega dropdown desktop
+  const [openSection, setOpenSection] = useState<string | null>(null); // mega dropdown mobile
 
   const navItems = [
-    { name: 'Accueil', href: '/' },
-    { name: 'À propos', href: '/Apropos' },
-    { name: 'Activités', href: '/Activites' },
-    { name: 'Réalisations', href: '/Realisations' },
-    { name: 'Partenaires', href: '/Partenaires' },
-    { name: 'Documentation', href: '/documentation' },
-    { name: 'Contact', href: '/Contact' },
+    { name: "Accueil", href: "/" },
+    { name: "À propos", href: "/Apropos" },
+    { name: "Activités", href: "/Activites" },
+    { name: "Réalisations", mega: true }, // mega dropdown
+    { name: "Partenaires", href: "/Partenaires" },
+    { name: "Documentation", href: "/Documentation" },
+    { name: "Contact", href: "/Contact" },
+  ];
+
+  // Mega menu content
+  const megaMenu = [
+    {
+      title: "L'environnement",
+      items: [
+        { name: "Projets terminés", href: "/Realisations/environnement/termines" },
+        { name: "Projets en cours", href: "/Realisations/environnement/cours" },
+        { name: "Galerie photos", href: "/Realisations/environnement/galerie" },
+      ],
+    },
+    {
+      title: "Santé",
+      items: [
+        { name: "Conférences", href: "/Realisations/sante/conferences" },
+        { name: "Formations", href: "/Realisations/sante/formations" },
+        { name: "Ateliers", href: "/Realisations/sante/ateliers" },
+      ],
+    },
+    {
+      title: "Domaine Social",
+      items: [
+        { name: "Rapports annuels", href: "/Realisations/social/rapports" },
+        { name: "Publications", href: "/Realisations/social/publications" },
+        { name: "Études & recherches", href: "/Realisations/social/etudes" },
+      ],
+    },
+    {
+      title: "Culture,Art et Patrimoine",
+      items: [
+        { name: "Institutions", href: "/Realisations/culture-art/institutions" },
+        { name: "ONG", href: "/Realisations/culture-art/ong" },
+        { name: "Collectivités", href: "/Realisations/culture-art/collectivites" },
+      ],
+    },
+    {
+      title: "Échange Culturel",
+      items: [
+        { name: "Articles de presse", href: "/Realisations/echange-culturel/articles" },
+        { name: "Vidéos", href: "/Realisations/echange-culturel/videos" },
+        { name: "Podcasts", href: "/Realisations/echange-culturel/podcasts" },
+      ],
+    },
+    {
+      title: "Autres",
+      items: [
+        { name: "Témoignages", href: "/Realisations/autres/temoignages" },
+        { name: "Archives", href: "/Realisations/autres/archives" },
+        { name: "Divers", href: "/Realisations/autres/divers" },
+      ],
+    },
   ];
 
   return (
     <nav className="fixed top-8 left-0 right-0 z-50">
       <div className="w-full mx-auto">
-        <div className="bg-white/60 backdrop-blur-md border border-[#000] shadow-md rounded-xl">
+        <div className="bg-white/60 backdrop-blur-md border border-[#000] shadow-md rounded-xl relative">
           <div className="flex justify-between items-center h-16 px-6">
             {/* Logo */}
             <div className="flex items-center">
@@ -27,16 +81,27 @@ const Navigation = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex flex-1 justify-center items-center space-x-10">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-black font-medium transition-colors duration-300 hover:text-[#146C2D]"
-                >
-                  {item.name}
-                </a>
-              ))}
+            <div className="hidden md:flex flex-1 justify-center items-center space-x-10 relative">
+              {navItems.map((item) =>
+                item.mega ? (
+                  <button
+                    key={item.name}
+                    className="flex items-center text-black font-medium hover:text-[#146C2D]"
+                    onClick={() => setIsMegaOpen(!isMegaOpen)}
+                  >
+                    {item.name}
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  </button>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-black font-medium hover:text-[#146C2D]"
+                  >
+                    {item.name}
+                  </a>
+                )
+              )}
             </div>
 
             {/* Mobile menu button */}
@@ -44,7 +109,10 @@ const Navigation = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  setOpenSection(null); // close sections when menu toggled
+                }}
               >
                 {isOpen ? (
                   <X className="h-6 w-6 text-black" />
@@ -55,19 +123,86 @@ const Navigation = () => {
             </div>
           </div>
 
+          {/* Mega Dropdown (Desktop) */}
+          {isMegaOpen && (
+            <div className="absolute left-0 right-0 mt-2 bg-white shadow-lg border-t border-gray-200 p-8 grid grid-cols-1 md:grid-cols-3 gap-8 z-40 rounded-b-xl">
+              {megaMenu.map((col) => (
+                <div key={col.title}>
+                  <h3 className="font-semibold text-[#146C2D] mb-3">
+                    {col.title}
+                  </h3>
+                  <ul className="space-y-2">
+                    {col.items.map((item) => (
+                      <li key={item.name}>
+                        <a
+                          href={item.href}
+                          className="text-gray-700 hover:text-[#146C2D] transition"
+                        >
+                          {item.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="md:hidden px-4 pb-3 bg-white/90 backdrop-blur-md rounded-b-2xl border-t border-gray-200">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-black hover:text-[#146C2D] transition-colors duration-300 font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
+            <div className="md:hidden px-4 pb-3 bg-white/95 backdrop-blur-md rounded-b-2xl border-t border-gray-200">
+              {navItems.map((item) =>
+                item.mega ? (
+                  <div key={item.name} className="border-t border-gray-200">
+                    <button
+                      className="w-full flex justify-between items-center px-3 py-3 font-medium text-black"
+                      onClick={() =>
+                        setOpenSection(
+                          openSection === item.name ? null : item.name
+                        )
+                      }
+                    >
+                      {item.name}
+                      <ChevronDown
+                        className={`h-4 w-4 transition-transform ${
+                          openSection === item.name ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+                    {/* Accordion style */}
+                    {openSection === item.name && (
+                      <div className="pl-4 py-2 animate-slideDown">
+                        {megaMenu.map((col) => (
+                          <div key={col.title} className="mb-3">
+                            <h4 className="font-semibold text-[#146C2D]">
+                              {col.title}
+                            </h4>
+                            {col.items.map((sub) => (
+                              <a
+                                key={sub.name}
+                                href={sub.href}
+                                className="block px-3 py-1 text-gray-700 hover:text-[#146C2D]"
+                                onClick={() => setIsOpen(false)}
+                              >
+                                {sub.name}
+                              </a>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="block px-3 py-3 text-black hover:text-[#146C2D] font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                )
+              )}
             </div>
           )}
         </div>

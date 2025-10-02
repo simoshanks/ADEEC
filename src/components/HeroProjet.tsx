@@ -1,6 +1,7 @@
+import React from "react";
 import heroactivites from "@/assets/hero.jpg"; 
 
-const HeroRealisation = () => {
+const HeroProjet = () => {
   return (
     <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -13,12 +14,9 @@ const HeroRealisation = () => {
       {/* Overlay Content */}
       <div className="relative z-10 text-center px-6">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg mb-4">
-          Nos realisation 
+           Projet
         </h1>
-        <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-          Découvrez nos projets actuels qui œuvrent pour l’éducation, 
-          l’environnement, la citoyenneté et la solidarité.
-        </p>
+
       </div>
 
       {/* Overlay Gradient */}
@@ -27,4 +25,4 @@ const HeroRealisation = () => {
   );
 };
 
-export default HeroRealisation;
+export default HeroProjet;
