@@ -7,10 +7,10 @@ import chance from "../assets/projetactuel/2mchance.jpg";
 import femmes from "../assets/projetactuel/femms.jpg";
 import prisonniers from "../assets/projetactuel/prisonniers.jpg";
 import Altruism from "@/assets/Altruism.jpeg";
-import Pride from "@/assets/fierté.jpg";
+import Pride from "@/assets/fierté.png";
 import Probity from "@/assets/Probity.jpeg";
 import Preseverance from "@/assets/Perseverance.jpeg";
-import respect from "@/assets/respect.jpeg";
+import respect from "@/assets/respect.jpg";
 
 
 

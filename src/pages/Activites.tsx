@@ -9,7 +9,7 @@ const Activites = () => {
       <Navigation />
       <HeroActivites/>
       
-      <ActivitesActul/>
+      
 
       <Footer />
     </div>
