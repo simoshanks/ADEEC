@@ -23,49 +23,51 @@ const Navigation = () => {
     {
       title: "L'environnement",
       items: [
-        { name: "Projets terminés", href: "/Realisations/environnement/termines" },
-        { name: "Projets en cours", href: "/Realisations/environnement/cours" },
-        { name: "Galerie photos", href: "/Realisations/environnement/galerie" },
+        { name: "Cop 22", href: "/Realisations/environnement/cop22" },
+        { name: "Progettomondo", href: "/Realisations/environnement/progettomondo" },
+        { name: "Activités de Sensibilisation", href: "/Realisations/environnement/sensibilisation" },
       ],
     },
     {
       title: "Santé",
       items: [
-        { name: "Conférences", href: "/Realisations/sante/conferences" },
-        { name: "Formations", href: "/Realisations/sante/formations" },
-        { name: "Ateliers", href: "/Realisations/sante/ateliers" },
+        { name: "Convois médicaux", href: "/Realisations/sante/convois-médicaux" },
+        { name: "Corona", href: "/Realisations/sante/corona" },
+        { name: "Informations de la Santé", href: "/Realisations/sante/information" },
       ],
     },
     {
       title: "Domaine Social",
       items: [
-        { name: "Rapports annuels", href: "/Realisations/social/rapports" },
-        { name: "Publications", href: "/Realisations/social/publications" },
-        { name: "Études & recherches", href: "/Realisations/social/etudes" },
+        { name: "Journaliers", href: "/Realisations/social/journaliers" },
+        { name: "Diagnostic Participatif", href: "/Realisations/social/diagnostic" },
+        { name: "Convois de Solidarité", href: "/Realisations/social/convois-solidarité" },
       ],
     },
     {
       title: "Culture,Art et Patrimoine",
       items: [
-        { name: "Institutions", href: "/Realisations/culture-art/institutions" },
-        { name: "ONG", href: "/Realisations/culture-art/ong" },
-        { name: "Collectivités", href: "/Realisations/culture-art/collectivites" },
+        { name: "Festival d'Azilal", href: "/Realisations/culture-art/festival" },
+        { name: "Gravures Rupestres", href: "/Realisations/culture-art/gravures" },
+        { name: "EN Hommage aux Résistants", href: "/Realisations/culture-art/hommage" },
+        { name: "Foire du livre", href: "/Realisations/culture-art/foire" },
       ],
     },
     {
       title: "Échange Culturel",
       items: [
-        { name: "Articles de presse", href: "/Realisations/echange-culturel/articles" },
-        { name: "Vidéos", href: "/Realisations/echange-culturel/videos" },
-        { name: "Podcasts", href: "/Realisations/echange-culturel/podcasts" },
+        { name: "Barbados et Espagnols", href: "/Realisations/échange-culturel/barbados-espagnols" },
+        { name: "Combattre L'extrémisme", href: "/Realisations/échange-culturel/extremisme" },
+        { name: "Dialogueb Interreligieux", href: "/Realisations/échange-culturel/dialogueb-interreligieux" },
       ],
     },
     {
       title: "Autres",
       items: [
-        { name: "Témoignages", href: "/Realisations/autres/temoignages" },
-        { name: "Archives", href: "/Realisations/autres/archives" },
-        { name: "Divers", href: "/Realisations/autres/divers" },
+        { name: "BED", href: "/Realisations/autres/bed" },
+        { name: "Unité National", href: "/Realisations/autres/unité-nationale" },
+        { name: "Accueil des étudiants Africains", href: "/Realisations/autres/étudiants-africains" },
+        { name: "Tourisme de Montagne", href: "/Realisations/autres/tourisme-montagne" },
       ],
     },
   ];

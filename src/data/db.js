@@ -106,7 +106,16 @@ export const projetsActuels = [
 // les projet realise
 
 
-// db.js
+import copimg from "@/assets/projetrealise/environnement/copimg.jpg";
+import cop1 from "@/assets/projetrealise/environnement/cop1.jpg";
+import cop2 from "@/assets/projetrealise/environnement/cop2.jpg";
+import cop3 from "@/assets/projetrealise/environnement/cop3.jpg";
+import cop4 from "@/assets/projetrealise/environnement/cop4.jpg";
+import cop5 from "@/assets/projetrealise/environnement/cop5.jpg";
+import cop6 from "@/assets/projetrealise/environnement/cop6.jpg";
+import proget1 from "@/assets/projetrealise/environnement/proget1.jpg";
+import proget2 from "@/assets/projetrealise/environnement/proget2.jpg";
+import proget3 from "@/assets/projetrealise/environnement/proget3.jpg";
 
 export const domainsData = [
   {
@@ -114,28 +123,31 @@ export const domainsData = [
     slug: "environnement",
     projects: [
       {
-        title: "Projets terminés",
-        slug: "termines",
-        description: "Description détaillée des projets environnementaux terminés.",
-        image: "/assets/projets/environnement1.jpg",
+        title: "Cop 22",
+        slug: "cop22",
+        description: "Description détaillée des projets environnementaux terminésDescription détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés..",
+        image: copimg,
+        year: 2016,
+        gallery: [cop1,cop2,cop3,cop4,cop5,cop6],
+      },
+      {
+        title: "Progettomondo",
+        slug: "progettomondo",
+        description: "Description détaillée des projets environnementaux terminésDescription détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés...",
+        image: proget1,
         year: 2023,
-        location: "Azzilal",
+        gallery: [proget1,proget2,proget3,],
       },
       {
-        title: "Projets en cours",
-        slug: "cours",
-        description: "Projets environnementaux actuellement en cours.",
-        image: "/assets/projets/environnement2.jpg",
-        year: 2025,
-        location: "Marrakech",
-      },
-      {
-        title: "Galerie photos",
-        slug: "galerie",
+        title: "Activités de sensibilisation",
+        slug: "sensibilisation",
         description: "Collection de photos des projets environnementaux.",
         image: "/assets/projets/environnement3.jpg",
-        year: 2024,
-        location: "Rabat",
+        year: 2014,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
     ],
   },
@@ -144,28 +156,37 @@ export const domainsData = [
     slug: "sante",
     projects: [
       {
-        title: "Conférences",
-        slug: "conferences",
+        title: "Convois médicaux",
+        slug: "convois-médicaux",
         description: "Conférences organisées sur la santé publique.",
         image: "/assets/projets/sante1.jpg",
-        year: 2022,
-        location: "Casablanca",
+        year: 2011,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Formations",
-        slug: "formations",
+        title: "Corona",
+        slug: "corona",
         description: "Sessions de formation pour les professionnels de santé.",
         image: "/assets/projets/sante2.jpg",
-        year: 2023,
-        location: "Fès",
+        year: 2020,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Ateliers",
-        slug: "ateliers",
+        title: "informations de la santé ",
+        slug: "information",
         description: "Ateliers pratiques pour la population locale.",
         image: "/assets/projets/sante3.jpg",
-        year: 2024,
-        location: "Agadir",
+        year: 2016,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
     ],
   },
@@ -174,28 +195,37 @@ export const domainsData = [
     slug: "social",
     projects: [
       {
-        title: "Rapports annuels",
-        slug: "rapports",
+        title: "Journaliers",
+        slug: "journaliers",
         description: "Rapports annuels sur les actions sociales menées.",
         image: "/assets/projets/social1.jpg",
-        year: 2023,
-        location: "Rabat",
+        year: 2016,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Publications",
-        slug: "publications",
+        title: "Convois de Solidarité",
+        slug: "convois-solidarité",
         description: "Publications et articles sur le domaine social.",
         image: "/assets/projets/social2.jpg",
-        year: 2022,
-        location: "Casablanca",
+        year: 2011,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Études & recherches",
-        slug: "etudes",
+        title: "Diagnostic Participatif",
+        slug: "diagnostic",
         description: "Études et recherches sur le développement social.",
         image: "/assets/projets/social3.jpg",
-        year: 2024,
-        location: "Marrakech",
+        year: 2018,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
     ],
   },
@@ -204,58 +234,87 @@ export const domainsData = [
     slug: "culture-art",
     projects: [
       {
-        title: "Institutions",
-        slug: "institutions",
+        title: "Festival d'Azilal",
+        slug: "festival",
         description: "Projets culturels réalisés avec les institutions locales.",
         image: "/assets/projets/culture1.jpg",
-        year: 2023,
-        location: "Fès",
+        year: 2001,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "ONG",
-        slug: "ong",
+        title: "Gravures Rupestres",
+        slug: "gravures",
         description: "Projets menés en collaboration avec différentes ONG.",
         image: "/assets/projets/culture2.jpg",
-        year: 2024,
-        location: "Rabat",
+        year: 2019,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Collectivités",
-        slug: "collectivites",
+        title: "EN Hommage aux Résistants",
+        slug: "hommage",
         description: "Actions culturelles avec les collectivités locales.",
         image: "/assets/projets/culture3.jpg",
-        year: 2022,
-        location: "Casablanca",
+        year: 2013,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
+      },
+      {
+        title: "Foire du livre",
+        slug: "foire",
+        description: "Actions culturelles avec les collectivités locales.",
+        image: "/assets/projets/culture3.jpg",
+        year: 2015,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
     ],
   },
   {
     title: "Échange Culturel",
-    slug: "echange-culturel",
+    slug: "échange-culturel",
     projects: [
       {
-        title: "Articles de presse",
-        slug: "articles",
+        title: "Barbados et Espagnols",
+        slug: "barbados-espagnols",
         description: "Articles de presse publiés sur les échanges culturels.",
         image: "/assets/projets/echange1.jpg",
-        year: 2023,
-        location: "Rabat",
+        year: 2018,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Vidéos",
-        slug: "videos",
+        title: "Combattre L'extrémisme",
+        slug: "extremisme",
         description: "Vidéos sur les événements culturels et échanges.",
         image: "/assets/projets/echange2.jpg",
-        year: 2024,
-        location: "Casablanca",
+        year: 2011,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Podcasts",
-        slug: "podcasts",
+        title: "Dialogueb Interreligieux",
+        slug: "dialogueb-interreligieux",
         description: "Podcasts sur la culture et le patrimoine.",
         image: "/assets/projets/echange3.jpg",
         year: 2025,
-        location: "Fès",
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
     ],
   },
@@ -264,28 +323,48 @@ export const domainsData = [
     slug: "autres",
     projects: [
       {
-        title: "Témoignages",
-        slug: "temoignages",
+        title: "BED",
+        slug: "bed",
         description: "Témoignages sur différents projets réalisés.",
         image: "/assets/projets/autres1.jpg",
-        year: 2022,
-        location: "Agadir",
+        year: 2005,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Archives",
-        slug: "archives",
+        title: "Tourisme de Montagne",
+        slug: "tourisme-montagne",
         description: "Archives des anciens projets et actions de l'organisation.",
         image: "/assets/projets/autres2.jpg",
-        year: 2023,
-        location: "Rabat",
+        year: 2015,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
       {
-        title: "Divers",
-        slug: "divers",
+        title: "Unité Nationale",
+        slug: "unité-nationale",
         description: "Projets divers ne rentrant pas dans les autres catégories.",
         image: "/assets/projets/autres3.jpg",
-        year: 2024,
-        location: "Casablanca",
+        year: 2011,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
+      },
+      {
+        title: "Accueil des étudiants Africains",
+        slug: "étudiants-africains",
+        description: "Projets divers ne rentrant pas dans les autres catégories.",
+        image: "/assets/projets/autres3.jpg",
+        year: 2014,
+        gallery: [
+          "/assets/projets/sante3.jpg",
+          "/assets/projets/sante3-2.jpg",
+        ],
       },
     ],
   },
