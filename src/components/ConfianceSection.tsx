@@ -9,7 +9,7 @@ const ConfianceSection = () => {
         {/* Title */}
         <div className="flex justify-center mb-10">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] uppercase tracking-wider relative">
-            POURQUOI NOUS CHOISIR ?
+            NOS VALEURS
             <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-20 h-1 bg-[#146C2D] rounded-full"></span>
           </h2>
         </div>
