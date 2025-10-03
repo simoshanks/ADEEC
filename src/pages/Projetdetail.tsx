@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 const ProjetDetail = () => {
   return (
-    <div>
+    <div className="bg-[#F5FCF8]">
       <Navigation/>
       <HeroProjet/>
       <ProjetInfo />

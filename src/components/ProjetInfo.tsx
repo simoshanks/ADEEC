@@ -1,8 +1,15 @@
 import { useParams } from "react-router-dom";
 import { domainsData } from "@/data/db";
+import { useEffect, useState } from "react";
 
 const ProjetInfo = () => {
   const { domainSlug, projectSlug } = useParams();
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(true), 100); // appear on load
+    return () => clearTimeout(timer);
+  }, []);
 
   const domain = domainsData.find((d) => d.slug === domainSlug);
   if (!domain)
@@ -17,39 +24,41 @@ const ProjetInfo = () => {
     );
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 space-y-16">
+    <div className="max-w-6xl mx-auto px-6 py-12 space-y-16 bg-[#F5FCF8]">
       {/* Section principale du projet */}
-      <section className="bg-white shadow-xl rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
-        {/* Image principale */}
-        <div className="h-80 w-full overflow-hidden rounded-2xl">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />
-        </div>
+      <section className="w-full relative rounded-2xl p-6">
 
-        {/* Contenu à droite */}
-        <div className="p-8 flex flex-col justify-start flex-1 bg-gray-50 rounded-r-2xl shadow-inner">
-          <h1 className="text-4xl font-extrabold mb-6 text-green-800 text-center md:text-left">
+        {/* Right content (animated) */}
+       <div
+  className={`text-white rounded-tr-[80px] rounded-bl-[80px] border-2 border-[#146C2D] flex flex-col justify-center min-h-[500px] relative z-10 pl-24 pr-6 py-12 max-w-[800px] mx-auto
+    transition-all duration-700 ease-out transform ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+  style={{
+    background: 'linear-gradient(to bottom, #146C2D, #F5FCF8)'
+  }}
+>
+          <h1 className="text-2xl font-bold text-[#146C2D] mb-6 uppercase tracking-wide ml-8">
             {project.title}
           </h1>
-
-          {/* Description longue avec scroll si nécessaire */}
-          <div className="mb-6 text-gray-700 leading-relaxed text-lg max-h-[500px] overflow-y-auto pr-2">
+          <p className="text-gray-700 text-base leading-relaxed mb-6 text-left font-medium tracking-wide">
             {project.description}
-          </div>
-
-          {/* Détails */}
-          <div className="flex flex-col gap-4 text-gray-700 font-medium">
-            <div className="bg-white p-3 rounded-lg shadow-sm flex justify-between items-center">
-              <span className="font-bold text-green-700"> Année</span>
-              <span>{project.year}</span>
-            </div>
-
-
+          </p>
+          <div className="text-center text-[#146C2D]">
+            <span className="font-semibold">Année: </span>{project.year}
           </div>
         </div>
+
+        {/* Left Image (animated, responsive) */}
+        <div className={`z-20 lg:absolute lg:top-1/4 lg:-left-12 relative mt-8 lg:mt-0 mx-auto lg:mx-0
+          transition-all duration-700 ease-out transform ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className="h-[350px] w-[270px] overflow-hidden rounded-xl border-2 border-[#146C2D]">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
       </section>
 
       {/* Galerie */}
