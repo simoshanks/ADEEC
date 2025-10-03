@@ -11,7 +11,15 @@ const Navigation = () => {
   const navItems = [
     { name: "Accueil", href: "/" },
     { name: "À propos", href: "/Apropos" },
-    { name: "Activités", href: "/Activites" },
+    {
+      name: "Activites",
+      dropdown: [
+        { name: "Azicode", href: "/Activites/Azicode" },
+        { name: "Culture", href: "/Activites/culture" },
+        { name: "Éducation", href: "/Activites/education" },
+        { name: "Environnement", href: "/Activites/environnement" },
+      ],
+    },
     { name: "Réalisations", mega: true }, // mega dropdown
     { name: "Partenaires", href: "/Partenaires" },
     { name: "Documentation", href: "/Documentation" },
@@ -85,7 +93,30 @@ const Navigation = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex flex-1 justify-center items-center space-x-10 relative">
               {navItems.map((item) =>
-                item.mega ? (
+                item.dropdown ? (
+                  <div key={item.name} className="relative group">
+                    <button className="flex items-center text-black font-medium hover:text-[#146C2D]">
+                      {item.name}
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </button>
+
+                    {/* Dropdown simple */}
+                    <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                      <ul className="py-2">
+                        {item.dropdown.map((sub) => (
+                          <li key={sub.name}>
+                            <a
+                              href={sub.href}
+                              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#146C2D]"
+                            >
+                              {sub.name}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ) : item.mega ? (
                   <button
                     key={item.name}
                     className="flex items-center text-black font-medium hover:text-[#146C2D]"
@@ -130,9 +161,7 @@ const Navigation = () => {
             <div className="absolute left-0 right-0 mt-2 bg-white shadow-lg border-t border-gray-200 p-8 grid grid-cols-1 md:grid-cols-3 gap-8 z-40 rounded-b-xl">
               {megaMenu.map((col) => (
                 <div key={col.title}>
-                  <h3 className="font-semibold text-[#146C2D] mb-3">
-                    {col.title}
-                  </h3>
+                  <h3 className="font-semibold text-[#146C2D] mb-3">{col.title}</h3>
                   <ul className="space-y-2">
                     {col.items.map((item) => (
                       <li key={item.name}>
@@ -154,14 +183,32 @@ const Navigation = () => {
           {isOpen && (
             <div className="md:hidden px-4 pb-3 bg-white/95 backdrop-blur-md rounded-b-2xl border-t border-gray-200">
               {navItems.map((item) =>
-                item.mega ? (
+                item.dropdown ? (
+                  <details key={item.name} className="group border-t border-gray-200">
+                    <summary className="flex items-center justify-between cursor-pointer px-3 py-3 font-medium text-black">
+                      {item.name}
+                      <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180" />
+                    </summary>
+                    <ul className="mt-2 pl-4 space-y-2">
+                      {item.dropdown.map((sub) => (
+                        <li key={sub.name}>
+                          <a
+                            href={sub.href}
+                            className="block text-gray-700 hover:text-[#146C2D]"
+                            onClick={() => setIsOpen(false)}
+                          >
+                            {sub.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                ) : item.mega ? (
                   <div key={item.name} className="border-t border-gray-200">
                     <button
                       className="w-full flex justify-between items-center px-3 py-3 font-medium text-black"
                       onClick={() =>
-                        setOpenSection(
-                          openSection === item.name ? null : item.name
-                        )
+                        setOpenSection(openSection === item.name ? null : item.name)
                       }
                     >
                       {item.name}
@@ -171,14 +218,11 @@ const Navigation = () => {
                         }`}
                       />
                     </button>
-                    {/* Accordion style */}
                     {openSection === item.name && (
                       <div className="pl-4 py-2 animate-slideDown">
                         {megaMenu.map((col) => (
                           <div key={col.title} className="mb-3">
-                            <h4 className="font-semibold text-[#146C2D]">
-                              {col.title}
-                            </h4>
+                            <h4 className="font-semibold text-[#146C2D]">{col.title}</h4>
                             {col.items.map((sub) => (
                               <a
                                 key={sub.name}

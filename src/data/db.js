@@ -6,10 +6,10 @@ import azicodeimg from "../assets/projetactuel/azicodeimg.jpg";
 import chance from "../assets/projetactuel/2mchance.jpg";
 import femmes from "../assets/projetactuel/femms.jpg";
 import prisonniers from "../assets/projetactuel/prisonniers.jpg";
-import Altruism from "@/assets/Altruism.jpeg";
+import Altruism from "@/assets/Altruism.png";
 import Pride from "@/assets/fierté.png";
-import Probity from "@/assets/Probity.jpeg";
-import Preseverance from "@/assets/Perseverance.jpeg";
+import Probity from "@/assets/Probity.png";
+import Preseverance from "@/assets/Perseverance.png";
 import respect from "@/assets/respect.jpg";
 
 
