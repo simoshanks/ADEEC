@@ -8,6 +8,7 @@ import AboutSection from '@/components/AboutSection';
 import ProjectSection from '@/components/ProjectSection';
 import CoverflowSwiper from '@/components/CoverflowSwiper';
 import Topbar from '@/components/Topbar';
+import VideoSection from '@/components/VideoSection';
 
 const Index = () => {
   return (
@@ -15,15 +16,11 @@ const Index = () => {
       <Topbar/>
       <Navigation />
       <HeroSection />
-      
-      
-
       <AboutSection/>
-      
       <ProjectSection/>
+      <VideoSection/>
       <ConfianceSection />
       <CoverflowSwiper />
-      
       <Footer />
     </div>
   );

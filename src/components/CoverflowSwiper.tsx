@@ -17,15 +17,18 @@ export default function CoverflowSwiper() {
   ];
 
   return (
-    <div className="bg-[#F8F8F8]">
+    <div className="bg-[#F5FCF8]">
       <div className="w-full max-w-5xl mx-auto">
        {/* Title */}
-        <div className="flex justify-center mb-10">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] uppercase tracking-wider relative">
-            GALERIE
-            <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-20 h-1 bg-[#146C2D] rounded-full"></span>
+      <div className="flex justify-center mb-12 sm:mb-16 relative z-10">
+        <div className="text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0D4A1F] uppercase tracking-tight mb-3">
+            GALLERY
           </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto rounded-full"></div>
+
         </div>
+      </div>
 
         {/* 🎞️ Swiper */}
         <Swiper

@@ -75,7 +75,7 @@ const HeroAbout = () => {
                     ...styles.typewriterLine2,
                   }}
                 >
-                  2003
+                  2000
                 </h1>
               </div>
             </div>
@@ -94,13 +94,13 @@ const HeroAbout = () => {
               className="text-6xl font-extrabold leading-tight tracking-wide text-white relative top-6"
               style={styles.typewriterRight}
             >
-              jusqu’à présent
+              AADEC
             </h1>
             <p
               className="mt-10 text-gray-200 max-w-4xl"
               style={styles.fadeIn}
             >
-              Committed to connecting you with nature through unforgettable journeys and experiences.
+              Les générations changent ,Mais Les valeurs et les Principes de l'AADEC ne changent pas
             </p>
           </div>
         </div>

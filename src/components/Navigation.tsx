@@ -14,10 +14,10 @@ const Navigation = () => {
     {
       name: "Activites",
       dropdown: [
-        { name: "Azicode", href: "/Activites/Azicode" },
-        { name: "Culture", href: "/Activites/culture" },
-        { name: "Éducation", href: "/Activites/education" },
-        { name: "Environnement", href: "/Activites/environnement" },
+        { name: "ECOLE DU CODAGE AZICODE 62", href: "/Activites/Azicode-62" },
+        { name: "ECOLE 2 EME CHANCE NOUVELLE GENERATION", href: "/Activites/2eme-chance" },
+        { name: "QUALIFICATION ET AIDE A LA RÉINSERTION DES PRISONNIERS", href: "/Activites/reinsertion-prisonniers" },
+        { name: "CENTRE RENFORCEMENT DES CAPACITES DES FEMMES", href: "/Activites/centre-femmes" },
       ],
     },
     { name: "Réalisations", mega: true }, // mega dropdown
@@ -39,7 +39,7 @@ const Navigation = () => {
     {
       title: "Santé",
       items: [
-        { name: "Convois médicaux", href: "/Realisations/sante/convois-médicaux" },
+        { name: "Convois médicaux", href: "/Realisations/sante/convois-medicaux" },
         { name: "Corona", href: "/Realisations/sante/corona" },
         { name: "Informations de la Santé", href: "/Realisations/sante/information" },
       ],
@@ -47,9 +47,9 @@ const Navigation = () => {
     {
       title: "Domaine Social",
       items: [
-        { name: "Journaliers", href: "/Realisations/social/journaliers" },
+        { name: "Journaliers", href: "/Realisations/social/journalier" },
         { name: "Diagnostic Participatif", href: "/Realisations/social/diagnostic" },
-        { name: "Convois de Solidarité", href: "/Realisations/social/convois-solidarité" },
+        { name: "Convois de Solidarité", href: "/Realisations/social/convois-solidarite" },
       ],
     },
     {
@@ -58,7 +58,8 @@ const Navigation = () => {
         { name: "Festival d'Azilal", href: "/Realisations/culture-art/festival" },
         { name: "Gravures Rupestres", href: "/Realisations/culture-art/gravures" },
         { name: "EN Hommage aux Résistants", href: "/Realisations/culture-art/hommage" },
-        { name: "Foire du livre", href: "/Realisations/culture-art/foire" },
+        { name: "Restauration d'Ighrem", href: "/Realisations/culture-art/ighrem" },
+        { name: "livre et Cinéma", href: "/Realisations/culture-art/livre-cinema" },
       ],
     },
     {
@@ -76,6 +77,7 @@ const Navigation = () => {
         { name: "Unité National", href: "/Realisations/autres/unité-nationale" },
         { name: "Accueil des étudiants Africains", href: "/Realisations/autres/étudiants-africains" },
         { name: "Tourisme de Montagne", href: "/Realisations/autres/tourisme-montagne" },
+        { name: "Pavage Tanaghmlt", href: "/Realisations/autres/pavage" },
       ],
     },
   ];
@@ -86,9 +88,13 @@ const Navigation = () => {
         <div className="bg-white/60 backdrop-blur-md border border-[#000] shadow-md rounded-xl relative">
           <div className="flex justify-between items-center h-16 px-6">
             {/* Logo */}
-            <div className="flex items-center">
-              <img src={logo} alt="AADEC Logo" className="h-12 w-auto" />
-            </div>
+            <a href="/" className="flex items-center">
+<img
+  src={logo}
+  alt="AADEC Logo"
+  className="h-10 md:h-12 w-auto max-w-full object-contain transition-transform hover:scale-105 duration-300"
+/>
+            </a>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex flex-1 justify-center items-center space-x-10 relative">
@@ -101,20 +107,22 @@ const Navigation = () => {
                     </button>
 
                     {/* Dropdown simple */}
-                    <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                      <ul className="py-2">
-                        {item.dropdown.map((sub) => (
-                          <li key={sub.name}>
-                            <a
-                              href={sub.href}
-                              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#146C2D]"
-                            >
-                              {sub.name}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+{/* Dropdown simple */}
+<div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-50 min-w-max">
+  <ul className="py-2">
+    {item.dropdown.map((sub) => (
+      <li key={sub.name}>
+        <a
+          href={sub.href}
+          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#146C2D]"
+        >
+          {sub.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
                   </div>
                 ) : item.mega ? (
                   <button
@@ -144,7 +152,7 @@ const Navigation = () => {
                 size="icon"
                 onClick={() => {
                   setIsOpen(!isOpen);
-                  setOpenSection(null); // close sections when menu toggled
+                  setOpenSection(null);
                 }}
               >
                 {isOpen ? (
@@ -218,25 +226,35 @@ const Navigation = () => {
                         }`}
                       />
                     </button>
-                    {openSection === item.name && (
-                      <div className="pl-4 py-2 animate-slideDown">
-                        {megaMenu.map((col) => (
-                          <div key={col.title} className="mb-3">
-                            <h4 className="font-semibold text-[#146C2D]">{col.title}</h4>
-                            {col.items.map((sub) => (
-                              <a
-                                key={sub.name}
-                                href={sub.href}
-                                className="block px-3 py-1 text-gray-700 hover:text-[#146C2D]"
-                                onClick={() => setIsOpen(false)}
-                              >
-                                {sub.name}
-                              </a>
-                            ))}
-                          </div>
-                        ))}
-                      </div>
-                    )}
+
+                    {/* ✅ تعديل عرض الميغا في الموبايل */}
+                  {openSection === item.name && (
+  <div className="pl-4 py-3 grid grid-cols-2 gap-4 max-h-80 overflow-y-auto">
+    {megaMenu.map((col) => (
+      <div
+        key={col.title}
+        className="bg-gray-50 p-3 rounded-lg shadow-sm"
+      >
+        <h4 className="font-semibold text-[#146C2D] text-sm mb-2">
+          {col.title}
+        </h4>
+        <ul className="space-y-1">
+          {col.items.map((sub) => (
+            <li key={sub.name}>
+              <a
+                href={sub.href}
+                className="block text-gray-700 hover:text-[#146C2D] text-sm"
+                onClick={() => setIsOpen(false)}
+              >
+                {sub.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+)}
                   </div>
                 ) : (
                   <a

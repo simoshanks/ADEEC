@@ -3,11 +3,14 @@ import HeroAbout from "@/components/HeroAbout";
 import HistorySection from "@/components/HistorySection";
 import MissionVision from "@/components/MissionVision";
 import Navigation from "@/components/Navigation";
+import Topbar from "@/components/Topbar";
 import Value from "@/components/ValueI";
 
 const Apropos = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Topbar/>
+      <Navigation/>
       <HeroAbout />
       <HistorySection />
       <MissionVision/>
