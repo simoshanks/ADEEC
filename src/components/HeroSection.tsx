@@ -1,6 +1,6 @@
-import hero1 from '@/assets/bg1.jpg';
-import hero2 from '@/assets/bg2.jpg';
-import hero3 from '@/assets/bg5.jpg';
+import hero1 from '@/assets/heroAADEC.jpg';
+import hero2 from '@/assets/herofistival.jpg';
+import hero3 from '@/assets/imagehero.jpg';
 import { useState, useEffect } from 'react';
 
 const slides = [
@@ -70,9 +70,10 @@ const HeroSection = () => {
         alt="Hero Background"
         className="w-full h-full object-cover transform scale-105"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/40 to-black/20"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-      <div className="absolute inset-0 bg-[#146C2D]/10 mix-blend-overlay"></div>
+      {/* ✅ التعتيم نقصناه باش الصور يبانوا مزيان */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-black/10"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+      <div className="absolute inset-0 bg-[#146C2D]/5 mix-blend-overlay"></div>
     </div>
   ))}
 
@@ -99,7 +100,6 @@ const HeroSection = () => {
         isTransitioning ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0"
       }`}
     >
-
 
       {/* Main Title */}
       <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-snug">
@@ -199,8 +199,6 @@ const HeroSection = () => {
     }
   `}</style>
 </section>
-
-
   );
 };
 

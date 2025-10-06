@@ -3,11 +3,7 @@ import { confianceCards } from "@/data/db";
 
 const ConfianceSection = () => {
   return (
-    <section className="bg-gradient-to-br from-white to-[#F0F7F3] py-16 sm:py-20 w-full relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-[#146C2D]/5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#146C2D]/5 rounded-full translate-x-1/2 translate-y-1/2"></div>
-      
+    <section className="bg-[#F5FCF8] py-16 sm:py-20 w-full relative overflow-hidden">
       {/* Title */}
       <div className="flex justify-center mb-12 sm:mb-16 relative z-10">
         <div className="text-center">
@@ -16,7 +12,7 @@ const ConfianceSection = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto rounded-full"></div>
           <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto">
-           Les principes fondamentaux qui guident notre engagement et notre excellence
+            Les principes fondamentaux qui guident notre engagement et notre excellence
           </p>
         </div>
       </div>
