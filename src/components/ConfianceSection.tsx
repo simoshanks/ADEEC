@@ -7,7 +7,7 @@ const ConfianceSection = () => {
       {/* Title */}
       <div className="flex justify-center mb-12 sm:mb-16 relative z-10">
         <div className="text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#146C2D] mb-4">
             NOS VALEURS
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto rounded-full"></div>

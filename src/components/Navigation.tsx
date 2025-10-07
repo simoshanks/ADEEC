@@ -85,7 +85,7 @@ const Navigation = () => {
   return (
     <nav className="fixed top-8 left-0 right-0 z-50">
       <div className="w-full mx-auto">
-        <div className="bg-white/60 backdrop-blur-md border border-[#000] shadow-md rounded-xl relative">
+        <div className="bg-white/60 backdrop-blur-md border border-[#000] shadow-md  relative">
           <div className="flex justify-between items-center h-16 px-6">
             {/* Logo */}
             <a href="/" className="flex items-center">
@@ -146,22 +146,35 @@ const Navigation = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center">
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                  setOpenSection(null);
-                }}
-              >
-                {isOpen ? (
-                  <X className="h-6 w-6 text-black" />
-                ) : (
-                  <Menu className="h-6 w-6 text-black" />
-                )}
-              </Button>
-            </div>
+            {/* Mobile menu button with smooth rotation */}
+<div className="md:hidden flex items-center">
+  <Button
+    variant="ghost"
+    size="icon"
+    onClick={() => {
+      setIsOpen(!isOpen);
+      setOpenSection(null);
+    }}
+    className="hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+  >
+    {isOpen ? (
+      <X
+        className={`h-6 w-6 transition-transform duration-500 ${
+          isOpen ? "rotate-180" : "rotate-0"
+        }`}
+        style={{ color: "#146C2D" }}
+      />
+    ) : (
+      <Menu
+        className={`h-6 w-6 transition-transform duration-500 ${
+          isOpen ? "rotate-0" : "rotate-180"
+        }`}
+        style={{ color: "#146C2D" }}
+      />
+    )}
+  </Button>
+</div>
+
           </div>
 
           {/* Mega Dropdown (Desktop) */}

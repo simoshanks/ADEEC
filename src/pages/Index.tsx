@@ -12,9 +12,10 @@ import VideoSection from '@/components/VideoSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[#F5FCF8]">
       <Topbar/>
       <Navigation />
+      <div className="h-[60px] bg-[#146C2D]" /> 
       <HeroSection />
       <AboutSection/>
       <ProjectSection/>

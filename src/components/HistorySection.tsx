@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 // 👉 Import images from assets
 import slide1 from "../assets/bag.jpg";
-import slide2 from "../assets/bg1.jpg";
-import slide3 from "../assets/bg2.jpg";
+import slide2 from "../assets/herofistival.jpg";
+import slide3 from "../assets/green.jpg";
 
 import slide4 from "../assets/heroAbt.jpg";
 import slide5 from "../assets/bg4.jpg";
 import slide6 from "../assets/bg5.jpg";
 
-import slide7 from "../assets/bg3.jpg";
+import slide7 from "../assets/fierté.png";
 import slide8 from "../assets/bag.jpg";
 import slide9 from "../assets/greenbg.jpg";
 

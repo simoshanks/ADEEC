@@ -22,7 +22,7 @@ export default function CoverflowSwiper() {
        {/* Title */}
       <div className="flex justify-center mb-12 sm:mb-16 relative z-10">
         <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#0D4A1F] uppercase tracking-tight mb-3">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#146C2D] uppercase tracking-tight mb-3">
             GALLERY
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto rounded-full"></div>

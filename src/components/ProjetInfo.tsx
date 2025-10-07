@@ -20,111 +20,76 @@ const ProjetInfo = () => {
   if (!project) return <p className="text-red-600 text-center py-6">❌ Projet introuvable</p>;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white to-[#F8FCF9]">
-      {/* Hero Section */}
-      <section className="relative py-16 lg:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        {/* Decorative Circles */}
-        <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#146C2D]/5 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-[#22A55D]/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div className="min-h-screen bg-gradient-to-br from-white to-[#F8FCF9] py-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Breadcrumb */}
+        <nav className="flex items-center flex-wrap text-sm text-gray-600 mb-8">
+          <span className="hover:text-[#146C2D] transition-colors cursor-pointer">Accueil</span>
+          <span className="text-[#146C2D] mx-2">▶</span>
+          <span className="hover:text-[#146C2D] transition-colors cursor-pointer">Domaines</span>
+          <span className="text-[#146C2D] mx-2">▶</span>
+          <span className="capitalize text-[#146C2D] font-semibold">{domain.title}</span>
+        </nav>
 
-        <div className="max-w-7xl mx-auto">
-          {/* Breadcrumb */}
-          <nav className="flex items-center flex-wrap text-sm text-gray-600 mb-8">
-            <span>Accueil</span>
-            <span className="text-[#146C2D] mx-1">▶</span>
-            <span>Domaines</span>
-            <span className="text-[#146C2D] mx-1">▶</span>
-            <span className="capitalize">{domain.name}</span>
-            <span className="text-[#146C2D] mx-1">▶</span>
-            <span className="text-[#146C2D] font-semibold">{project.title}</span>
-          </nav>
-
-          {/* Main Content */}
-          <div
-            className={`transition-all duration-1000 ease-out transform ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-          >
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              {/* Text Content */}
-              <div className="space-y-6 lg:space-y-8">
-                {/* Category Badge */}
-                <div className="inline-flex items-center px-4 py-2 bg-[#146C2D]/10 rounded-full">
-                  <span className="w-2 h-2 bg-[#146C2D] rounded-full mr-2"></span>
-                  <span className="text-[#146C2D] font-semibold text-sm uppercase tracking-wide">{domain.name}</span>
+        {/* Main Card */}
+        <div
+          className={`bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-1000 ease-out transform ${
+            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          {/* Card Header */}
+          <div className="bg-gradient-to-r from-[#146C2D] to-[#22A55D] p-8 text-white">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <div className="inline-flex items-center px-3 py-1 bg-white/20 rounded-full mb-4">
+                  <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
+                  <span className="text-sm font-medium uppercase tracking-wide">
+                    {domain.title}
+                  </span>
                 </div>
-
-                {/* Title */}
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-bold mt-2">
                   {project.title}
                 </h1>
-
-                {/* Description */}
-                <p className="text-lg lg:text-xl text-gray-600 leading-relaxed font-light">
-                  {project.description}
-                </p>
-
-                {/* Project Meta */}
-                <div className="flex flex-wrap gap-6 pt-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-[#146C2D] rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-500">Année</p>
-                      <p className="text-lg font-semibold text-gray-900">{project.year}</p>
-                    </div>
-                  </div>
-
-                  {project.duration && (
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-[#22A55D] rounded-full flex items-center justify-center">
-                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <p className="text-sm text-gray-500">Durée</p>
-                        <p className="text-lg font-semibold text-gray-900">{project.duration}</p>
-                      </div>
-                    </div>
-                  )}
-                </div>
               </div>
-
-              {/* Visual Card */}
-              <div className="relative">
-                <div className="relative z-10 bg-gradient-to-br from-[#146C2D] to-[#22A55D] rounded-2xl p-8 lg:p-12 text-white transform rotate-1 hover:rotate-0 transition-transform duration-500">
-                  <div className="absolute -inset-4 bg-gradient-to-br from-[#146C2D] to-[#22A55D] rounded-2xl opacity-50 blur-xl"></div>
-                  <div className="relative z-10 space-y-4">
-                    <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold">Projet Réussi</h3>
-                    <p className="text-white/80 leading-relaxed">
-                      Un projet soigneusement exécuté avec expertise et professionnalisme,
-                      démontrant notre engagement envers l'excellence.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#146C2D]/10 rounded-full"></div>
-                <div className="absolute -top-6 -left-6 w-16 h-16 bg-[#22A55D]/10 rounded-full"></div>
+              
+              <div className="flex items-center space-x-2 bg-white/10 rounded-lg px-4 py-3 backdrop-blur-sm">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span className="text-lg font-semibold">{project.year}</span>
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Gallery Section */}
-      {project.gallery && project.gallery.length > 0 && (
-        <div className="px-4 sm:px-6 lg:px-8 pb-20">
-          <GallerySection gallery={project.gallery} title={project.title} />
+          {/* Card Body */}
+          <div className="p-8">
+            <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed">
+              <p className="text-xl font-light mb-6">
+                {project.description}
+              </p>
+              
+              {/* Gallery Info */}
+              {project.gallery && project.gallery.length > 0 && (
+                <div className="flex items-center space-x-2 text-gray-500 mt-8 pt-6 border-t border-gray-200">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <span className="font-medium">
+                    {project.gallery.length} photo{project.gallery.length > 1 ? 's' : ''} disponible{project.gallery.length > 1 ? 's' : ''}
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
-      )}
+
+        {/* Gallery Section */}
+        {project.gallery && project.gallery.length > 0 && (
+          <div className="mt-12">
+            <GallerySection gallery={project.gallery} title={project.title} />
+          </div>
+        )}
+      </div>
     </div>
   );
 };

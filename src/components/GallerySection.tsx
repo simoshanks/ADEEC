@@ -86,7 +86,7 @@ const GallerySection = ({ gallery, title }) => {
         {/* Gallery Info */}
         <div className="text-center mt-12">
           <p className="text-gray-600 text-lg">
-            {gallery.length} {gallery.length > 1 ? 'images' : 'image'} disponible{gallery.length > 1 ? 's' : ''}
+            {gallery.length} {gallery.length > 1 ? 'Photos' : 'image'} disponible{gallery.length > 1 ? 's' : ''}
           </p>
         </div>
       </div>
