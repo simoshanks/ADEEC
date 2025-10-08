@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectCoverflow, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -6,6 +7,8 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 
 const GallerySection = ({ gallery, title }) => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   if (!gallery || gallery.length === 0) return null;
 
   return (
@@ -56,21 +59,20 @@ const GallerySection = ({ gallery, title }) => {
         >
           {gallery.map((img, index) => (
             <SwiperSlide key={index}>
-              <div className="group relative rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-2xl transition-all duration-500 ease-out transform hover:-translate-y-2">
-                {/* Image Container */}
+              <div
+                className="group relative rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-2xl transition-all duration-500 ease-out transform hover:-translate-y-2 cursor-pointer"
+                onClick={() => setSelectedImage(img)}
+              >
                 <div className="relative h-80 lg:h-96 overflow-hidden bg-gray-100">
                   <img
                     src={img}
                     alt={`${title} - Image ${index + 1}`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  {/* Image Number */}
                   <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-900 font-semibold text-sm shadow-lg">
                     {index + 1}
                   </div>
-                  {/* Hover Info */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                     <div className="text-white">
                       <h3 className="font-semibold text-lg mb-1">{title}</h3>
@@ -90,6 +92,28 @@ const GallerySection = ({ gallery, title }) => {
           </p>
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 px-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-w-5xl w-full">
+            <img
+              src={selectedImage}
+              alt="Selected"
+              className="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-2xl"
+            />
+            <button
+              className="absolute top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full p-2 transition"
+              onClick={() => setSelectedImage(null)}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -33,7 +33,7 @@ const Navigation = () => {
       items: [
         { name: "Cop 22", href: "/Realisations/environnement/cop22" },
         { name: "Progettomondo", href: "/Realisations/environnement/progettomondo" },
-        { name: "Activités de Sensibilisation", href: "/Realisations/environnement/sensibilisation" },
+        { name: "Débats de Sensibilisation", href: "/Realisations/environnement/sensibilisation" },
       ],
     },
     {
@@ -41,13 +41,13 @@ const Navigation = () => {
       items: [
         { name: "Convois médicaux", href: "/Realisations/sante/convois-medicaux" },
         { name: "Corona", href: "/Realisations/sante/corona" },
-        { name: "Informations de la Santé", href: "/Realisations/sante/information" },
+        { name: "Relais communautaire de santé", href: "/Realisations/sante/information" },
       ],
     },
     {
       title: "Domaine Social",
       items: [
-        { name: "Journaliers", href: "/Realisations/social/journalier" },
+        { name: "Ouvriers journaliers", href: "/Realisations/social/journalier" },
         { name: "Diagnostic Participatif", href: "/Realisations/social/diagnostic" },
         { name: "Convois de Solidarité", href: "/Realisations/social/convois-solidarite" },
       ],
@@ -67,15 +67,15 @@ const Navigation = () => {
       items: [
         { name: "Barbados et Espagnols", href: "/Realisations/échange-culturel/barbados-espagnols" },
         { name: "Combattre L'extrémisme", href: "/Realisations/échange-culturel/extremisme" },
-        { name: "Dialogueb Interreligieux", href: "/Realisations/échange-culturel/dialogueb-interreligieux" },
+        { name: "Dialogue inter-religieux", href: "/Realisations/échange-culturel/dialogueb-interreligieux" },
       ],
     },
     {
       title: "Autres",
       items: [
         { name: "BED", href: "/Realisations/autres/bed" },
-        { name: "Unité National", href: "/Realisations/autres/unité-nationale" },
-        { name: "Accueil des étudiants Africains", href: "/Realisations/autres/étudiants-africains" },
+        { name: "Pour le sahara marocain", href: "/Realisations/autres/unité-nationale" },
+        { name: "Accueil des étudiants doctorants", href: "/Realisations/autres/étudiants-africains" },
         { name: "Tourisme de Montagne", href: "/Realisations/autres/tourisme-montagne" },
         { name: "Pavage Tanaghmlt", href: "/Realisations/autres/pavage" },
       ],

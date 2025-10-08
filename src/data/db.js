@@ -118,6 +118,7 @@ import cop6 from "@/assets/projetrealise/environnement/cop6.jpg";
 import proget1 from "@/assets/projetrealise/environnement/proget1.jpg";
 import proget2 from "@/assets/projetrealise/environnement/proget2.jpg";
 import proget3 from "@/assets/projetrealise/environnement/proget3.jpg";
+import proget4 from "@/assets/projetrealise/environnement/proget4.png";
 // sante
 import coronaimg from "@/assets/projetrealise/sante/coronaimg.jpg";
 import corona1 from "@/assets/projetrealise/sante/corona1.jpg";
@@ -126,6 +127,9 @@ import corona3 from "@/assets/projetrealise/sante/corona3.jpg";
 import corona4 from "@/assets/projetrealise/sante/corona4.jpg";
 import corona5 from "@/assets/projetrealise/sante/corona5.jpg";
 import corona6 from "@/assets/projetrealise/sante/corona6.jpg";
+import corona7 from "@/assets/projetrealise/sante/corona7.jpg";
+import corona8 from "@/assets/projetrealise/sante/corona8.jpg";
+import corona9 from "@/assets/projetrealise/sante/corona9.jpg";
 
 import caravanimg from "@/assets/projetrealise/sante/caravanimg.jpg";
 import caravanimg2 from "@/assets/projetrealise/sante/caravanimg2.jpg";
@@ -147,6 +151,7 @@ import tahsis6 from "@/assets/projetrealise/sante/tahsis6.jpg";
 import tahsis7 from "@/assets/projetrealise/sante/tahsis7.jpg";
 import tahsis8 from "@/assets/projetrealise/sante/tahsis8.jpg";
 import tahsis9 from "@/assets/projetrealise/sante/tahsis9.jpg";
+import tahsis10 from "@/assets/projetrealise/sante/tahsis10.jpg";
 // social
 import diagnosticimg from "@/assets/projetrealise/social/diagnosticimg.jpg";
 import diagnostic1 from "@/assets/projetrealise/social/diagnostic1.jpg";
@@ -225,6 +230,7 @@ import dialog2 from "@/assets/projetrealise/echange/dialog2.jpg";
 import dialog3 from "@/assets/projetrealise/echange/dialog3.jpg";
 import dialog4 from "@/assets/projetrealise/echange/dialog4.jpg";
 import dialog5 from "@/assets/projetrealise/echange/dialog5.jpg";
+import dialog6 from "@/assets/projetrealise/echange/dialog6.jpg";
 import dialogimg from "@/assets/projetrealise/echange/dialogimg.jpg";
 
 import tatarof1 from "@/assets/projetrealise/echange/tatarof1.jpg";
@@ -252,6 +258,7 @@ import pavag3 from "@/assets/projetrealise/autre/pavag3.jpg";
 import pavag4 from "@/assets/projetrealise/autre/pavag4.jpg";
 import pavag5 from "@/assets/projetrealise/autre/pavag5.jpg";
 import pavag6 from "@/assets/projetrealise/autre/pavag6.jpg";
+import pavag7 from "@/assets/projetrealise/autre/pavag7.jpg";
 import pavagimg from "@/assets/projetrealise/autre/pavagimg.jpg";
 
 import tourist1 from "@/assets/projetrealise/autre/tourist1.jpg";
@@ -267,6 +274,10 @@ import watanya3 from "@/assets/projetrealise/autre/watanya3.jpg";
 import watanya4 from "@/assets/projetrealise/autre/watanya4.jpg";
 import watanya5 from "@/assets/projetrealise/autre/watanya5.jpg";
 import watanya6 from "@/assets/projetrealise/autre/watanya6.jpg";
+import watanya7 from "@/assets/projetrealise/autre/watanya7.jpg";
+import watanya8 from "@/assets/projetrealise/autre/watanya8.jpg";
+
+
 
 
 export const domainsData = [
@@ -286,14 +297,14 @@ export const domainsData = [
         slug: "progettomondo",
         description: "Description détaillée des projets environnementaux terminésDescription détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés...",
         year: 2023,
-        gallery: [proget1,proget2,proget3,],
+        gallery: [proget1,proget2,proget3,proget4],
       },
       {
-        title: "Activités de sensibilisation",
+        title: "Débats de sensibilisation",
         slug: "sensibilisation",
         description: "Collection de photos des projets environnementaux.",
         year: 2014,
-        gallery: [proget1,proget2,proget3,],
+        gallery: [proget1,proget2,proget3,proget4],
       },
     ],
   },
@@ -313,14 +324,14 @@ export const domainsData = [
         slug: "corona",
         description: "Sessions de formation pour les professionnels de santé.",
         year: 2020,
-        gallery: [coronaimg,corona1,corona2,corona3,corona4,corona5,corona6],
+        gallery: [coronaimg,corona1,corona2,corona3,corona4,corona5,corona6,corona7,corona8,corona9],
       },
       {
-        title: "informations de la santé ",
+        title: "Relais communautaire de santé ",
         slug: "information",
         description: "Ateliers pratiques pour la population locale.",
         year: 2016,
-        gallery: [tahsisimg,tahsis1,tahsis2,tahsis3,tahsis4,tahsis5,tahsis6,tahsis7,tahsis8,tahsis9],
+        gallery: [tahsisimg,tahsis1,tahsis2,tahsis3,tahsis4,tahsis5,tahsis6,tahsis7,tahsis8,tahsis9,tahsis10],
       },
     ],
   },
@@ -329,7 +340,7 @@ export const domainsData = [
     slug: "social",
     projects: [
       {
-        title: "Journaliers",
+        title: "Ouvriers journaliers",
         slug: "journalier",
         description: "Rapports annuels sur les actions sociales menées.",
         year: 2016,
@@ -411,11 +422,31 @@ export const domainsData = [
         gallery: [tatarofimg,tatarof1,tatarof2,tatarof3,tatarof4,tatarof5],
       },
       {
-        title: "Dialogueb Interreligieux",
+        title: "Dialogue inter-religieux",
         slug: "dialogueb-interreligieux",
         description: "Podcasts sur la culture et le patrimoine.",
         year: 2025,
-        gallery: [ dialogimg,dialog1,dialog2,dialog3,dialog4,dialog5],
+        gallery: [ dialogimg,dialog1,dialog2,dialog3,dialog4,dialog5,dialog6],
+      },
+    ],
+  },
+  {
+    title: "Education",
+    slug: "education",
+    projects: [
+      {
+        title: "Modèle de Développement",
+        slug: "developpement",
+        description: "Témoignages sur différents projets réalisés.",
+        year: 2005,
+        gallery: [bedimg,bed1,bed2,bed3,bed4,bed5],
+      },
+        {
+        title: "Scolarisation des filles en milieu rural ",
+        slug: "scolarisation",
+        description: "Projets divers ne rentrant pas dans les autres catégories.",
+        year: 2014,
+       gallery: [pavagimg,pavag1,pavag2,pavag3,pavag4,pavag5,pavag6,pavag7],
       },
     ],
   },
@@ -438,14 +469,14 @@ export const domainsData = [
         gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6],
       },
       {
-        title: "Unité Nationale",
+        title: "Pour le sahara marocain",
         slug: "unité-nationale",
         description: "Projets divers ne rentrant pas dans les autres catégories.",
         year: 2011,
-        gallery: [watanya1,watanya2,watanya3,watanya4,watanya5,watanya6],
+        gallery: [watanya1,watanya2,watanya3,watanya4,watanya5,watanya6,watanya7,watanya8],
       },
       {
-        title: "Accueil des étudiants Africains",
+        title: "Accueil des étudiants doctorants",
         slug: "étudiants-africains",
         description: "Projets divers ne rentrant pas dans les autres catégories.",
         year: 2014,
@@ -456,7 +487,7 @@ export const domainsData = [
         slug: "pavage",
         description: "Projets divers ne rentrant pas dans les autres catégories.",
         year: 2014,
-       gallery: [pavagimg,pavag1,pavag2,pavag3,pavag4,pavag5,pavag6],
+       gallery: [pavagimg,pavag1,pavag2,pavag3,pavag4,pavag5,pavag6,pavag7],
       },
     ],
   },

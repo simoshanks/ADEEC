@@ -31,13 +31,6 @@ const CustomSlider = () => {
 
   return (
     <section className="relative py-16 lg:py-20 bg-[#F5FCF8] overflow-hidden">
-      {/* Background Blurs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#146C2D]/5 rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-32 -right-32 w-80 h-80 bg-[#22A55D]/5 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#146C2D]/3 rounded-full blur-3xl"></div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-14">

@@ -1,12 +1,25 @@
+import React from "react";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import Topbar from "@/components/Topbar";
+import ContactHero from "@/components/ContactHero";
+import MapFAQ from "@/components/MapFAQ";
+import ContactMain from "@/components/ContactMain";
+
+
+
+
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Topbar/>
+      <Topbar />
       <Navigation />
+
+      <ContactHero />
+      <ContactMain/>
+      
+      <MapFAQ />
 
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
-import heroAbt from '../assets/heroAbt.jpg';
+import heroAbt from '../assets/AADECFRANCE.jpg';
 
 const HeroAbout = () => {
   const styles = {
@@ -58,20 +58,24 @@ const HeroAbout = () => {
           <div className="relative z-10 w-full h-full flex items-center">
             <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-16 w-full h-full flex flex-col justify-center">
               <div className="w-full text-right mt-20">
-                <h1
-                  className="text-6xl font-extrabold leading-tight tracking-wide bg-clip-text text-transparent bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${heroAbt})`,
-                    ...styles.typewriterLine1,
-                  }}
-                >
-                  DEPUIS
-                </h1>
+<h1
+  className="text-6xl font-extrabold leading-tight tracking-wide bg-clip-text text-transparent bg-cover bg-center"
+  style={{
+    backgroundImage: `url(${heroAbt})`,
+    WebkitTextStroke: "1px rgba(255,255,255,0.7)", // outline أبيض خفيف
+    textShadow: "0 3px 10px rgba(0,0,0,0.6)",       // ظل لتوضيح الحروف
+    ...styles.typewriterLine1,
+  }}
+>
+  DEPUIS
+</h1>
                 <br />
                 <h1
                   className="text-6xl font-extrabold leading-tight tracking-wide bg-clip-text text-transparent bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${heroAbt})`,
+                     WebkitTextStroke: "1px rgba(255,255,255,0.7)", // outline أبيض خفيف
+    textShadow: "0 3px 10px rgba(0,0,0,0.6)",       // ظل لتوضيح الحروف
                     ...styles.typewriterLine2,
                   }}
                 >
@@ -83,27 +87,39 @@ const HeroAbout = () => {
         </div>
 
         {/* Right side with full image, no overlay */}
-        <div
-          className="w-3/5 bg-cover bg-center flex items-center justify-start p-8"
-          style={{
-            backgroundImage: `url(${heroAbt})`,
-          }}
-        >
-          <div>
-            <h1
-              className="text-6xl font-extrabold leading-tight tracking-wide text-white relative top-6"
-              style={styles.typewriterRight}
-            >
-              AADEC
-            </h1>
-            <p
-              className="mt-10 text-gray-200 max-w-4xl"
-              style={styles.fadeIn}
-            >
-              Les générations changent ,Mais Les valeurs et les Principes de l'AADEC ne changent pas
-            </p>
-          </div>
-        </div>
+{/* Right side with full image, no overlay */}
+<div
+  className="relative w-3/5 bg-cover bg-center flex items-center justify-start p-8"
+  style={{
+    backgroundImage: `url(${heroAbt})`,
+  }}
+>
+  {/* overlay dark */}
+  <div className="absolute inset-0 bg-black/20"></div>
+
+  <div className="relative z-10">
+    <h1
+      className="text-6xl font-extrabold leading-tight tracking-wide text-white relative top-6 drop-shadow-[0_3px_8px_rgba(0,0,0,0.8)]"
+      style={styles.typewriterRight}
+    >
+      AADEC
+    </h1>
+<p
+  className="mt-10 max-w-4xl text-white text-lg md:text-xl font-semibold"
+  style={{
+    ...styles.fadeIn,
+    textShadow: "0 4px 12px rgba(0, 0, 0, 0.8)", // ظل قوي يوضح الحروف
+    filter: "contrast(1.3) brightness(1.1)", // يزيد التباين والوضوح
+    letterSpacing: "0.5px", // مسافة بسيطة بين الحروف
+    lineHeight: "1.6", // يريح القراءة
+  }}
+>
+  Les générations changent, mais les valeurs et les principes de l'AADEC ne changent pas.
+</p>
+
+  </div>
+</div>
+
       </section>
     </>
   );
