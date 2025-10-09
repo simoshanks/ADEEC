@@ -8,11 +8,14 @@ import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
 
 import Apropos from "./pages/Apropos";
-import Activites from "./pages/Activites";
 import Documentation from "./pages/Documentation";
-import Activitesdetail from "./pages/Activitesdetail";
+
 import Partenaires from "./pages/Partenaires";
 import ProjetDetail from "./pages/Projetdetail";
+import Azicode from "./pages/Azicode";
+import Prisonniers from "./pages/Prisonniers";
+import Chance from "./pages/Chance";
+import Femmes from "./pages/Femmes";
 
 
 
@@ -28,8 +31,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/apropos" element={<Apropos />} />
-          <Route path="/Activites" element={<Activites />} />
-          <Route path="/Activites/:id" element={<Activitesdetail />} />
+          
+          <Route path="/Activites/Azicode-62" element={<Azicode />} />
+          <Route path="/Activites/reinsertion-prisonniers" element={<Prisonniers />} />
+          <Route path="/Activites/2eme-chance" element={<Chance />} />
+          <Route path="/Activites/centre-femmes" element={<Femmes />} />
            <Route path="/Realisations/:domainSlug/:projectSlug" element={<ProjetDetail />} />
           <Route path="/Partenaires" element={<Partenaires />} />
           <Route path="/documentation" element={<Documentation />} />

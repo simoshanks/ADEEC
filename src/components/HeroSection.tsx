@@ -69,10 +69,11 @@ const HeroSection = () => {
             alt="Hero Background"
             className="w-full h-full object-cover transform scale-105"
           />
-          {/* ✅ التعتيم نقصناه باش الصور يبانوا مزيان */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-black/10"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-          <div className="absolute inset-0 bg-[#146C2D]/5 mix-blend-overlay"></div>
+          {/* ✅ طبقة تظليل محسنة للنص */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
+          <div className="absolute inset-0 bg-[#146C2D]/10 mix-blend-overlay"></div>
         </div>
       ))}
 
@@ -100,37 +101,37 @@ const HeroSection = () => {
         >
 
           {/* Main Title */}
-          <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-snug">
-            <span className="bg-gradient-to-r from-white via-green-100 to-green-200 bg-clip-text text-transparent">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+            <span className="bg-gradient-to-r from-white via-green-50 to-green-100 bg-clip-text text-transparent">
               {slides[current].phrase.split(":")[0]}
             </span>
             {slides[current].phrase.includes(":") && (
-              <span className="block text-white mt-2 text-[clamp(1rem,2vw,1.5rem)]">
+              <span className="block text-white mt-4 text-2xl sm:text-3xl lg:text-4xl font-semibold drop-shadow-lg">
                 {slides[current].phrase.split(":")[1]}
               </span>
             )}
           </h1>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-lg sm:text-xl lg:text-2xl text-white/95 mb-8 max-w-4xl mx-auto leading-relaxed font-medium drop-shadow-lg">
             {slides[current].subtitle}
           </p>
 
           {/* Description */}
-          <p className="text-sm sm:text-base text-white/80 mb-10 max-w-xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed font-normal drop-shadow-md">
             L'AADEC a opté pour une stratégie de « développement par le bas » pour un impact durable et significatif.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-5 mb-12">
             <button
               onClick={() => (window.location.href = "/about")}
-              className="px-6 py-3 bg-[#146C2D] text-white rounded-lg font-semibold text-base shadow-xl hover:bg-[#1D8F50] hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              className="group px-8 py-4 bg-[#146C2D] text-white rounded-xl font-bold text-lg shadow-2xl hover:bg-[#1D8F50] hover:shadow-3xl transition-all duration-300 hover:scale-105 transform"
             >
-              <span className="flex items-center space-x-2">
+              <span className="flex items-center space-x-3">
                 <span>Découvrir nos réalisations</span>
                 <svg
-                  className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+                  className="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -140,15 +141,13 @@ const HeroSection = () => {
               </span>
             </button>
 
-
-
             <button
               onClick={() => (window.location.href = "/contact")}
-              className="group relative px-6 py-3 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-base hover:bg-white/10 backdrop-blur-sm transition-all duration-300 hover:scale-105"
+              className="group relative px-8 py-4 bg-transparent border-3 border-white text-white rounded-xl font-bold text-lg hover:bg-white/20 backdrop-blur-md transition-all duration-300 hover:scale-105 transform shadow-xl"
             >
-              <span className="flex items-center space-x-2">
+              <span className="flex items-center space-x-3">
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -167,14 +166,14 @@ const HeroSection = () => {
         </div>
 
         {/* Slide Indicators */}
-        <div className="flex justify-center items-center space-x-3 mb-8">
+        <div className="flex justify-center items-center space-x-4 mb-10">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${index === current
-                ? "bg-white w-10"
-                : "bg-white/40 hover:bg-white/60"
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === current
+                ? "bg-white w-12 shadow-lg"
+                : "bg-white/50 hover:bg-white/70"
                 }`}
               aria-label={`Aller au slide ${index + 1}`}
             />
@@ -182,8 +181,30 @@ const HeroSection = () => {
         </div>
       </div>
 
+      {/* Navigation Arrows */}
+      <button
+        onClick={handlePrev}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-30 p-4 rounded-2xl bg-black/40 text-white hover:bg-black/60 transition-all duration-300 backdrop-blur-lg border border-white/20 hover:scale-110"
+        aria-label="Slide précédent"
+      >
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <button
+        onClick={handleNext}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-30 p-4 rounded-2xl bg-black/40 text-white hover:bg-black/60 transition-all duration-300 backdrop-blur-lg border border-white/20 hover:scale-110"
+        aria-label="Slide suivant"
+      >
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
       {/* Tailwind Animation */}
-      <style jsx>{`
+<style>
+  {`
     @keyframes float {
       0%, 100% {
         transform: translateY(0) rotate(0deg);
@@ -193,9 +214,11 @@ const HeroSection = () => {
       }
     }
     .animate-float {
-      animation: float linear infinite;
+      animation: float 20s linear infinite;
     }
-  `}</style>
+  `}
+</style>
+
     </section>
   );
 };

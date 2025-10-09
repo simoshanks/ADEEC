@@ -239,11 +239,57 @@ import tatarof3 from "@/assets/projetrealise/echange/tatarof3.jpg";
 import tatarof4 from "@/assets/projetrealise/echange/tatarof4.jpg";
 import tatarof5 from "@/assets/projetrealise/echange/tatarof5.jpg";
 import tatarofimg from "@/assets/projetrealise/echange/tatarofimg.jpg";
+// education
+import african1 from "@/assets/projetrealise/education/african1.jpg";
+import african2 from "@/assets/projetrealise/education/african2.jpg";
+import african3 from "@/assets/projetrealise/education/african3.jpg";
+import africanimg from "@/assets/projetrealise/education/africanimg.jpg";
+import stage1 from "@/assets/projetrealise/education/stage1.jpg";
+import stage2 from "@/assets/projetrealise/education/stage2.jpg";
+import stage3 from "@/assets/projetrealise/education/stage3.jpg";
+import stage4 from "@/assets/projetrealise/education/stage4.jpg";
+import stage5 from "@/assets/projetrealise/education/stage5.jpg";
+import stage6 from "@/assets/projetrealise/education/stage6.jpg";
+import stage7 from "@/assets/projetrealise/education/stage7.jpg";
 
-import african1 from "@/assets/projetrealise/autre/african1.jpg";
-import african2 from "@/assets/projetrealise/autre/african2.jpg";
-import african3 from "@/assets/projetrealise/autre/african3.jpg";
-import africanimg from "@/assets/projetrealise/autre/africanimg.jpg";
+import scolair1 from "@/assets/projetrealise/education/scolair1.jpeg";
+import scolair2 from "@/assets/projetrealise/education/scolair2.jpeg";
+import scolair3 from "@/assets/projetrealise/education/scolair3.jpeg";
+import scolair4 from "@/assets/projetrealise/education/scolair4.jpeg";
+import scolair5 from "@/assets/projetrealise/education/scolair5.jpeg";
+import scolair6 from "@/assets/projetrealise/education/scolair6.jpeg";
+import scolair7 from "@/assets/projetrealise/education/scolair7.jpeg";
+import scolair9 from "@/assets/projetrealise/education/scolair9.jpeg";
+import scolair10 from "@/assets/projetrealise/education/scolair10.jpeg";
+
+import bnmous from "@/assets/projetrealise/education/bnmous.jpg";
+import bnmous2 from "@/assets/projetrealise/education/bnmous2.jpg";
+
+import prof1 from "@/assets/projetrealise/education/prof1.jpg";
+import prof2 from "@/assets/projetrealise/education/prof2.jpg";
+import prof3 from "@/assets/projetrealise/education/prof3.jpg";
+import prof4 from "@/assets/projetrealise/education/prof4.jpg";
+import prof5 from "@/assets/projetrealise/education/prof5.jpg";
+import prof6 from "@/assets/projetrealise/education/prof6.jpg";
+import prof7 from "@/assets/projetrealise/education/prof7.jpg";
+
+import talaba1 from "@/assets/projetrealise/education/talaba1.jpeg";
+import talaba2 from "@/assets/projetrealise/education/talaba2.jpg";
+import talaba3 from "@/assets/projetrealise/education/talaba3.jpg";
+import talaba4 from "@/assets/projetrealise/education/talaba4.jpg";
+import talaba5 from "@/assets/projetrealise/education/talaba5.jpg";
+import talaba6 from "@/assets/projetrealise/education/talaba6.jpg";
+import talaba7 from "@/assets/projetrealise/education/talaba7.jpg";
+import talaba8 from "@/assets/projetrealise/education/talaba8.jpg";
+import talaba9 from "@/assets/projetrealise/education/talaba9.jpg";
+import talaba10 from "@/assets/projetrealise/education/talaba10.jpg";
+
+
+
+
+// autre
+
+
 
 import bed1 from "@/assets/projetrealise/autre/bed1.jpg";
 import bed2 from "@/assets/projetrealise/autre/bed2.jpg";
@@ -439,14 +485,35 @@ export const domainsData = [
         slug: "developpement",
         description: "Témoignages sur différents projets réalisés.",
         year: 2005,
-        gallery: [bedimg,bed1,bed2,bed3,bed4,bed5],
+        gallery: [bnmous,bnmous2],
       },
         {
         title: "Scolarisation des filles en milieu rural ",
         slug: "scolarisation",
         description: "Projets divers ne rentrant pas dans les autres catégories.",
         year: 2014,
-       gallery: [pavagimg,pavag1,pavag2,pavag3,pavag4,pavag5,pavag6,pavag7],
+       gallery: [scolair1,scolair2,scolair3,scolair4,scolair5,scolair6,scolair7,scolair9,scolair10],
+      },
+              {
+        title: "étudiants cherchruts ",
+        slug: "etudiants",
+        description: "Projets divers ne rentrant pas dans les autres catégories.",
+        year: 2014,
+       gallery: [talaba1,talaba2,talaba3,talaba4,talaba5,talaba6,talaba7,talaba8,talaba9,talaba10],
+      },
+                    {
+        title: "Professeurs d'université ",
+        slug: "professeurs",
+        description: "Projets divers ne rentrant pas dans les autres catégories.",
+        year: 2014,
+       gallery: [prof1,prof2,prof3,prof4,prof5,prof6,prof7],
+      },
+            {
+        title: "Accueil des étudiants doctorants",
+        slug: "étudiants-africains",
+        description: "Projets divers ne rentrant pas dans les autres catégories.",
+        year: 2014,
+       gallery: [africanimg,african1,african2,african3,stage1,stage2,stage3,stage4,stage5,stage6,stage7],
       },
     ],
   },

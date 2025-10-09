@@ -26,7 +26,6 @@ const Navigation = () => {
     { name: "Contact", href: "/Contact" },
   ];
 
-  // Mega menu content
   const megaMenu = [
     {
       title: "L'environnement",
@@ -36,6 +35,7 @@ const Navigation = () => {
         { name: "Débats de Sensibilisation", href: "/Realisations/environnement/sensibilisation" },
       ],
     },
+
     {
       title: "Santé",
       items: [
@@ -50,6 +50,16 @@ const Navigation = () => {
         { name: "Ouvriers journaliers", href: "/Realisations/social/journalier" },
         { name: "Diagnostic Participatif", href: "/Realisations/social/diagnostic" },
         { name: "Convois de Solidarité", href: "/Realisations/social/convois-solidarite" },
+      ],
+    },
+        {
+      title: "Education",
+      items: [
+        { name: "Scolarisation des filles en milieu rural", href: "/Realisations/education/scolarisation" },
+        { name: "étudiants cherchruts", href: "/Realisations/education/etudiants" },
+        { name: "Professeurs d'université", href: "/Realisations/education/professeurs" },
+        { name: "Modèle de Développement", href: "/Realisations/education/developpement" },
+        { name: "Accueil des étudiants doctorants", href: "/Realisations/education/étudiants-africains" },
       ],
     },
     {
@@ -75,7 +85,6 @@ const Navigation = () => {
       items: [
         { name: "BED", href: "/Realisations/autres/bed" },
         { name: "Pour le sahara marocain", href: "/Realisations/autres/unité-nationale" },
-        { name: "Accueil des étudiants doctorants", href: "/Realisations/autres/étudiants-africains" },
         { name: "Tourisme de Montagne", href: "/Realisations/autres/tourisme-montagne" },
         { name: "Pavage Tanaghmlt", href: "/Realisations/autres/pavage" },
       ],
@@ -85,15 +94,15 @@ const Navigation = () => {
   return (
     <nav className="fixed top-8 left-0 right-0 z-50">
       <div className="w-full mx-auto">
-        <div className="bg-white/60 backdrop-blur-md border border-[#000] shadow-md  relative">
+        <div className="bg-white/60 backdrop-blur-md border border-[#000] shadow-md relative">
           <div className="flex justify-between items-center h-16 px-6">
             {/* Logo */}
             <a href="/" className="flex items-center">
-<img
-  src={logo}
-  alt="AADEC Logo"
-  className="h-10 md:h-12 w-auto max-w-full object-contain transition-transform hover:scale-105 duration-300"
-/>
+              <img
+                src={logo}
+                alt="AADEC Logo"
+                className="h-10 md:h-12 w-auto max-w-full object-contain transition-transform hover:scale-105 duration-300"
+              />
             </a>
 
             {/* Desktop Navigation */}
@@ -106,23 +115,21 @@ const Navigation = () => {
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
 
-                    {/* Dropdown simple */}
-{/* Dropdown simple */}
-<div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-50 min-w-max">
-  <ul className="py-2">
-    {item.dropdown.map((sub) => (
-      <li key={sub.name}>
-        <a
-          href={sub.href}
-          className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#146C2D]"
-        >
-          {sub.name}
-        </a>
-      </li>
-    ))}
-  </ul>
-</div>
-
+                    {/* Simple Dropdown */}
+                    <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md opacity-0 translate-y-2 invisible group-hover:opacity-100 group-hover:translate-y-0 group-hover:visible transition-all duration-300 ease-out z-50 min-w-max">
+                      <ul className="py-2">
+                        {item.dropdown.map((sub) => (
+                          <li key={sub.name}>
+                            <a
+                              href={sub.href}
+                              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[#146C2D]"
+                            >
+                              {sub.name}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 ) : item.mega ? (
                   <button
@@ -146,50 +153,45 @@ const Navigation = () => {
             </div>
 
             {/* Mobile menu button */}
-            {/* Mobile menu button with smooth rotation */}
-<div className="md:hidden flex items-center">
-  <Button
-    variant="ghost"
-    size="icon"
-    onClick={() => {
-      setIsOpen(!isOpen);
-      setOpenSection(null);
-    }}
-    className="hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
-  >
-    {isOpen ? (
-      <X
-        className={`h-6 w-6 transition-transform duration-500 ${
-          isOpen ? "rotate-180" : "rotate-0"
-        }`}
-        style={{ color: "#146C2D" }}
-      />
-    ) : (
-      <Menu
-        className={`h-6 w-6 transition-transform duration-500 ${
-          isOpen ? "rotate-0" : "rotate-180"
-        }`}
-        style={{ color: "#146C2D" }}
-      />
-    )}
-  </Button>
-</div>
-
+            <div className="md:hidden flex items-center">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  setOpenSection(null);
+                }}
+                className="hover:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+              >
+                {isOpen ? (
+                  <X
+                    className={`h-6 w-6 transition-transform duration-500 ${
+                      isOpen ? "rotate-180" : "rotate-0"
+                    }`}
+                    style={{ color: "#146C2D" }}
+                  />
+                ) : (
+                  <Menu
+                    className={`h-6 w-6 transition-transform duration-500 ${
+                      isOpen ? "rotate-0" : "rotate-180"
+                    }`}
+                    style={{ color: "#146C2D" }}
+                  />
+                )}
+              </Button>
+            </div>
           </div>
 
           {/* Mega Dropdown (Desktop) */}
           {isMegaOpen && (
-            <div className="absolute left-0 right-0 mt-2 bg-white shadow-lg border-t border-gray-200 p-8 grid grid-cols-1 md:grid-cols-3 gap-8 z-40 rounded-b-xl">
+            <div className="absolute left-0 right-0 mt-2 bg-white shadow-lg border-t border-gray-200 p-8 grid grid-cols-1 md:grid-cols-4 gap-8 z-40 rounded-b-xl max-h-[70vh] overflow-y-auto animate-fadeSlide">
               {megaMenu.map((col) => (
-                <div key={col.title}>
-                  <h3 className="font-semibold text-[#146C2D] mb-3">{col.title}</h3>
-                  <ul className="space-y-2">
+                <div key={col.title} className="bg-gray-50 rounded-xl p-4 shadow-sm hover:shadow-md transition">
+                  <h3 className="font-semibold text-[#146C2D] mb-3 border-b border-gray-200 pb-2">{col.title}</h3>
+                  <ul className="space-y-2 mt-2">
                     {col.items.map((item) => (
                       <li key={item.name}>
-                        <a
-                          href={item.href}
-                          className="text-gray-700 hover:text-[#146C2D] transition"
-                        >
+                        <a href={item.href} className="block text-gray-700 hover:text-[#146C2D] transition text-sm">
                           {item.name}
                         </a>
                       </li>
@@ -228,9 +230,7 @@ const Navigation = () => {
                   <div key={item.name} className="border-t border-gray-200">
                     <button
                       className="w-full flex justify-between items-center px-3 py-3 font-medium text-black"
-                      onClick={() =>
-                        setOpenSection(openSection === item.name ? null : item.name)
-                      }
+                      onClick={() => setOpenSection(openSection === item.name ? null : item.name)}
                     >
                       {item.name}
                       <ChevronDown
@@ -240,34 +240,30 @@ const Navigation = () => {
                       />
                     </button>
 
-                    {/* ✅ تعديل عرض الميغا في الموبايل */}
-                  {openSection === item.name && (
-  <div className="pl-4 py-3 grid grid-cols-2 gap-4 max-h-80 overflow-y-auto">
-    {megaMenu.map((col) => (
-      <div
-        key={col.title}
-        className="bg-gray-50 p-3 rounded-lg shadow-sm"
-      >
-        <h4 className="font-semibold text-[#146C2D] text-sm mb-2">
-          {col.title}
-        </h4>
-        <ul className="space-y-1">
-          {col.items.map((sub) => (
-            <li key={sub.name}>
-              <a
-                href={sub.href}
-                className="block text-gray-700 hover:text-[#146C2D] text-sm"
-                onClick={() => setIsOpen(false)}
-              >
-                {sub.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    ))}
-  </div>
-)}
+                    {openSection === item.name && (
+                      <div className="pl-4 py-3 grid grid-cols-1 sm:grid-cols-2 gap-4 max-h-[70vh] overflow-y-auto animate-fadeSlide">
+                        {megaMenu.map((col) => (
+                          <div key={col.title} className="bg-gray-50 p-3 rounded-lg shadow-sm">
+                            <h4 className="font-semibold text-[#146C2D] text-sm mb-2 border-b border-gray-200 pb-1">
+                              {col.title}
+                            </h4>
+                            <ul className="space-y-1 mt-2">
+                              {col.items.map((sub) => (
+                                <li key={sub.name}>
+                                  <a
+                                    href={sub.href}
+                                    className="block text-gray-700 hover:text-[#146C2D] text-sm"
+                                    onClick={() => setIsOpen(false)}
+                                  >
+                                    {sub.name}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 ) : (
                   <a
@@ -284,6 +280,23 @@ const Navigation = () => {
           )}
         </div>
       </div>
+
+      {/* Animation Style */}
+      <style >{`
+        @keyframes fadeSlide {
+          from {
+            opacity: 0;
+            transform: translateY(-10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-fadeSlide {
+          animation: fadeSlide 0.4s ease-out;
+        }
+      `}</style>
     </nav>
   );
 };
