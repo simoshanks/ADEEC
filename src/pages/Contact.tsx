@@ -2,9 +2,10 @@ import React from "react";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import Topbar from "@/components/Topbar";
-import ContactHero from "@/components/ContactHero";
+
 import MapFAQ from "@/components/MapFAQ";
 import ContactMain from "@/components/ContactMain";
+
 
 
 
@@ -16,8 +17,9 @@ const Contact = () => {
       <Topbar />
       <Navigation />
 
-      <ContactHero />
+      
       <ContactMain/>
+      
       
       <MapFAQ />
 

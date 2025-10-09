@@ -57,25 +57,45 @@ const HeroSection = () => {
   return (
     <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden bg-gray-900 pt-24 sm:pt-28">
 
-      {/* Background Slides */}
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-all duration-1000 ease-in-out ${index === current ? "opacity-100 z-0 scale-100" : "opacity-0 z-0 scale-105"
-            }`}
-        >
-          <img
-            src={slide.image}
-            alt="Hero Background"
-            className="w-full h-full object-cover transform scale-105"
-          />
-          {/* ✅ طبقة تظليل محسنة للنص */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/30"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
-          <div className="absolute inset-0 bg-[#146C2D]/10 mix-blend-overlay"></div>
-        </div>
-      ))}
+{/* Background Slides */}
+{slides.map((slide, index) => (
+  <div
+    key={index}
+    className={`absolute inset-0 transition-all duration-[1200ms] ease-in-out 
+      ${index === current ? "opacity-100 z-0" : "opacity-0 z-0"}`}
+  >
+    {/* الصورة مع حركة الزوم الناعمة */}
+    <img
+      src={slide.image}
+      alt="Hero Background"
+      className={`w-full h-full object-cover transition-transform duration-[8000ms] ease-in-out
+        ${index === current ? "scale-110" : "scale-100"} animate-zoom`}
+    />
+
+    {/* ✅ خففنا التظليل باش تبان الصورة مزيان */}
+    <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/25 to-black/20"></div>
+    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+    <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
+    <div className="absolute inset-0 bg-[#146C2D]/5 mix-blend-overlay"></div>
+  </div>
+))}
+
+{/* Animation Keyframes */}
+<style>
+  {`
+    @keyframes zoom {
+      0%, 100% {
+        transform: scale(1.05);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+    .animate-zoom {
+      animation: zoom 12s ease-in-out infinite;
+    }
+  `}
+</style>
 
       {/* Floating Particles */}
       <div className="absolute inset-0 z-10 overflow-hidden pointer-events-none">
@@ -181,26 +201,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-30 p-4 rounded-2xl bg-black/40 text-white hover:bg-black/60 transition-all duration-300 backdrop-blur-lg border border-white/20 hover:scale-110"
-        aria-label="Slide précédent"
-      >
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <button
-        onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-30 p-4 rounded-2xl bg-black/40 text-white hover:bg-black/60 transition-all duration-300 backdrop-blur-lg border border-white/20 hover:scale-110"
-        aria-label="Slide suivant"
-      >
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
+ 
 
       {/* Tailwind Animation */}
 <style>

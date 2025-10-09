@@ -14,7 +14,7 @@ const MissionVision = () => {
         <h2 className="text-4xl font-bold mb-6">Notre Mission</h2>
         <p className="text-lg leading-relaxed mb-12">
           Nous œuvrons pour promouvoir le développement durable, renforcer la
-          solidarité et encourager l’innovation au service de la communauté.
+          solidarité et encourager l’innovation au service de la communauté locale et régionale .
         </p>
 
         <h2 className="text-4xl font-bold mb-6">Notre Vision</h2>
