@@ -108,7 +108,7 @@ const CustomSlider = () => {
               return (
                 <div
                   key={project.id}
-                  onClick={() => (window.location.href = `/projects/${project.id}`)}
+                  onClick={() => (window.location.href = `/Activites/${project.slug}`)}
                   className={`absolute cursor-pointer transition-all duration-700 ease-out ${transformClass} ${zIndex} ${opacity} ${scale} ${isAnimating ? "pointer-events-none" : ""}`}
                   style={{ transitionProperty: 'transform, opacity, scale' }}
                 >
@@ -128,7 +128,7 @@ const CustomSlider = () => {
                     </div>
 
                     <div className="p-5 lg:p-6 relative">
-                      <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2 line-clamp-2">
+                      <h3 className="text-lg lg:text-xl font-bold text-gray-900 mb-2 ">
                         {project.titre}
                       </h3>
                     </div>

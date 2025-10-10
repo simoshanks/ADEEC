@@ -14,10 +14,10 @@ const Navigation = () => {
     {
       name: "Activites",
       dropdown: [
-        { name: "ECOLE DU CODAGE AZICODE 62", href: "/Activites/Azicode-62" },
-        { name: "ECOLE 2 EME CHANCE NOUVELLE GENERATION", href: "/Activites/2eme-chance" },
-        { name: "QUALIFICATION ET AIDE A LA RÉINSERTION DES PRISONNIERS", href: "/Activites/reinsertion-prisonniers" },
-        { name: "CENTRE RENFORCEMENT DES CAPACITES DES FEMMES", href: "/Activites/centre-femmes" },
+        { name: "Ecole Azicode-62", href: "/Activites/Azicode-62" },
+        { name: "Ecole 2eme Chance", href: "/Activites/2eme-chance" },
+        { name: "Reinsertion Prisonniers", href: "/Activites/reinsertion-prisonniers" },
+        { name: "Centre Femmes", href: "/Activites/centre-femmes" },
       ],
     },
     { name: "Réalisations", mega: true }, // mega dropdown

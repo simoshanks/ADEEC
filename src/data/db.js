@@ -1,11 +1,4 @@
 
-import agadir from "../assets/agadir.png";
-
-import zagora from "../assets/zagora.png";
-import azicodeimg from "../assets/projetactuel/azicodeimg.jpg";
-import chance from "../assets/projetactuel/2mchance.jpg";
-import femmes from "../assets/projetactuel/femms.jpg";
-import prisonniers from "../assets/projetactuel/prisonniers.jpg";
 import Altruism from "@/assets/Altruism.png";
 import Pride from "@/assets/fierté.png";
 import Probity from "@/assets/Probity.png";
@@ -17,30 +10,35 @@ import respect from "@/assets/respect.jpg";
 
 // les projet actuel
 
+// azicode
+import azicodeimg from "../assets/projetactuel/azicode/azicodeimg.jpg";
+// chance
+import chance from "../assets/projetactuel/chance/chanceimg.jpg";
+// prisonniers
+import prisonniers from "../assets/projetactuel/prisonniers/prisonniers.jpg";
+// femmes
+import femmes from "../assets/projetactuel/femmes/femms.jpg";
+
+
+
+
+
+
 export const projetsActuels = [
   {
     id: 1,
-    titre: "ECOLE DU CODAGE AZICODE 62",
+    slug: "Azicode-62",
+    titre: "Ecole du Codage Azicode-62",
     description: "Une école numérique pour apprendre tout ce qui touche à la programmation",
     annee: 2024,
     descriptionLongue: "Le projet AZICODE a pour objectif de former les jeunes aux compétences numériques et à la programmation afin de faciliter leur insertion dans le marché de l’emploi digital.",
     image: azicodeimg, 
-    gallery: [
-      "/images/azicode/1.jpg",
-      "/images/azicode/2.jpg",
-      "/images/azicode/3.jpg",
-      "/images/azicode/4.jpg",
-      "/images/azicode/5.jpg",
-      "/images/azicode/6.jpg",
-      "/images/azicode/7.jpg",
-      "/images/azicode/8.jpg",
-      "/images/azicode/9.jpg",
-      "/images/azicode/10.jpg",
-    ]
+    gallery: [azicodeimg,prisonniers,femmes,chance,azicodeimg,prisonniers,femmes,chance,]
   },
   {
     id: 2,
-    titre: "ECOLE 2 EME CHANCE NOUVELLE GENERATION",
+    slug: "2eme-chance",
+    titre: "Ecole 2 eme Chance Nouvelle Generation",
     description: "Formation dans le domaine de la gestion hôtelière et de pâtisserie dans les villes Demnat et Azilal",
     annee: 2021,
     descriptionLongue: "Cette école offre une seconde chance aux jeunes déscolarisés en leur proposant une formation pratique et professionnelle dans des métiers porteurs comme l’hôtellerie et la pâtisserie.",
@@ -60,7 +58,8 @@ export const projetsActuels = [
   },
   {
     id: 3,
-    titre: "QUALIFICATION ET AIDE A LA REINSERTION DES PRISONNIERS",
+    slug: "reinsertion-prisonniers",
+    titre: "Qualification et Aide A La Reinsertion des Prisonniers",
     description: "Formation professionnelle pour l’intégration des détenus dans la vie sociale",
     annee: 2020,
     descriptionLongue: "Ce projet vise à accompagner les prisonniers en leur offrant une qualification professionnelle qui facilite leur réinsertion et leur donne une nouvelle chance dans la société.",
@@ -80,7 +79,8 @@ export const projetsActuels = [
   },
   {
     id: 4,
-    titre: "CENTRE RENFORCEMENT DES CAPACITES DES FEMMES",
+    slug: "centre-femmes",
+    titre: "Centre Renforcment des Capacites des Femmes",
     description: "Former les femmes dans le domaine de cuisine et aussi de l’éducation des enfants 3 à 5 ans",
     annee: 2019,
     descriptionLongue: "Ce centre a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",

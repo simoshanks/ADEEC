@@ -73,10 +73,7 @@ const HeroSection = () => {
     />
 
     {/* ✅ خففنا التظليل باش تبان الصورة مزيان */}
-    <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/25 to-black/20"></div>
-    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-    <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20"></div>
-    <div className="absolute inset-0 bg-[#146C2D]/5 mix-blend-overlay"></div>
+<div className="absolute inset-0 bg-black/15"></div>
   </div>
 ))}
 
