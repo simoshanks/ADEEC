@@ -1,38 +1,64 @@
-import aboutImg from '@/assets/greenbg.jpg';
-import { useEffect, useState } from 'react';
+import aboutImg from "@/assets/acceil.jpg";
+import { useEffect, useState } from "react";
 
 export default function AboutSection() {
   const [visible, setVisible] = useState(false);
+  const [projectsCount, setProjectsCount] = useState(0);
+  const [yearsCount, setYearsCount] = useState(0);
 
+  // ✅ Animation d'apparition
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 100);
     return () => clearTimeout(t);
   }, []);
 
+  // ✅ Animation des chiffres (tasa3odi)
+  useEffect(() => {
+    if (!visible) return;
+
+    let startProjects = 0;
+    let startYears = 0;
+
+    const duration = 2000; // durée totale en ms
+    const steps = 60; // nombre d’étapes
+    const incrementProjects = 50 / steps;
+    const incrementYears = 25 / steps;
+
+    const interval = setInterval(() => {
+      startProjects += incrementProjects;
+      startYears += incrementYears;
+
+      setProjectsCount(Math.floor(startProjects));
+      setYearsCount(Math.floor(startYears));
+
+      if (startProjects >= 50 && startYears >= 25) clearInterval(interval);
+    }, duration / steps);
+
+    return () => clearInterval(interval);
+  }, [visible]);
+
   return (
     <section className="relative w-full min-h-[60vh] flex items-center justify-center py-12 lg:py-20 overflow-hidden">
-      {/* Background Image + Gradient Overlay */}
+      {/* ✅ Background Image + Gradient */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url(${aboutImg})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#146C2D]/90 via-[#146C2D]/80 to-[#0f4d21]/90"></div>
+        <div className="absolute inset-0 bg-[#146C2D]/65"></div>
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] opacity-10"></div>
       </div>
 
-      {/* Floating Background Elements */}
+      {/* ✅ Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-28 h-28 bg-white/5 rounded-full blur-xl"></div>
         <div className="absolute top-1/3 right-16 w-20 h-20 bg-white/5 rounded-full blur-xl"></div>
-        <div className="absolute bottom-16 left-1/4 w-32 h-32 bg-white/5 rounded-full blur-xl"></div>
-        <div className="absolute bottom-24 right-32 w-24 h-24 bg-white/5 rounded-full blur-xl"></div>
       </div>
 
-      {/* Main Content */}
+      {/* ✅ Main Content */}
       <div className="relative z-10 w-full max-w-4xl px-4 sm:px-6 lg:px-8 text-center lg:text-left">
         <div
           className={`transition-all duration-1000 ease-out ${
-            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
+            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
           {/* Badge */}
@@ -45,7 +71,7 @@ export default function AboutSection() {
 
           {/* Titles */}
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 leading-tight">
-            Association Azilal pour le{' '}
+            Association Azilal pour le{" "}
             <span className="bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
               Développement
             </span>
@@ -57,34 +83,43 @@ export default function AboutSection() {
           {/* Description */}
           <div className="space-y-3 mb-8 max-w-3xl mx-auto lg:mx-0">
             <p className="text-base sm:text-lg text-white/90 leading-relaxed font-light">
-              Créée à Azilal, l'AADEC œuvre pour le développement durable et la protection de
-              l'environnement tout en favorisant la communication et la sensibilisation citoyenne.
+              Créée à Azilal, l'AADEC œuvre pour le développement durable et la
+              protection de l'environnement tout en favorisant la communication
+              et la sensibilisation citoyenne.
             </p>
             <p className="text-base sm:text-lg text-white/90 leading-relaxed font-light">
-              L'association accompagne des initiatives locales, soutient des projets éducatifs,
-              culturels et sociaux pour renforcer la solidarité dans la région.
+              L'association accompagne des initiatives locales, soutient des
+              projets éducatifs, culturels et sociaux pour renforcer la
+              solidarité dans la région.
             </p>
           </div>
 
-          {/* Stats */}
+          {/* ✅ Stats avec animation */}
           <div className="grid grid-cols-2 gap-4 mb-8 max-w-sm mx-auto lg:mx-0">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-1">50+</div>
-              <div className="text-white/70 text-sm font-medium">Projets Réalisés</div>
+              <div className="text-3xl font-bold text-white mb-1">
+                {projectsCount}+
+              </div>
+              <div className="text-white/70 text-sm font-medium">
+                Projets Réalisés
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-1">25+</div>
-              <div className="text-white/70 text-sm font-medium">Années d'Expérience</div>
+              <div className="text-3xl font-bold text-white mb-1">
+                {yearsCount}+
+              </div>
+              <div className="text-white/70 text-sm font-medium">
+                Années d'Expérience
+              </div>
             </div>
           </div>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
             <button
-              onClick={() => (window.location.href = '/Apropos')}
+              onClick={() => (window.location.href = "/Apropos")}
               className="group relative px-6 py-3 bg-white text-[#146C2D] rounded-xl font-semibold text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-white to-gray-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <span className="relative flex items-center justify-center space-x-2">
                 <span>En savoir plus</span>
                 <svg
@@ -104,11 +139,16 @@ export default function AboutSection() {
             </button>
 
             <button
-              onClick={() => (window.location.href = '/projects')}
+              onClick={() => (window.location.href = "/projects")}
               className="group relative px-6 py-3 bg-transparent border-2 border-white text-white rounded-xl font-semibold text-base hover:bg-white/10 backdrop-blur-sm transition-all duration-300 hover:scale-105"
             >
               <span className="flex items-center justify-center space-x-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

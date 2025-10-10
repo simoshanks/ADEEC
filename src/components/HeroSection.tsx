@@ -134,10 +134,7 @@ const HeroSection = () => {
             {slides[current].subtitle}
           </p>
 
-          {/* Description */}
-          <p className="text-base sm:text-lg text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed font-normal drop-shadow-md">
-            L'AADEC a opté pour une stratégie de « développement par le bas » pour un impact durable et significatif.
-          </p>
+
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-5 mb-12">

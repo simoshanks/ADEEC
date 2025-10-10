@@ -4,6 +4,7 @@ import Topbar from "@/components/Topbar";
 import { projetsActuels } from "@/data/db";
 import logoazicode from "../assets/projetactuel/azicode/logoazicode.jpg";
 import GalerieActule from "@/components/GalerieActule";
+import AboutAzicode from "@/components/AboutAzicode";
 
 
 const Azicode = () => {
@@ -28,82 +29,74 @@ const Azicode = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
-        {/* Image de fond avec overlay gradient */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 ease-in-out"
-          style={{ backgroundImage: `url(${projet.image})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+{/* Hero Section */}
+<section className="relative min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden bg-gray-900">
+  {/* Image de fond avec overlay gradient */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 ease-in-out"
+    style={{ backgroundImage: `url(${projet.image})` }}
+  >
+    <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+  </div>
 
-        </div>
+  {/* Contenu principal */}
+  <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Contenu principal */}
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6 lg:px-8">
+    {/* Badge d'année */}
+    <div className="inline-flex items-center px-3 sm:px-4 py-1 sm:py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6 sm:mb-8">
+      <span className="text-xs sm:text-sm font-medium text-white/90">Depuis {projet.annee}</span>
+    </div>
 
-          {/* Badge d'année */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
-            <span className="text-sm font-medium text-white/90">Depuis {projet.annee}</span>
-          </div>
+    {/* Titre principal */}
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-snug">
+      Ecole du Codage <span className="text-[#0877BC]">Azicode</span><span className="text-[#212759]">62</span>
+    </h1>
 
-          {/* Titre principal */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight " >
-            Ecole du Codage <span className="text-[#0877BC]">Azicode</span><span className="text-[#212759]">62</span>
-          </h1>
+    {/* Description */}
+    <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 font-light text-gray-200 leading-relaxed">
+      {projet.description}
+    </p>
 
-          {/* Description */}
-          <p className="text-xl md:text-2xl lg:text-3xl mb-6 font-light text-gray-200 leading-relaxed">
-            {projet.description}
-          </p>
+    {/* Séparateur */}
+    <div className="w-20 sm:w-24 h-1 bg-blue-500 mx-auto mb-6 sm:mb-8 rounded-full"></div>
 
-          {/* Séparateur */}
-          <div className="w-24 h-1 bg-blue-500 mx-auto mb-8 rounded-full"></div>
+    {/* Boutons d'action */}
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-6 sm:mt-8">
+      <button className="group relative bg-[#0877BC] hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 min-w-[140px] sm:min-w-[160px]">
+        <span className="flex items-center justify-center gap-2">
+          Site Web
+          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </span>
+      </button>
 
-          {/* Boutons d'action */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
-            <button className="group relative bg-[#0877BC] hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 min-w-[160px]">
-              <span className="flex items-center justify-center gap-2">
-                Site Web
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </span>
-            </button>
+      <button
+        onClick={() => {
+          const gallerySection = document.getElementById("galerie");
+          if (gallerySection) {
+            gallerySection.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+        className="group relative bg-transparent hover:bg-white/10 text-white border-2 border-white/30 hover:border-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm min-w-[140px] sm:min-w-[160px]"
+      >
+        <span className="flex items-center justify-center gap-2">
+          Voir la Galerie
+          <svg className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </div>
 
-            <button
-              onClick={() => {
-                const gallerySection = document.getElementById("galerie");
-                if (gallerySection) {
-                  gallerySection.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-              className="group relative bg-transparent hover:bg-white/10 text-white border-2 border-white/30 hover:border-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 backdrop-blur-sm min-w-[160px]"
-            >
-              <span className="flex items-center justify-center gap-2">
-                Voir la Galerie
-                <svg className="w-4 h-4 group-hover:translate-y-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </span>
-            </button>
-          </div>
+  {/* Effets décoratifs */}
+  <div className="absolute bottom-0 left-0 w-full h-24 sm:h-32 bg-gradient-to-t from-black/50 to-transparent"></div>
+</section>
 
 
-        </div>
-
-        {/* Effets décoratifs */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/50 to-transparent"></div>
-      </section>
-
-      {/* Section Description Longue */}
-      <section className="py-16 bg-[#F5FCF8]">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">À propos du projet</h2>
-          <p className="text-lg text-gray-600 text-center leading-relaxed">
-            {projet.descriptionLongue}
-          </p>
-        </div>
-      </section>
+     
+      <AboutAzicode/>
 
       {/* Section Problématique */}
       <section className="py-16 bg-[#F5FCF8]">
@@ -188,6 +181,7 @@ const Azicode = () => {
           </div>
         </div>
       </section>
+
 
 
 
