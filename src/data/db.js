@@ -600,6 +600,42 @@ export const confianceCards = [
   },
 ];
 
+// history
+
+import slide1 from "@/assets/history/fistivalhistory1.jpg";
+import slide2 from "@/assets/history/fistivalhistory2.jpg";
+import slide3 from "@/assets/history/fistivalhistory3.jpg";
+import slide4 from "@/assets/history/model1.jpg";
+import slide5 from "@/assets/history/model2.jpg";
+import slide6 from "@/assets/history/model3.jpg";
+import slide66 from "@/assets/history/model4.jpg";
+import slide7 from "@/assets/history/jeun1.jpg";
+import slide8 from "@/assets/history/jeun2.jpg";
+import slide9 from "@/assets/history/jeun3.jpg";
+import slide10 from "@/assets/history/jeun4.jpg";
+
+export const historyData = [
+  {
+    year: "2000",
+    images: [slide1, slide2, slide3],
+    title: "Festival d’Azilal",
+    desc: "Notre association est le principal responsable de l'organisation du Festival d'Azilal durant les six années précédentes d'existence, un événement culturel et artistique qui rassemble les habitants locaux et rencontre les talents de la région."
+  },
+  {
+    year: "2006",
+    images: [slide4, slide5, slide6,slide66],
+    title: "Plan stratégique",
+    desc: "Depuis 2006, une association s’est jointe aux actions de l’orienteur, permettant d’organiser simplement des animations culturelles pour apporter une réflexion plus large sur le développement communautaire et l’accompagnement de Jeunesse, parallèlement au modèle de développement de 2006."
+  },
+  {
+    year: "Aujourd'hui",
+    images: [slide7, slide8, slide9,slide10],
+    title: "développement de la jeunesse",
+    desc: "Aujourd’hui, l’AADEC concentre ses efforts sur les jeunes afin de les former, de les encadrer et de les intégrer à la vie publique, car elle est le principal moteur du développement."
+  }
+];
+
+
 // les partenaires
 
 
