@@ -64,7 +64,7 @@ const ProjetInfo = () => {
           {/* Card Body */}
           <div className="p-8">
             <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed">
-              <p className="text-xl font-light mb-6">
+              <p className="text-xl font-light mb-6 "style={{ whiteSpace: "pre-line" }}>
                 {project.description}
               </p>
               

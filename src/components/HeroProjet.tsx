@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import heroactivites from "@/assets/hero.jpg";
+import heroactivites from "@/assets/herorealisation.jpg";
 
 const HeroProjet = () => {
   return (
     <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden bg-black">
-      {/* 🌄 Background Image with smooth zoom animation */}
+      {/*  Background Image with smooth zoom animation */}
       <motion.img
         src={heroactivites}
         alt="Projet AADEC"
@@ -15,10 +15,10 @@ const HeroProjet = () => {
         transition={{ duration: 15, ease: "easeOut" }}
       />
 
-      {/* 🌈 Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/20" />
+      {/*  Overlay Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/20" />
 
-      {/* ✨ Content */}
+      {/*  Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl">
         {/* Small animated intro line */}
         <motion.p

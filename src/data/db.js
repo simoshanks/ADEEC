@@ -24,6 +24,8 @@ import femmes from "../assets/projetactuel/femmes/femms.jpg";
 
 
 
+
+
 export const projetsActuels = [
   {
     id: 1,
@@ -31,74 +33,193 @@ export const projetsActuels = [
     titre: "Ecole du Codage Azicode-62",
     description: "Une école numérique pour apprendre tout ce qui touche à la programmation",
     annee: 2024,
-    descriptionLongue: "Le projet AZICODE a pour objectif de former les jeunes aux compétences numériques et à la programmation afin de faciliter leur insertion dans le marché de l’emploi digital.",
-    image: azicodeimg, 
-    gallery: [azicodeimg,prisonniers,femmes,chance,azicodeimg,prisonniers,femmes,chance,]
+    descriptionLongue:
+      "Le projet AZICODE a pour objectif de former les jeunes aux compétences numériques et à la programmation afin de faciliter leur insertion dans le marché de l’emploi digital.",
+    image: azicodeimg,
+    gallery: [azicodeimg, prisonniers, femmes, chance],
+    problematique:
+      "De nombreux jeunes sont confrontés à un manque de compétences numériques, limitant leur insertion professionnelle dans le secteur digital.",
+    problemPoints: [
+      "Chômage élevé chez les jeunes",
+      "Manque de formation pratique en programmation",
+      "Écart entre formation académique et besoins des entreprises",
+    ],
+    solutionIntro:
+      "Une approche complète pour former les développeurs de demain et faciliter leur insertion professionnelle.",
+    solutions: [
+      {
+        title: "Formation Intensive",
+        description:
+          "Bootcamps de programmation full-stack avec technologies modernes et méthodologies agiles.",
+        color: "blue",
+        icon: "M12 6v6h4M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+      },
+      {
+        title: "Pédagogie Pratique",
+        description:
+          "Apprentissage par projets concrets et études de cas réels pour des compétences directement applicables.",
+        color: "green",
+        icon: "M3 13h18M9 17l3 3 3-3",
+      },
+      {
+        title: "Intégration Professionnelle",
+        description:
+          "Stage sur le terrain à l'issue de la formation pour valoriser les compétences acquises.",
+        color: "purple",
+        icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
+      },
+    ],
   },
+
   {
     id: 2,
     slug: "2eme-chance",
-    titre: "Ecole 2 eme Chance Nouvelle Generation",
-    description: "Formation dans le domaine de la gestion hôtelière et de pâtisserie dans les villes Demnat et Azilal",
+    titre: "Ecole 2ème Chance Nouvelle Génération",
+    description:
+      "Formation en gestion hôtelière et pâtisserie dans les villes Demnat et Azilal",
     annee: 2021,
-    descriptionLongue: "Cette école offre une seconde chance aux jeunes déscolarisés en leur proposant une formation pratique et professionnelle dans des métiers porteurs comme l’hôtellerie et la pâtisserie.",
+    descriptionLongue:
+      "Cette école offre une seconde chance aux jeunes déscolarisés en leur proposant une formation pratique et professionnelle dans des métiers porteurs comme l’hôtellerie et la pâtisserie.",
     image: chance,
     gallery: [
       "/images/chance/1.jpg",
       "/images/chance/2.jpg",
       "/images/chance/3.jpg",
       "/images/chance/4.jpg",
-      "/images/chance/5.jpg",
-      "/images/chance/6.jpg",
-      "/images/chance/7.jpg",
-      "/images/chance/8.jpg",
-      "/images/chance/9.jpg",
-      "/images/chance/10.jpg",
-    ]
+    ],
+    problematique:
+      "Les jeunes déscolarisés ont peu d’opportunités de formation professionnelle adaptée aux besoins du marché de l’hôtellerie et de la pâtisserie.",
+    problemPoints: [
+      "Absence de formation pratique",
+      "Difficulté d’insertion professionnelle",
+      "Manque de suivi individualisé",
+    ],
+    solutionIntro:
+      "Formation pratique et encadrement pour offrir une seconde chance aux jeunes déscolarisés.",
+    solutions: [
+      {
+        title: "Formation Hôtelière",
+        description:
+          "Cours théoriques et pratiques pour maîtriser les métiers de l’hôtellerie.",
+        color: "blue",
+        icon: "M12 8c-3.313 0-6 2.239-6 5v2h12v-2c0-2.761-2.687-5-6-5z",
+      },
+      {
+        title: "Formation Pâtisserie",
+        description:
+          "Ateliers pratiques pour développer des compétences culinaires avancées.",
+        color: "green",
+        icon: "M9 12h6M9 16h6M5 20h14a2 2 0 002-2V8H3v10a2 2 0 002 2z",
+      },
+      {
+        title: "Accompagnement Personnalisé",
+        description:
+          "Mentorat et suivi pour faciliter l’insertion professionnelle.",
+        color: "purple",
+        icon: "M12 11c0-1.657 1.343-3 3-3s3 1.343 3 3v5h-6v-5z",
+      },
+    ],
   },
+
   {
     id: 3,
     slug: "reinsertion-prisonniers",
-    titre: "Qualification et Aide A La Reinsertion des Prisonniers",
-    description: "Formation professionnelle pour l’intégration des détenus dans la vie sociale",
+    titre: "Qualification et Aide à la Réinsertion des Prisonniers",
+    description:
+      "Formation professionnelle pour l’intégration des détenus dans la vie sociale",
     annee: 2020,
-    descriptionLongue: "Ce projet vise à accompagner les prisonniers en leur offrant une qualification professionnelle qui facilite leur réinsertion et leur donne une nouvelle chance dans la société.",
+    descriptionLongue:
+      "Ce projet vise à accompagner les prisonniers en leur offrant une qualification professionnelle qui facilite leur réinsertion et leur donne une nouvelle chance dans la société.",
     image: prisonniers,
     gallery: [
       "/images/prisonniers/1.jpg",
       "/images/prisonniers/2.jpg",
       "/images/prisonniers/3.jpg",
       "/images/prisonniers/4.jpg",
-      "/images/prisonniers/5.jpg",
-      "/images/prisonniers/6.jpg",
-      "/images/prisonniers/7.jpg",
-      "/images/prisonniers/8.jpg",
-      "/images/prisonniers/9.jpg",
-      "/images/prisonniers/10.jpg",
-    ]
+    ],
+    problematique:
+      "Les prisonniers manquent de compétences professionnelles reconnues pour réussir leur réinsertion sociale et économique.",
+    problemPoints: [
+      "Stigmatisation sociale",
+      "Manque de qualification professionnelle",
+      "Difficultés d’insertion dans le marché du travail",
+    ],
+    solutionIntro:
+      "Programme de formation professionnelle pour donner aux détenus une chance réelle de réinsertion.",
+    solutions: [
+      {
+        title: "Formation Professionnelle",
+        description: "Cours techniques adaptés aux besoins du marché.",
+        color: "blue",
+        icon: "M9 12h6m-3-3v6m9 3a9 9 0 11-18 0 9 9 0 0118 0z",
+      },
+      {
+        title: "Accompagnement Social",
+        description: "Soutien psychologique et suivi social.",
+        color: "green",
+        icon: "M12 11c0-1.657 1.343-3 3-3s3 1.343 3 3v5h-6v-5z",
+      },
+      {
+        title: "Insertion Professionnelle",
+        description:
+          "Stage et mise en emploi pour faciliter la réinsertion.",
+        color: "purple",
+        icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
+      },
+    ],
   },
+
   {
     id: 4,
     slug: "centre-femmes",
-    titre: "Centre Renforcment des Capacites des Femmes",
-    description: "Former les femmes dans le domaine de cuisine et aussi de l’éducation des enfants 3 à 5 ans",
+    titre: "Centre Renforcement des Capacités des Femmes",
+    description:
+      "Former les femmes dans la cuisine et l’éducation des enfants 3 à 5 ans",
     annee: 2019,
-    descriptionLongue: "Ce centre a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
+    descriptionLongue:
+      "Ce centre a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
     image: femmes,
     gallery: [
       "/images/femmes/1.jpg",
       "/images/femmes/2.jpg",
       "/images/femmes/3.jpg",
       "/images/femmes/4.jpg",
-      "/images/femmes/5.jpg",
-      "/images/femmes/6.jpg",
-      "/images/femmes/7.jpg",
-      "/images/femmes/8.jpg",
-      "/images/femmes/9.jpg",
-      "/images/femmes/10.jpg",
-    ]
-  }
+    ],
+    problematique:
+      "Les femmes ont besoin de formations pratiques pour devenir autonomes et contribuer à l’économie locale.",
+    problemPoints: [
+      "Manque de compétences professionnelles",
+      "Opportunités économiques limitées",
+      "Accès limité à l’éducation préscolaire",
+    ],
+    solutionIntro:
+      "Formation pratique et encadrement pour renforcer les compétences des femmes et favoriser leur autonomie.",
+    solutions: [
+      {
+        title: "Formation Cuisine",
+        description:
+          "Cours de cuisine professionnelle pour développer l’autonomie économique.",
+        color: "blue",
+        icon: "M12 8c-3.313 0-6 2.239-6 5v2h12v-2c0-2.761-2.687-5-6-5z",
+      },
+      {
+        title: "Formation Éducation",
+        description:
+          "Cours sur l’éducation préscolaire pour améliorer la prise en charge des enfants.",
+        color: "green",
+        icon: "M9 12h6M9 16h6M5 20h14a2 2 0 002-2V8H3v10a2 2 0 002 2z",
+      },
+      {
+        title: "Autonomie Sociale",
+        description:
+          "Encadrement et soutien pour favoriser l’autonomie et l’intégration sociale.",
+        color: "purple",
+        icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
+      },
+    ],
+  },
 ];
+
 
 
 
@@ -140,6 +261,8 @@ import caravan4 from "@/assets/projetrealise/sante/caravan4.jpg";
 import caravan5 from "@/assets/projetrealise/sante/caravan5.jpg";
 import caravan6 from "@/assets/projetrealise/sante/caravan6.jpg";
 import caravan7 from "@/assets/projetrealise/sante/caravan7.jpg";
+import caravan10 from "@/assets/projetrealise/sante/caravan10.jpg";
+import caravan11 from "@/assets/projetrealise/sante/caravan11.jpg";
 
 import tahsisimg from "@/assets/projetrealise/sante/tahsisimg.jpg";
 import tahsis1 from "@/assets/projetrealise/sante/tahsis1.jpg";
@@ -162,7 +285,6 @@ import diagnostic4 from "@/assets/projetrealise/social/diagnostic4.jpg";
 
 import journalier1 from "@/assets/projetrealise/social/jour1.jpg";
 import journalier2 from "@/assets/projetrealise/social/jour2.jpg";
-
 import journalier4 from "@/assets/projetrealise/social/jour4.jpg";
 import journalier5 from "@/assets/projetrealise/social/jour5.jpg";
 import journalier6 from "@/assets/projetrealise/social/jour6.jpg";
@@ -204,6 +326,12 @@ import livre2 from "@/assets/projetrealise/cultur/livre2.jpg";
 import livre3 from "@/assets/projetrealise/cultur/livre3.jpg";
 import livre4 from "@/assets/projetrealise/cultur/livre4.jpg";
 import livre5 from "@/assets/projetrealise/cultur/livre5.jpg";
+import livre6 from "@/assets/projetrealise/cultur/livre6.jpg";
+import livre7 from "@/assets/projetrealise/cultur/livre7.jpg";
+import livre8 from "@/assets/projetrealise/cultur/livre8.jpg";
+import livre9 from "@/assets/projetrealise/cultur/livre9.jpg";
+import livre10 from "@/assets/projetrealise/cultur/livre10.jpg";
+import livre11 from "@/assets/projetrealise/cultur/livre11.jpg";
 
 import mo9awama1 from "@/assets/projetrealise/cultur/mo9awama1.jpg";
 import mo9awama2 from "@/assets/projetrealise/cultur/mo9awama2.jpg";
@@ -223,6 +351,7 @@ import barbados3 from "@/assets/projetrealise/echange/barbados3.jpg";
 import barbados4 from "@/assets/projetrealise/echange/barbados4.jpg";
 import barbados5 from "@/assets/projetrealise/echange/barbados5.jpg";
 import barbados6 from "@/assets/projetrealise/echange/barbados6.jpg";
+import barbados8 from "@/assets/projetrealise/echange/barbados8.jpeg";
 import barbadosimg from "@/assets/projetrealise/echange/barbadosimg.jpg";
 
 import dialog1 from "@/assets/projetrealise/echange/dialog1.jpg";
@@ -239,6 +368,8 @@ import tatarof3 from "@/assets/projetrealise/echange/tatarof3.jpg";
 import tatarof4 from "@/assets/projetrealise/echange/tatarof4.jpg";
 import tatarof5 from "@/assets/projetrealise/echange/tatarof5.jpg";
 import tatarofimg from "@/assets/projetrealise/echange/tatarofimg.jpg";
+
+
 // education
 import african1 from "@/assets/projetrealise/education/african1.jpg";
 import african2 from "@/assets/projetrealise/education/african2.jpg";
@@ -262,6 +393,19 @@ import scolair7 from "@/assets/projetrealise/education/scolair7.jpeg";
 import scolair9 from "@/assets/projetrealise/education/scolair9.jpeg";
 import scolair10 from "@/assets/projetrealise/education/scolair10.jpeg";
 
+import charte1 from "@/assets/projetrealise/education/charte1.jpg";
+import charte2 from "@/assets/projetrealise/education/charte2.jpg";
+import charte3 from "@/assets/projetrealise/education/charte3.jpg";
+import charte4 from "@/assets/projetrealise/education/charte4.jpg";
+import charte5 from "@/assets/projetrealise/education/charte5.jpg";
+import charte6 from "@/assets/projetrealise/education/charte6.jpg";
+import charte7 from "@/assets/projetrealise/education/charte7.jpg";
+import charte8 from "@/assets/projetrealise/education/charte8.jpg";
+import charte9 from "@/assets/projetrealise/education/charte9.jpeg";
+import charte10 from "@/assets/projetrealise/education/charte10.jpg";
+import charte11 from "@/assets/projetrealise/education/charte11.jpg";
+import charte12 from "@/assets/projetrealise/education/charte12.jpg";
+import charte13 from "@/assets/projetrealise/education/charte13.jpg";
 import bnmous from "@/assets/projetrealise/education/bnmous.jpg";
 import bnmous2 from "@/assets/projetrealise/education/bnmous2.jpg";
 
@@ -272,7 +416,6 @@ import prof4 from "@/assets/projetrealise/education/prof4.jpg";
 import prof5 from "@/assets/projetrealise/education/prof5.jpg";
 import prof6 from "@/assets/projetrealise/education/prof6.jpg";
 import prof7 from "@/assets/projetrealise/education/prof7.jpg";
-
 import talaba1 from "@/assets/projetrealise/education/talaba1.jpeg";
 import talaba2 from "@/assets/projetrealise/education/talaba2.jpg";
 import talaba3 from "@/assets/projetrealise/education/talaba3.jpg";
@@ -283,45 +426,58 @@ import talaba7 from "@/assets/projetrealise/education/talaba7.jpg";
 import talaba8 from "@/assets/projetrealise/education/talaba8.jpg";
 import talaba9 from "@/assets/projetrealise/education/talaba9.jpg";
 import talaba10 from "@/assets/projetrealise/education/talaba10.jpg";
+import dicart1 from "@/assets/projetrealise/education/dicart1.jpg";
+import dicart2 from "@/assets/projetrealise/education/dicart2.jpg";
+import dicart3 from "@/assets/projetrealise/education/dicart3.jpg";
+import dicart4 from "@/assets/projetrealise/education/dicart4.jpg";
+import dicart5 from "@/assets/projetrealise/education/dicart5.jpeg";
 
 
+// BED
+import bed1 from "@/assets/projetrealise/BED/bed1.jpg";
+import bed2 from "@/assets/projetrealise/BED/bed2.jpg";
+import bed3 from "@/assets/projetrealise/BED/bed3.jpg";
+import bed4 from "@/assets/projetrealise/BED/bed4.jpg";
+import bed5 from "@/assets/projetrealise/BED/bed5.jpg";
+import bedimg from "@/assets/projetrealise/BED/bedimg.jpg";
+import mutuelle1 from "@/assets/projetrealise/BED/mutuelle1.jpg";
+import mutuelle2 from "@/assets/projetrealise/BED/mutuelle2.jpg";
+import mutuelle3 from "@/assets/projetrealise/BED/mutuelle3.jpg";
+import mutuelle4 from "@/assets/projetrealise/BED/mutuelle4.jpg";
+import mutuelle5 from "@/assets/projetrealise/BED/mutuelle5.jpg";
+import mutuelle6 from "@/assets/projetrealise/BED/mutuelle6.jpg";
+import mutuelle7 from "@/assets/projetrealise/BED/mutuelle7.png";
 
+// SAHARA MAROCAIN
+import watanya1 from "@/assets/projetrealise/sahara/watanya1.jpg";
+import watanya2 from "@/assets/projetrealise/sahara/watanya2.jpg";
+import watanya3 from "@/assets/projetrealise/sahara/watanya3.jpg";
+import watanya4 from "@/assets/projetrealise/sahara/watanya4.jpg";
+import watanya5 from "@/assets/projetrealise/sahara/watanya5.jpg";
+import watanya6 from "@/assets/projetrealise/sahara/watanya6.jpg";
+import watanya7 from "@/assets/projetrealise/sahara/watanya7.jpg";
+import watanya8 from "@/assets/projetrealise/sahara/watanya8.jpg";
 
-// autre
+// Tourism
+import tourist1 from "@/assets/projetrealise/tourism/tourist1.jpg";
+import tourist2 from "@/assets/projetrealise/tourism/tourist2.jpg";
+import tourist3 from "@/assets/projetrealise/tourism/tourist3.jpg";
+import tourist4 from "@/assets/projetrealise/tourism/tourist4.jpg";
+import tourist5 from "@/assets/projetrealise/tourism/tourist5.jpg";
+import tourist6 from "@/assets/projetrealise/tourism/tourist6.jpg";
 
-
-
-import bed1 from "@/assets/projetrealise/autre/bed1.jpg";
-import bed2 from "@/assets/projetrealise/autre/bed2.jpg";
-import bed3 from "@/assets/projetrealise/autre/bed3.jpg";
-import bed4 from "@/assets/projetrealise/autre/bed4.jpg";
-import bed5 from "@/assets/projetrealise/autre/bed5.jpg";
-import bedimg from "@/assets/projetrealise/autre/bedimg.jpg";
-
-import pavag1 from "@/assets/projetrealise/autre/pavag1.jpg";
-import pavag2 from "@/assets/projetrealise/autre/pavag2.jpg";
-import pavag3 from "@/assets/projetrealise/autre/pavag3.jpg";
-import pavag4 from "@/assets/projetrealise/autre/pavag4.jpg";
-import pavag5 from "@/assets/projetrealise/autre/pavag5.jpg";
-import pavag6 from "@/assets/projetrealise/autre/pavag6.jpg";
-import pavag7 from "@/assets/projetrealise/autre/pavag7.jpg";
-import pavagimg from "@/assets/projetrealise/autre/pavagimg.jpg";
-
-import tourist1 from "@/assets/projetrealise/autre/tourist1.jpg";
-import tourist2 from "@/assets/projetrealise/autre/tourist2.jpg";
-import tourist3 from "@/assets/projetrealise/autre/tourist3.jpg";
-import tourist4 from "@/assets/projetrealise/autre/tourist4.jpg";
-import tourist5 from "@/assets/projetrealise/autre/tourist5.jpg";
-import tourist6 from "@/assets/projetrealise/autre/tourist6.jpg";
-
-import watanya1 from "@/assets/projetrealise/autre/watanya1.jpg";
-import watanya2 from "@/assets/projetrealise/autre/watanya2.jpg";
-import watanya3 from "@/assets/projetrealise/autre/watanya3.jpg";
-import watanya4 from "@/assets/projetrealise/autre/watanya4.jpg";
-import watanya5 from "@/assets/projetrealise/autre/watanya5.jpg";
-import watanya6 from "@/assets/projetrealise/autre/watanya6.jpg";
-import watanya7 from "@/assets/projetrealise/autre/watanya7.jpg";
-import watanya8 from "@/assets/projetrealise/autre/watanya8.jpg";
+import pavag1 from "@/assets/projetrealise/tourism/pavag1.jpg";
+import pavag2 from "@/assets/projetrealise/tourism/pavag2.jpg";
+import pavag3 from "@/assets/projetrealise/tourism/pavag3.jpg";
+import pavag4 from "@/assets/projetrealise/tourism/pavag4.jpg";
+import pavag5 from "@/assets/projetrealise/tourism/pavag5.jpg";
+import pavag6 from "@/assets/projetrealise/tourism/pavag6.jpg";
+import pavag7 from "@/assets/projetrealise/tourism/pavag7.jpg";
+import pavagimg from "@/assets/projetrealise/tourism/pavagimg.jpg";
+import ouzoud1 from "@/assets/projetrealise/tourism/ouzoud1.png";
+import ouzoud2 from "@/assets/projetrealise/tourism/ouzoud2.png";
+import ouzoud3 from "@/assets/projetrealise/tourism/ouzoud3.jpg";
+import ouzoud4 from "@/assets/projetrealise/tourism/ouzoud4.jpg";
 
 
 
@@ -332,25 +488,25 @@ export const domainsData = [
     slug: "environnement",
     projects: [
       {
-        title: "Cop 22",
+        title: "COP 22",
         slug: "cop22",
-        description: "Description détaillée des projets environnementaux terminésDescription détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés..",
+        description: "L'AADEC était au rendez-vous dans l’espace vert réservé à la société civile. Elle y a présenté son projet sur l’effet des changements climatiques sur le « genévrier thurifère » dans le Haut Atlas central à Azilal, ainsi que sur le danger d’extinction du chêne vert *Quercus ilex*.",
         year: 2016,
-        gallery: [cop1,cop2,cop3,cop4,cop5,cop6,copimg],
+        gallery: [cop1, cop2, cop3, cop4, cop5, cop6, copimg],
       },
       {
-        title: "Progettomondo",
+        title: "Progetto Mondo",
         slug: "progettomondo",
-        description: "Description détaillée des projets environnementaux terminésDescription détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés.Description détaillée des projets environnementaux terminés...",
+        description: "L'AADEC a participé à Turin en tant qu’invitée spéciale de *Progetto Mondo* dans un atelier de travail sur le thème : « L’eau inonde, la terre sèche, le feu brûle et le plastique pollue : quelles stratégies pour l’avenir ? »",
         year: 2023,
-        gallery: [proget1,proget2,proget3,proget4],
+        gallery: [proget1, proget2, proget3, proget4],
       },
       {
         title: "Débats de sensibilisation",
         slug: "sensibilisation",
-        description: "Collection de photos des projets environnementaux.",
-        year: 2014,
-        gallery: [proget1,proget2,proget3,proget4],
+        description: "L'AADEC a organisé de nombreuses journées d’étude en partenariat avec d’autres associations locales et nationales sur ce thème, notamment :\n• Journée de l’environnement (2008, Agro-Polytech)\n• Le chêne vert *Quercus ilex* en danger (2013, Mouvement Twiza)\n• Assainissement dans la ville (2002, Commune)\n• 1ère rencontre pour la jeunesse sur l’environnement (2013)",
+        year: 2002,
+        gallery: [proget1, proget2, proget3, proget4],
       },
     ],
   },
@@ -359,52 +515,52 @@ export const domainsData = [
     slug: "sante",
     projects: [
       {
-        title: "Convois médicaux",
-        slug: "convois-medicaux",
-        description: "Conférences organisées sur la santé publique.",
-        year: 2011,
-        gallery: [caravanimg,caravan1,caravan2,caravan3,caravan4,caravan5,caravan6,caravan7,caravanimg2],
+        title: "Campagnes médicales",
+        slug: "campagnes-medicales",
+        description: "En partenariat avec le *Lions Club International* et l’association *Sosana-Khouribga*, l’AADEC a assuré quatre grandes campagnes médicales au profit de la population démunie d’Azilal entre 2016 et 2020.",
+        year: 2016,
+        gallery: [caravanimg, caravan1, caravan2, caravan3, caravan4, caravan5, caravan6, caravan7, caravanimg2,caravan10,caravan11],
       },
       {
         title: "Corona",
         slug: "corona",
-        description: "Sessions de formation pour les professionnels de santé.",
+        description: "L'AADEC a réalisé un travail remarquable pendant la pandémie de Covid-19 : sensibilisation, inscription des bénéficiaires via des fiches techniques soigneusement élaborées, distribution de denrées et mise en œuvre de l’opération « Reste chez toi, je t’apporterai ce dont tu as besoin » pour limiter les déplacements et les contacts hors domicile.",
         year: 2020,
-        gallery: [coronaimg,corona1,corona2,corona3,corona4,corona5,corona6,corona7,corona8,corona9],
+        gallery: [coronaimg, corona1, corona2, corona3, corona4, corona5, corona6, corona7, corona8, corona9],
       },
       {
-        title: "Relais communautaire de santé ",
+        title: "Relais communautaire de santé",
         slug: "information",
-        description: "Ateliers pratiques pour la population locale.",
+        description: "Ce projet visait à impliquer des membres formés au sein des communautés pour améliorer l’accès aux soins, la sensibilisation et l’éducation sanitaire. L’AADEC a travaillé sur 24 modules à Tabia : leishmaniose, morsures de scorpions, santé sexuelle, accidents domestiques, adolescence... en collaboration avec les structures de santé locales.",
         year: 2016,
-        gallery: [tahsisimg,tahsis1,tahsis2,tahsis3,tahsis4,tahsis5,tahsis6,tahsis7,tahsis8,tahsis9,tahsis10],
+        gallery: [tahsisimg, tahsis1, tahsis2, tahsis3, tahsis4, tahsis5, tahsis6, tahsis7, tahsis8, tahsis9, tahsis10],
       },
     ],
   },
   {
-    title: "Domaine Social",
+    title: "Caritatif et Domaine Social",
     slug: "social",
     projects: [
       {
         title: "Ouvriers journaliers",
         slug: "journalier",
-        description: "Rapports annuels sur les actions sociales menées.",
+        description: "L'AADEC, en partenariat avec l'INDH et le conseil communal, a mis en œuvre un projet inédit visant à valoriser une catégorie d'ouvriers en situation précaire : les ouvriers journaliers d'Azilal (Makfia). Le projet n’a malheureusement pas abouti, en raison de mentalités rigides et du poids de l’autorité patronale.",
         year: 2016,
-        gallery: [jourimg,journalier1,journalier2,journalier4,journalier5,journalier6,journalier7,journalier8,journalier9], 
+        gallery: [jourimg, journalier1, journalier2, journalier4, journalier5, journalier6, journalier7, journalier8, journalier9],
       },
       {
-        title: "Convois de Solidarité",
-        slug: "convois-solidarite",
-        description: "Publications et articles sur le domaine social.",
-        year: 2011,
-        gallery: [tadamonimg,tadamon1,tadamon2,tadamon3,tadamon4,tadamon5,tadamon6,tadamon7,tadamon8,],
+        title: "Caravanes de Solidarité",
+        slug: "caravanes-solidarite",
+        description: "L'AADEC a participé aux caravanes à Al Hoceïma (2004) et à Al Haouz (2023). Elle a également organisé de nombreuses caravanes en montagne durant la période hivernale.",
+        year: 2004,
+        gallery: [tadamonimg, tadamon1, tadamon2, tadamon3, tadamon4, tadamon5, tadamon6, tadamon7, tadamon8],
       },
       {
-        title: "Diagnostic Participatif",
+        title: "Diagnostics Territoriaux",
         slug: "diagnostic",
-        description: "Études et recherches sur le développement social.",
-        year: 2018,
-       gallery: [diagnosticimg,diagnostic1,diagnostic2,diagnostic3,diagnostic4,],
+        description: "Ces travaux de diagnostic réalisés par l'AADEC depuis 2006 traduisent une vision très avancée du développement durable, basée sur des enquêtes minutieuses sur le terrain de plusieurs communes de la région Tadla-Azilal.",
+        year: 2006,
+        gallery: [diagnosticimg, diagnostic1, diagnostic2, diagnostic3, diagnostic4],
       },
     ],
   },
@@ -415,37 +571,37 @@ export const domainsData = [
       {
         title: "Festival d'Azilal",
         slug: "festival",
-        description: "Projets culturels réalisés avec les institutions locales.",
-        year: 2001,
-        gallery: [fistivalimg,fistival1,fistival2,fistival3,fistival4,fistival5,],
+        description: "L'AADEC a organisé le 1er festival : « Atlas des Arts » en 2000. Elle s'engageait dans ce sens pour valoriser les trésors artistiques et patrimoniaux de la province jusqu'à la 6ème édition, en 2006, avant de le reléguer à la commune territoriale.",
+        year: 2000,
+        gallery: [fistivalimg, fistival1, fistival2, fistival3, fistival4, fistival5],
       },
       {
         title: "Gravures Rupestres",
         slug: "gravures",
-        description: "Projets menés en collaboration avec différentes ONG.",
-        year: 2019,
-        gallery: [no9ochimg,no9och2,no9och3,no9och4,no9och5],
+        description: "L'AADEC a mis en exergue un patrimoine matériel très important qui a été menacé de disparaître : 'gravures de Tizi N'Targhist'. Et ce à travers des débats, des exposés et des partenariats, surtout avec l'Université Ibn Zohr d'Agadir depuis 2014.",
+        year: 2014,
+        gallery: [no9ochimg, no9och2, no9och3, no9och4, no9och5],
       },
       {
-        title: "EN Hommage aux Résistants",
+        title: "En Hommage aux Résistants",
         slug: "hommage",
-        description: "Actions culturelles avec les collectivités locales.",
+        description: "L'AADEC rendit hommage à plusieurs combattants d'Azilal relégués aux oubliettes à travers des jubilés et lors des fêtes nationales.",
         year: 2013,
-        gallery: [mo9awamaimg,mo9awama1,mo9awama2,mo9awama3,mo9awama4],
+        gallery: [mo9awamaimg, mo9awama1, mo9awama2, mo9awama3, mo9awama4],
       },
-            {
+      {
         title: "Restauration d'Ighrem",
         slug: "ighrem",
-        description: "Actions culturelles avec les collectivités locales.",
+        description: "Dans le but de sauvegarder le patrimoine architectural de quelques anciennes habitations ancestrales, l'AADEC, en partenariat avec Tétraktys, l'INDH et d'autres départements ministériels du Royaume, a veillé à la restauration du grenier de Megdaz et celui d'Ibaklioun, entre autres.",
         year: 2013,
-        gallery: [ighrmimg,ighrm1,ighrm2,ighrm3,ighrm4,ighrm5,ighrm6,ighrm7,ighrm8],
+        gallery: [ighrmimg, ighrm1, ighrm2, ighrm3, ighrm4, ighrm5, ighrm6, ighrm7, ighrm8],
       },
       {
-        title: "livre et cinéma",
+        title: "Livre et Cinéma",
         slug: "livre-cinema",
-        description: "Actions culturelles avec les collectivités locales.",
-        year: 2015,
-        gallery: [livreimg,livre1,livre2,livre3,livre4,livre5,],
+        description: "L'AADEC a organisé à maintes reprises des cérémonies de signature d'ouvrages (2004-2013) : littéraires, philosophiques et historiques (El Kadiri, Boumeshouli ...).",
+        year: 2014,
+        gallery: [livreimg, livre1, livre2, livre3, livre4, livre5,livre6,livre7,livre8,livre9,livre10,livre11],
       },
     ],
   },
@@ -454,110 +610,123 @@ export const domainsData = [
     slug: "échange-culturel",
     projects: [
       {
-        title: "Barbados et Espagnols",
+        title: "Barbados et Espagnol/Azilal",
         slug: "barbados-espagnols",
-        description: "Articles de presse publiés sur les échanges culturels.",
-        year: 2018,
-       gallery: [barbadosimg,barbados1,barbados2,barbados3,barbados4,barbados5,barbados6],
+        description: "L'AADEC, en partenariat avec l'AIPC Pandora, a mis en place en 2016 un programme ambitieux d’échange culturel entre la jeunesse espagnole et barbadienne d’une part, et la jeunesse d’Azilal d’autre part, en accueillant 20 adolescents pendant un mois, dans le cadre de la promotion du « tourisme chez l’habitant ».",
+        year: 2016,
+        gallery: [barbadosimg, barbados1, barbados2, barbados3, barbados4, barbados5, barbados6,barbados8],
       },
       {
         title: "Combattre L'extrémisme",
         slug: "extremisme",
-        description: "Vidéos sur les événements culturels et échanges.",
-        year: 2011,
-        gallery: [tatarofimg,tatarof1,tatarof2,tatarof3,tatarof4,tatarof5],
+        description: "Projet d'envergure que l'AADEC mena côte à côte avec Progetto Mondo en 2017, visant à lutter contre le radicalisme dans les écoles grâce à des psycho-socio-éducateurs formés.",
+        year: 2017,
+        gallery: [tatarofimg, tatarof1, tatarof2, tatarof3, tatarof4, tatarof5],
       },
       {
         title: "Dialogue inter-religieux",
         slug: "dialogueb-interreligieux",
-        description: "Podcasts sur la culture et le patrimoine.",
-        year: 2025,
-        gallery: [ dialogimg,dialog1,dialog2,dialog3,dialog4,dialog5,dialog6],
+        description: "En 2018, l'AADEC a accueilli une importante délégation du Vatican qui a visité plusieurs administrations publiques, notamment la délégation provinciale des Habous et des Affaires islamiques.",
+        year: 2018,
+        gallery: [dialogimg, dialog1, dialog2, dialog3, dialog4, dialog5, dialog6],
       },
     ],
   },
-  {
+ {
     title: "Education",
     slug: "education",
     projects: [
       {
-        title: "Modèle de Développement",
-        slug: "developpement",
-        description: "Témoignages sur différents projets réalisés.",
-        year: 2005,
-        gallery: [bnmous,bnmous2],
+        title: "Charte de Citoyenneté",
+        slug: "charte",
+        description: "L'AADEC a mené en 2006 un projet intéressant intitulé : « Charte de citoyenneté dans les établissements de la ville ».",
+        year: 2006,
+        gallery: [charte1,charte2,charte3,charte4,charte5,charte6,charte7,charte8,charte9,charte10,charte11,charte12,charte13,bnmous,bnmous2],
       },
-        {
-        title: "Scolarisation des filles en milieu rural ",
+      {
+        title: "Scolarisation des filles en milieu rural",
         slug: "scolarisation",
-        description: "Projets divers ne rentrant pas dans les autres catégories.",
-        year: 2014,
-       gallery: [scolair1,scolair2,scolair3,scolair4,scolair5,scolair6,scolair7,scolair9,scolair10],
+        description: "L'AADEC supervisa deux centres créés pour assurer la scolarisation des filles rurales à Aït Atab et Ouaouizeght entre 2006 et 2011, en collaboration avec l’AFD, le CSSFR et l’Ambassade des USA.",
+        year: 2006,
+        gallery: [scolair1,scolair2,scolair3,scolair4,scolair5,scolair6,scolair7,scolair9,scolair10],
       },
-              {
-        title: "étudiants cherchruts ",
-        slug: "etudiants",
-        description: "Projets divers ne rentrant pas dans les autres catégories.",
-        year: 2014,
-       gallery: [talaba1,talaba2,talaba3,talaba4,talaba5,talaba6,talaba7,talaba8,talaba9,talaba10],
-      },
-                    {
-        title: "Professeurs d'université ",
-        slug: "professeurs",
-        description: "Projets divers ne rentrant pas dans les autres catégories.",
-        year: 2014,
-       gallery: [prof1,prof2,prof3,prof4,prof5,prof6,prof7],
-      },
-            {
-        title: "Accueil des étudiants doctorants",
+      {
+        title: "Soutien aux étudiants doctorants",
         slug: "étudiants-africains",
-        description: "Projets divers ne rentrant pas dans les autres catégories.",
+        description: "L’AADEC est venu en aide à de nombreux étudiants africains et européens, favorisant ainsi les échanges culturels et la solidarité entre les peuples.",
         year: 2014,
-       gallery: [africanimg,african1,african2,african3,stage1,stage2,stage3,stage4,stage5,stage6,stage7],
+        gallery: [africanimg,african1,african2,african3,stage1,stage2,stage3,stage4,stage5,stage6,stage7],
+      },
+      {
+        title: "Collaboration avec les universités nationales",
+        slug: "universites",
+        description: "Elle s’est intéressée à solidifier les bases de coopération et de collaboration avec plusieurs universités et instituts :\n- Université Mohamed VI (Rabat)\n- Ibn Zohr (Agadir)\n- OCP (Khouribga)\n- Lycée Descartes (Rabat)\n- Université Cadi Ayyad (Marrakech)",
+        year: 2014,
+        gallery: [talaba1,talaba2,talaba3,talaba4,talaba5,talaba6,talaba7,talaba8,talaba9,talaba10,prof1,prof2,prof3,prof4,prof5,prof6,prof7, dicart1,dicart2,dicart3,dicart4,dicart5],
       },
     ],
   },
   {
-    title: "Autres",
-    slug: "autres",
+    title: "BED",
+    slug: "bed",
     projects: [
       {
-        title: "BED",
-        slug: "bed",
-        description: "Témoignages sur différents projets réalisés.",
-        year: 2005,
-        gallery: [bedimg,bed1,bed2,bed3,bed4,bed5],
-      },
-      {
-        title: "Tourisme de Montagne",
-        slug: "tourisme-montagne",
-        description: "Archives des anciens projets et actions de l'organisation.",
+        title: "Mutuelle Communautaire",
+        slug: "mutuelle",
+        description: "Ancien projet de l’AADEC mené en partenariat avec le FNUAP, portant sur la santé et la mutuelle communautaire dans le cadre du Développement humain. Ce projet visait trois communes :\n- Aït M’hamed\n- Aït Abbas\n- Zaouiat Ahansal",
         year: 2015,
-        gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6],
+        gallery: [mutuelle1, mutuelle2, mutuelle3, mutuelle4, mutuelle5, mutuelle6,mutuelle7],
       },
       {
-        title: "Pour le sahara marocain",
-        slug: "unité-nationale",
-        description: "Projets divers ne rentrant pas dans les autres catégories.",
-        year: 2011,
-        gallery: [watanya1,watanya2,watanya3,watanya4,watanya5,watanya6,watanya7,watanya8],
-      },
-      {
-        title: "Accueil des étudiants doctorants",
-        slug: "étudiants-africains",
-        description: "Projets divers ne rentrant pas dans les autres catégories.",
-        year: 2014,
-       gallery: [africanimg,african1,african2,african3],
-      },
-            {
-        title: "Pavage Tanaghmlt",
-        slug: "pavage",
-        description: "Projets divers ne rentrant pas dans les autres catégories.",
-        year: 2014,
-       gallery: [pavagimg,pavag1,pavag2,pavag3,pavag4,pavag5,pavag6,pavag7],
+        title: "Approvisionnement en Eau Potable – 12 Douars",
+        slug: "eau-potable",
+        description: "L’AADEC a également réalisé un projet à forte dimension socio-économique, consistant à approvisionner en eau potable 12 douars situés dans trois communes montagneuses, améliorant ainsi les conditions de vie des habitants.",
+        year: 2019,
+        gallery: [bedimg, bed1, bed2, bed3, bed4, bed5],
       },
     ],
   },
+  {
+    title: "Tourisme de Montagne",
+    slug: "tourisme",
+    projects: [
+      {
+        title: "Balisage de Circuits",
+        slug: "balisage",
+        description: "L'AADEC a pensé à un projet de balisage du circuit touristique Aït Bouli, Aït Bougmaz et Tilougit, en passant par Zaouiat Ahansal, en collaboration avec l'association du parc « Aragona » en 2016.",
+        year: 2016,
+        gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6],
+      },
+      {
+        title: "Pavage Tanaghmelt",
+        slug: "pavage",
+        description: "Dans la continuité du partenariat avec l’ADS et les conseils régionaux de Tadla-Azilal et de l’Isère, l’AADEC a supervisé le pavage du village de Tanaghmelt afin d’améliorer les infrastructures locales et de renforcer l’attractivité touristique du site.",
+        year: 2019,
+        gallery: [pavagimg,pavag1,pavag2,pavag3,pavag4,pavag5,pavag6,pavag7],
+      },
+      {
+        title: "Circuit Touristique d'Ouzoud",
+        slug: "ouzoud",
+        description: "En partenariat avec l’ADS et les conseils régionaux de Tadla-Azilal et de l’Isère, l’AADEC a développé le circuit touristique d’Ouzoud, un projet visant à valoriser le patrimoine naturel et à dynamiser l’économie locale à travers un tourisme responsable et durable.",
+        year: 2019,
+        gallery: [ouzoud1,ouzoud2,ouzoud3,ouzoud4],
+      },
+    ],
+  },
+  {
+    title: "Sahara Marocain",
+    slug: "sahara-marocain",
+    projects: [
+      {
+        title: "Forte implication",
+        slug: "forte",
+        description: "L'AADEC a participé à de nombreuses manifestations nationales : la Marche Verte, et la mobilisation contre les fake news de la presse espagnole en 2011...",
+        year: 2001,
+        gallery: [watanya1, watanya2, watanya3, watanya4, watanya5, watanya6, watanya7, watanya8],
+      },
+    ],
+  },
+
 ];
 
 
@@ -637,6 +806,51 @@ export const historyData = [
 
 
 // les partenaires
+
+
+export const categoriesPartenaires = [
+  {
+    id: 1,
+    titre: "Partenaires Stratégiques",
+    description: "Nos alliances principales pour une croissance durable",
+    partenaires: [
+      { nom: "Entreprise A", logo: "/logos/entreprise-a.svg", secteur: "Technologie" },
+      { nom: "Groupe B", logo: "/logos/groupe-b.svg", secteur: "Finance" },
+      { nom: "Corporation C", logo: "/logos/corporation-c.svg", secteur: "Industrie" },
+    ],
+  },
+  {
+    id: 2,
+    titre: "Partenaires Institutionnels",
+    description: "Collaborations avec des organismes publics et institutionnels",
+    partenaires: [
+      { nom: "Ministère X", logo: "/logos/ministere-x.svg", secteur: "Public" },
+      { nom: "Organisme Y", logo: "/logos/organisme-y.svg", secteur: "Éducation" },
+      { nom: "Agence Z", logo: "/logos/agence-z.svg", secteur: "Développement" },
+    ],
+  },
+  {
+    id: 3,
+    titre: "Partenaires Technologiques",
+    description: "Innovation et solutions technologiques avancées",
+    partenaires: [
+      { nom: "Tech Solutions", logo: "/logos/tech-solutions.svg", secteur: "IT" },
+      { nom: "Digital Lab", logo: "/logos/digital-lab.svg", secteur: "R&D" },
+      { nom: "Cloud Systems", logo: "/logos/cloud-systems.svg", secteur: "Cloud" },
+    ],
+  },
+  {
+    id: 4,
+    titre: "Partenaires Internationaux",
+    description: "Réseau mondial pour une présence internationale",
+    partenaires: [
+      { nom: "Global Partners", logo: "/logos/global-partners.svg", secteur: "International" },
+      { nom: "World Trade", logo: "/logos/world-trade.svg", secteur: "Commerce" },
+      { nom: "Overseas Corp", logo: "/logos/overseas-corp.svg", secteur: "Export" },
+    ],
+  },
+];
+
 
 
 

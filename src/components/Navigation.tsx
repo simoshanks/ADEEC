@@ -31,7 +31,7 @@ const Navigation = () => {
       title: "L'environnement",
       items: [
         { name: "Cop 22", href: "/Realisations/environnement/cop22" },
-        { name: "Progettomondo", href: "/Realisations/environnement/progettomondo" },
+        { name: "Progetto Mondo", href: "/Realisations/environnement/progettomondo" },
         { name: "Débats de Sensibilisation", href: "/Realisations/environnement/sensibilisation" },
       ],
     },
@@ -39,26 +39,25 @@ const Navigation = () => {
     {
       title: "Santé",
       items: [
-        { name: "Convois médicaux", href: "/Realisations/sante/convois-medicaux" },
+        { name: "Compagnes Médicales", href: "/Realisations/sante/campagnes-medicales" },
         { name: "Corona", href: "/Realisations/sante/corona" },
         { name: "Relais communautaire de santé", href: "/Realisations/sante/information" },
       ],
     },
     {
-      title: "Domaine Social",
+      title: "Caritatif et Domaine Social",
       items: [
         { name: "Ouvriers journaliers", href: "/Realisations/social/journalier" },
-        { name: "Diagnostic Participatif", href: "/Realisations/social/diagnostic" },
-        { name: "Convois de Solidarité", href: "/Realisations/social/convois-solidarite" },
+        { name: "Diagnostic Territoriaux", href: "/Realisations/social/diagnostic" },
+        { name: "Caravanes de Solidarité", href: "/Realisations/social/caravanes-solidarite" },
       ],
     },
         {
       title: "Education",
       items: [
         { name: "Scolarisation des filles en milieu rural", href: "/Realisations/education/scolarisation" },
-        { name: "étudiants cherchruts", href: "/Realisations/education/etudiants" },
-        { name: "Professeurs d'université", href: "/Realisations/education/professeurs" },
-        { name: "Modèle de Développement", href: "/Realisations/education/developpement" },
+        { name: "Collaboration avec les universités nationales", href: "/Realisations/education/universites" },
+        { name: "Charte de Citoyenneté", href: "/Realisations/education/charte" },
         { name: "Accueil des étudiants doctorants", href: "/Realisations/education/étudiants-africains" },
       ],
     },
@@ -81,12 +80,26 @@ const Navigation = () => {
       ],
     },
     {
-      title: "Autres",
+      title: "BED",
       items: [
-        { name: "BED", href: "/Realisations/autres/bed" },
-        { name: "Pour le sahara marocain", href: "/Realisations/autres/unité-nationale" },
-        { name: "Tourisme de Montagne", href: "/Realisations/autres/tourisme-montagne" },
-        { name: "Pavage Tanaghmlt", href: "/Realisations/autres/pavage" },
+        { name: "La Mutuelle Communautaire", href: "/Realisations/bed/mutuelle" },
+        { name: "Approvisionnement en Eau Potable 12 Douars", href: "/Realisations/bed/eau-potable" },
+
+      ],
+    },
+     {
+      title: "Tourisme de Montagne",
+      items: [
+        { name: "Balisage de Circuits", href: "/Realisations/tourisme/balisage" },
+        { name: "Circuit Touristique d'Ouzoud", href: "/Realisations/tourisme/ouzoud" },
+        { name: "Pavage Tanaghmelt", href: "/Realisations/tourisme/pavage" },
+ 
+      ],
+    },
+     {
+      title: "Sahara Marocain",
+      items: [
+        { name: "Forte Imlicatiers", href: "/Realisations/sahara-marocain/forte" },
       ],
     },
   ];

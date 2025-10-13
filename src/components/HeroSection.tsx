@@ -73,7 +73,7 @@ const HeroSection = () => {
     />
 
     {/* ✅ خففنا التظليل باش تبان الصورة مزيان */}
-<div className="absolute inset-0 bg-black/15"></div>
+<div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/20" />
   </div>
 ))}
 
