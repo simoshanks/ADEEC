@@ -1,5 +1,4 @@
 import React from 'react';
-import Navigation from './Navigation';
 import heroAbt from '../assets/AADECFRANCE.jpg';
 
 const HeroAbout = () => {
@@ -45,38 +44,34 @@ const HeroAbout = () => {
     <>
       <style>{styles.keyframes}</style>
 
-      <Navigation />
+      <section className="flex flex-col lg:flex-row h-auto w-full">
 
-      <section className="flex h-auto">
-        {/* Left side with image and overlay */}
+        {/* Left side: يظهر فقط على desktop (lg+) */}
         <div
-          className="relative w-2/5 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${heroAbt})`,
-          }}
+          className="hidden lg:flex relative w-2/5 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroAbt})` }}
         >
-          <div className="relative z-10 w-full h-full flex items-center">
-            <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-16 w-full h-full flex flex-col justify-center">
-              <div className="w-full text-right mt-20">
+          <div className="relative z-10 w-full h-full flex items-center justify-center">
+            <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-lg p-16 w-full h-full flex flex-col justify-center items-end">
+              <div className="w-full text-right">
                 <h1
-                  className="font-extrabold leading-tight tracking-wide bg-clip-text text-transparent bg-cover bg-center text-xl sm:text-4xl md:text-6xl"
+                  className="font-extrabold text-6xl lg:block hidden bg-clip-text text-transparent bg-cover bg-center"
                   style={{
+                    ...styles.typewriterLine1,
                     backgroundImage: `url(${heroAbt})`,
                     WebkitTextStroke: "1px rgba(255,255,255,0.7)",
                     textShadow: "0 3px 10px rgba(0,0,0,0.6)",
-                    ...styles.typewriterLine1,
                   }}
                 >
                   DEPUIS
                 </h1>
-                <br />
                 <h1
-                  className="font-extrabold leading-tight tracking-wide bg-clip-text text-transparent bg-cover bg-center text-xl sm:text-4xl md:text-6xl"
+                  className="font-extrabold text-6xl lg:block hidden bg-clip-text text-transparent bg-cover bg-center"
                   style={{
+                    ...styles.typewriterLine2,
                     backgroundImage: `url(${heroAbt})`,
                     WebkitTextStroke: "1px rgba(255,255,255,0.7)",
                     textShadow: "0 3px 10px rgba(0,0,0,0.6)",
-                    ...styles.typewriterLine2,
                   }}
                 >
                   2000
@@ -86,18 +81,15 @@ const HeroAbout = () => {
           </div>
         </div>
 
-        {/* Right side with full image, no overlay */}
+        {/* Right side: يظهر دائما (desktop + mobile) */}
         <div
-          className="relative w-3/5 bg-cover bg-center flex items-center justify-start p-8"
-          style={{
-            backgroundImage: `url(${heroAbt})`,
-          }}
+          className="relative w-full lg:w-3/5 bg-cover bg-center flex items-center justify-start p-8"
+          style={{ backgroundImage: `url(${heroAbt})` }}
         >
           <div className="absolute inset-0 bg-black/20"></div>
-
           <div className="relative z-10">
             <h1
-              className="font-extrabold leading-tight tracking-wide text-white relative top-6 drop-shadow-[0_3px_8px_rgba(0,0,0,0.8)] text-4xl sm:text-5xl md:text-6xl"
+              className="font-extrabold leading-tight tracking-wide text-white text-4xl sm:text-5xl md:text-6xl drop-shadow-[0_3px_8px_rgba(0,0,0,0.8)]"
               style={styles.typewriterRight}
             >
               AADEC
@@ -116,6 +108,7 @@ const HeroAbout = () => {
             </p>
           </div>
         </div>
+
       </section>
     </>
   );

@@ -406,8 +406,7 @@ import charte10 from "@/assets/projetrealise/education/charte10.jpg";
 import charte11 from "@/assets/projetrealise/education/charte11.jpg";
 import charte12 from "@/assets/projetrealise/education/charte12.jpg";
 import charte13 from "@/assets/projetrealise/education/charte13.jpg";
-import bnmous from "@/assets/projetrealise/education/bnmous.jpg";
-import bnmous2 from "@/assets/projetrealise/education/bnmous2.jpg";
+
 
 import prof1 from "@/assets/projetrealise/education/prof1.jpg";
 import prof2 from "@/assets/projetrealise/education/prof2.jpg";
@@ -457,6 +456,8 @@ import watanya5 from "@/assets/projetrealise/sahara/watanya5.jpg";
 import watanya6 from "@/assets/projetrealise/sahara/watanya6.jpg";
 import watanya7 from "@/assets/projetrealise/sahara/watanya7.jpg";
 import watanya8 from "@/assets/projetrealise/sahara/watanya8.jpg";
+import bnmous from "@/assets/projetrealise/sahara/bnmous.jpg";
+import bnmous2 from "@/assets/projetrealise/sahara/bnmous2.jpg";
 
 // Tourism
 import tourist1 from "@/assets/projetrealise/tourism/tourist1.jpg";
@@ -479,6 +480,16 @@ import ouzoud2 from "@/assets/projetrealise/tourism/ouzoud2.png";
 import ouzoud3 from "@/assets/projetrealise/tourism/ouzoud3.jpg";
 import ouzoud4 from "@/assets/projetrealise/tourism/ouzoud4.jpg";
 
+import envir from "@/assets/projetrealise/heroimg/envir.jpg";
+import bed from "@/assets/projetrealise/heroimg/bed.jpg";
+import cultur from "@/assets/projetrealise/heroimg/cultur.jpg";
+import echange from "@/assets/projetrealise/heroimg/echange.jpg";
+import education from "@/assets/projetrealise/heroimg/education.jpg";
+import sahara from "@/assets/projetrealise/heroimg/sahara.jpg";
+import sante from "@/assets/projetrealise/heroimg/sante.jpg";
+import social from "@/assets/projetrealise/heroimg/social.jpg";
+import tourist from "@/assets/projetrealise/heroimg/tourist.jpg";
+
 
 
 
@@ -486,6 +497,7 @@ export const domainsData = [
   {
     title: "L'environnement",
     slug: "environnement",
+    heroImage: envir,
     projects: [
       {
         title: "COP 22",
@@ -513,6 +525,7 @@ export const domainsData = [
   {
     title: "Santé",
     slug: "sante",
+    heroImage:sante ,
     projects: [
       {
         title: "Campagnes médicales",
@@ -540,6 +553,7 @@ export const domainsData = [
   {
     title: "Caritatif et Domaine Social",
     slug: "social",
+    heroImage:social ,
     projects: [
       {
         title: "Ouvriers journaliers",
@@ -567,6 +581,7 @@ export const domainsData = [
   {
     title: "Culture, Art et Patrimoine",
     slug: "culture-art",
+    heroImage:cultur ,
     projects: [
       {
         title: "Festival d'Azilal",
@@ -608,6 +623,7 @@ export const domainsData = [
   {
     title: "Échange Culturel",
     slug: "échange-culturel",
+    heroImage:echange,
     projects: [
       {
         title: "Barbados et Espagnol/Azilal",
@@ -635,13 +651,14 @@ export const domainsData = [
  {
     title: "Education",
     slug: "education",
+    heroImage:education,
     projects: [
       {
         title: "Charte de Citoyenneté",
         slug: "charte",
         description: "L'AADEC a mené en 2006 un projet intéressant intitulé : « Charte de citoyenneté dans les établissements de la ville ».",
         year: 2006,
-        gallery: [charte1,charte2,charte3,charte4,charte5,charte6,charte7,charte8,charte9,charte10,charte11,charte12,charte13,bnmous,bnmous2],
+        gallery: [charte1,charte2,charte3,charte4,charte5,charte6,charte7,charte8,charte9,charte10,charte11,charte12,charte13],
       },
       {
         title: "Scolarisation des filles en milieu rural",
@@ -669,6 +686,7 @@ export const domainsData = [
   {
     title: "BED",
     slug: "bed",
+    heroImage:bed,
     projects: [
       {
         title: "Mutuelle Communautaire",
@@ -689,6 +707,7 @@ export const domainsData = [
   {
     title: "Tourisme de Montagne",
     slug: "tourisme",
+    heroImage:tourist,
     projects: [
       {
         title: "Balisage de Circuits",
@@ -716,6 +735,7 @@ export const domainsData = [
   {
     title: "Sahara Marocain",
     slug: "sahara-marocain",
+    heroImage:sahara,
     projects: [
       {
         title: "Forte implication",
@@ -723,6 +743,13 @@ export const domainsData = [
         description: "L'AADEC a participé à de nombreuses manifestations nationales : la Marche Verte, et la mobilisation contre les fake news de la presse espagnole en 2011...",
         year: 2001,
         gallery: [watanya1, watanya2, watanya3, watanya4, watanya5, watanya6, watanya7, watanya8],
+      },
+            {
+        title: "Modèle de Développement",
+        slug: "modele-developpement",
+        description: "participation de l'AADEC aux discussions et au débat sur le nouveau modèle de développement NMD lors de la réunion au siège de la chambre de l'agriculture d'Azilal à l'occasion de la rencontre organisée par la commission du NMD avec la société civile locale ",
+        year: 2001,
+        gallery: [bnmous,bnmous2],
       },
     ],
   },
@@ -778,6 +805,7 @@ import slide4 from "@/assets/history/model1.jpg";
 import slide5 from "@/assets/history/model2.jpg";
 import slide6 from "@/assets/history/model3.jpg";
 import slide66 from "@/assets/history/model4.jpg";
+import slide67 from "@/assets/history/model5.jpg";
 import slide7 from "@/assets/history/jeun1.jpg";
 import slide8 from "@/assets/history/jeun2.jpg";
 import slide9 from "@/assets/history/jeun3.jpg";
@@ -792,7 +820,7 @@ export const historyData = [
   },
   {
     year: "2006",
-    images: [slide4, slide5, slide6,slide66],
+    images: [slide4, slide5, slide6,slide66,slide67],
     title: "Plan stratégique",
     desc: "Depuis 2006, une association s’est jointe aux actions de l’orienteur, permettant d’organiser simplement des animations culturelles pour apporter une réflexion plus large sur le développement communautaire et l’accompagnement de Jeunesse, parallèlement au modèle de développement de 2006."
   },
@@ -806,49 +834,153 @@ export const historyData = [
 
 
 // les partenaires
+import ONG1 from "@/assets/partenaires/ONG/AMSED.jpg";
+import ONG2 from "@/assets/partenaires/ONG/nakhil.jpg";
+import ONG3 from "@/assets/partenaires/ONG/artisans.jpg";
+import ONG4 from "@/assets/partenaires/ONG/cssf.png";
+import ONG5 from "@/assets/partenaires/ONG/Tetraktys.png";
+import ONG6 from "@/assets/partenaires/ONG/COOPI.png";
+import ONG7 from "@/assets/partenaires/ONG/corps.jpg";
+import ONG8 from "@/assets/partenaires/ONG/laval.png";
+import ONG9 from "@/assets/partenaires/ONG/AIPC.png";
+import ONG10 from "@/assets/partenaires/ONG/europ.png";
+import ONG11 from "@/assets/partenaires/ONG/PAU.png";
+import ONG12 from "@/assets/partenaires/ONG/PROGETTO.png";
+import ONG13 from "@/assets/partenaires/ONG/ambassades.jpg";
+import ONG14 from "@/assets/partenaires/ONG/DESCARTES.jpeg";
+import ONG15 from "@/assets/partenaires/ONG/adfm.png";
+import ONG16 from "@/assets/partenaires/ONG/bnozohr.jpg";
+import ONG17 from "@/assets/partenaires/ONG/Espace.png";
+import ONG18 from "@/assets/partenaires/ONG/HADAF.jpg";
+import ONG19 from "@/assets/partenaires/ONG/med6.png";
+import ONG20 from "@/assets/partenaires/ONG/ocp.jpg";
+import ONG21 from "@/assets/partenaires/ONG/Ribat.jpg";
+import ONG22 from "@/assets/partenaires/ONG/Zakoura.jpg";
+
+import BF1 from "@/assets/partenaires/BF/UNFAP.jpg";
+import BF2 from "@/assets/partenaires/BF/ned.png";
+import BF3 from "@/assets/partenaires/BF/banque.png";
+import BF4 from "@/assets/partenaires/BF/ADS.png";
+
+import AM1 from "@/assets/partenaires/AM/CRT.jpeg";
+import AM2 from "@/assets/partenaires/AM/lmyah.jpeg";
+import AM3 from "@/assets/partenaires/AM/sijn.jpeg";
+import AM4 from "@/assets/partenaires/AM/sina3a.jpeg";
+import AM5 from "@/assets/partenaires/AM/Entraide.png";
+import AM6 from "@/assets/partenaires/AM/INDH.png";
+import AM7 from "@/assets/partenaires/AM/lwafd.png";
+import AM8 from "@/assets/partenaires/AM/SIHA.png";
+import AM9 from "@/assets/partenaires/AM/ta9afa.png";
+import AM10 from "@/assets/partenaires/AM/tourisme.jpg";
+
+import R1 from "@/assets/partenaires/reseaux/CCM.jpg";
+import R2 from "@/assets/partenaires/reseaux/MPDP.jpg";
+import R3 from "@/assets/partenaires/reseaux/ANARUZ.png";
+import R4 from "@/assets/partenaires/reseaux/TADA.png";
 
 
 export const categoriesPartenaires = [
   {
     id: 1,
-    titre: "Partenaires Stratégiques",
-    description: "Nos alliances principales pour une croissance durable",
+    titre: "Organisations Non Gouvernementales (ONG)",
+    description: "Partenariats avec des associations œuvrant pour le développement humain et social",
     partenaires: [
-      { nom: "Entreprise A", logo: "/logos/entreprise-a.svg", secteur: "Technologie" },
-      { nom: "Groupe B", logo: "/logos/groupe-b.svg", secteur: "Finance" },
-      { nom: "Corporation C", logo: "/logos/corporation-c.svg", secteur: "Industrie" },
+      { nom: "Association Marocaine de Solidarité et de Développement (AMSED)", logo: ONG1},
+      { nom: "Association Ennakhil pour la Femme et l’Enfant (Marrakech)", logo: ONG2  },
+      { nom: "Comité de Scolarisation de la Fille Rurale (CSSF)", logo: ONG4  },
+      { nom: "Association française Artisans du Monde", logo: ONG3},
+      { nom: "Association française Tetraktys", logo: ONG5},
+      { nom: "corps de paix( volonteers) ", logo: ONG7},
+      { nom: "COOPI", logo: ONG6},
+      { nom: "Université PAU", logo: ONG11},
+      { nom: "Université européenne de Madrid", logo: ONG10},
+      { nom: "Université de LAVAL", logo: ONG8},
+      { nom: "LYCEE DESCARTES", logo: ONG14},
+      { nom: "AIPC  PANDORA ", logo: ONG9},
+      { nom: "PROGETTO MONDO", logo: ONG12},
+      { nom: "ambassades", logo: ONG13},
+      { nom: "AL HADAF Boulmane", logo: ONG18},
+      { nom: "l’Espace Associatif Mohammedia", logo: ONG17},
+      { nom: "Ribat Al fath ", logo: ONG21},
+      { nom: "Université Md V Rabat", logo: ONG19},
+      { nom: "université Ibnou Zohr Agadir", logo: ONG16},
+      { nom: "Fondation Zakoura; W WAGON Maroc", logo: ONG22},
+      { nom: "Fondation OCP ", logo: ONG20},
+      { nom: "ADFM", logo: ONG15},
     ],
+  },
+ {
+    id: 2,
+    titre: "Bailleurs de Fonds",
+    description: "Institutions soutenant financièrement les projets de développement",
+    partenaires: [
+      { nom: "Fonds des Nations Unies pour la Population (FNUAP)", logo:BF1  },
+      { nom: "Agence de Développement Social (ADS)", logo: BF4 },
+      { nom: "Banque Mondiale", logo: BF3 },
+      { nom: "Ned", logo: BF2},
+    ],
+  },
+    {
+  id: 3,
+  titre: "Administrations ministérielles ",
+  description: "Collaborations avec les Administrations ministérielles ",
+  partenaires: [
+    { nom: "Ministère de la santé ",logo:AM8  },
+    { nom: "Délégation du tourisme ", logo:AM10},
+    { nom: "C.R.T", logo:AM1  },
+    { nom: "Délégation Eaux et forêt ",logo:AM2  },
+    { nom: "Ministère de l’éducation nationale ",logo:AM7  },
+    { nom: "Entraide nationale ", logo:AM5  },
+    { nom: "Direction provinciale de l’artisanat", logo:AM4 },
+    { nom: "INDH ", logo:AM6},
+    { nom: "ministère de la culture/ musée dino",logo:AM9 },
+    { nom: "prison locale Azilal", logo:AM3 }
+  ]
+},
+ {
+  id: 4,
+  titre: "Les réseaux ",
+  description: "Les réseaux de l'AADEC ",
+  partenaires: [
+    { nom: "TADA (tissu associatif de développement d’Azilal créé par l’AADEC en 2002 ).",logo:R4  },
+    { nom: "ANARUZ ( Réseau national des centres d’écoute des femmes victimes de la violence).", logo:R3},
+    { nom: "RCAM réseau des associations de la montagne. ", },
+    { nom: "CCM - Coalition civile pour la Montagne- ",logo:R1  },
+    { nom: "MPDP ( mouvement pour la démocratie paritaire. )", logo:R2  },
+    { nom: "PGE ( plan gouvernemental pour l’équité )",  },
+   
+  ]
+},
+];
+
+// document
+
+export const documentsData = [
+  {
+    id: 1,
+    title: "Quercus",
+    description: "تقرير الورشة حول شجر البلوط",
+    date: "2014",
+    size: "0.8 MB",
+    url: "/doc/blot.pdf",
   },
   {
     id: 2,
-    titre: "Partenaires Institutionnels",
-    description: "Collaborations avec des organismes publics et institutionnels",
-    partenaires: [
-      { nom: "Ministère X", logo: "/logos/ministere-x.svg", secteur: "Public" },
-      { nom: "Organisme Y", logo: "/logos/organisme-y.svg", secteur: "Éducation" },
-      { nom: "Agence Z", logo: "/logos/agence-z.svg", secteur: "Développement" },
-    ],
+    title: "Diagnostic Territoriaux",
+    description: "تشخيص ايت أم البخت ",
+    date: "2008",
+    size: "2.4 MB",
+    url: "/doc/diagno.pdf",
   },
-  {
+    {
     id: 3,
-    titre: "Partenaires Technologiques",
-    description: "Innovation et solutions technologiques avancées",
-    partenaires: [
-      { nom: "Tech Solutions", logo: "/logos/tech-solutions.svg", secteur: "IT" },
-      { nom: "Digital Lab", logo: "/logos/digital-lab.svg", secteur: "R&D" },
-      { nom: "Cloud Systems", logo: "/logos/cloud-systems.svg", secteur: "Cloud" },
-    ],
+    title: "Le résistant martyr Ahmad Ahansal ",
+    description: "الشعر الأمازيغي الممجد للشهيد أحمد الحنصالي",
+    date: "2013",
+    size: "1.2 MB",
+    url: "/doc/chi3r.pptx",
   },
-  {
-    id: 4,
-    titre: "Partenaires Internationaux",
-    description: "Réseau mondial pour une présence internationale",
-    partenaires: [
-      { nom: "Global Partners", logo: "/logos/global-partners.svg", secteur: "International" },
-      { nom: "World Trade", logo: "/logos/world-trade.svg", secteur: "Commerce" },
-      { nom: "Overseas Corp", logo: "/logos/overseas-corp.svg", secteur: "Export" },
-    ],
-  },
+
 ];
 
 

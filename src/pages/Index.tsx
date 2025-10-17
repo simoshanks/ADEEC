@@ -9,6 +9,7 @@ import ProjectSection from '@/components/ProjectSection';
 import CoverflowSwiper from '@/components/CoverflowSwiper';
 import Topbar from '@/components/Topbar';
 import VideoSection from '@/components/VideoSection';
+import PartnersCarousel from '@/components/PartnersCarousel';
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
       <Navigation />
       
       <HeroSection />
+      <PartnersCarousel/>
       <AboutSection/>
       <ProjectSection/>
       <VideoSection/>

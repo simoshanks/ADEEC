@@ -18,7 +18,7 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Topbar />
       <Navigation />
-      <div className="h-[34px] bg-[#146C2D]"></div>
+      
       <HeroContact/>
 
       

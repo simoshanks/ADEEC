@@ -29,12 +29,12 @@ const HistorySection = () => {
 
   return (
     <section className="relative bg-[#F5FCF8] py-20 overflow-hidden">
-      <div className="flex justify-center mb-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] uppercase tracking-wider relative">
-          NOTRE HISTOIRE ?
-          <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-20 h-1 bg-[#146C2D] rounded-full"></span>
+        <div className="text-center mb-12 lg:mb-14">
+         <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] uppercase tracking-wider relative">
+          NOTRE HISTOIRE 
         </h2>
-      </div>
+          <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto mt-6 rounded-full"></div>
+          </div>
 
       <div className="space-y-32">
         {milestones.map((item, index) => (

@@ -1,26 +1,45 @@
 import aboutImg from "@/assets/acceil.jpg";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function AboutSection() {
   const [visible, setVisible] = useState(false);
   const [projectsCount, setProjectsCount] = useState(0);
   const [yearsCount, setYearsCount] = useState(0);
+  const statsRef = useRef(null); // ✅ Ref pour la section des stats
+  const [statsVisible, setStatsVisible] = useState(false);
 
-  // ✅ Animation d'apparition
+  // ✅ Animation d'apparition de la section
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 100);
     return () => clearTimeout(t);
   }, []);
 
-  // ✅ Animation des chiffres (tasa3odi)
+  // ✅ Observer pour déclencher l'animation des chiffres au scroll
   useEffect(() => {
-    if (!visible) return;
+    if (!statsRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setStatsVisible(true);
+          observer.disconnect(); // on arrête l'observer après le trigger
+        }
+      },
+      { threshold: 0.5 } // déclenche quand 50% de la section est visible
+    );
+
+    observer.observe(statsRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+  // ✅ Animation des chiffres
+  useEffect(() => {
+    if (!statsVisible) return;
 
     let startProjects = 0;
     let startYears = 0;
-
-    const duration = 2000; // durée totale en ms
-    const steps = 60; // nombre d’étapes
+    const duration = 2000;
+    const steps = 60;
     const incrementProjects = 50 / steps;
     const incrementYears = 25 / steps;
 
@@ -35,26 +54,26 @@ export default function AboutSection() {
     }, duration / steps);
 
     return () => clearInterval(interval);
-  }, [visible]);
+  }, [statsVisible]);
 
   return (
     <section className="relative w-full min-h-[60vh] flex items-center justify-center py-12 lg:py-20 overflow-hidden">
-      {/* ✅ Background Image + Gradient */}
+      {/* Background Image + Gradient */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: `url(${aboutImg})` }}
       >
-        <div className="absolute inset-0 bg-[#146C2D]/65"></div>
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/asfalt-dark.png')] opacity-10"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
+
       </div>
 
-      {/* ✅ Floating Elements */}
+      {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-28 h-28 bg-white/5 rounded-full blur-xl"></div>
         <div className="absolute top-1/3 right-16 w-20 h-20 bg-white/5 rounded-full blur-xl"></div>
       </div>
 
-      {/* ✅ Main Content */}
+      {/* Main Content */}
       <div className="relative z-10 w-full max-w-4xl px-4 sm:px-6 lg:px-8 text-center lg:text-left">
         <div
           className={`transition-all duration-1000 ease-out ${
@@ -62,7 +81,7 @@ export default function AboutSection() {
           }`}
         >
           {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6">
+          <div className="inline-flex items-center px-4 py-2 bg-[#146C2D] backdrop-blur-sm rounded-full border border-white/20 mb-6">
             <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
             <span className="text-white font-semibold text-sm uppercase tracking-wider">
               Qui sommes-nous
@@ -71,10 +90,7 @@ export default function AboutSection() {
 
           {/* Titles */}
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 leading-tight">
-            Association Azilal pour le{" "}
-            <span className="bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
-              Développement
-            </span>
+            Association Azilal pour le Développement
           </h1>
           <h2 className="text-xl lg:text-2xl font-semibold text-white/90 mb-6">
             Environnement et Communication (AADEC)
@@ -94,23 +110,19 @@ export default function AboutSection() {
             </p>
           </div>
 
-          {/* ✅ Stats avec animation */}
-          <div className="grid grid-cols-2 gap-4 mb-8 max-w-sm mx-auto lg:mx-0">
+          {/* Stats avec animation au scroll */}
+          <div ref={statsRef} className="grid grid-cols-2 gap-4 mb-8 max-w-sm mx-auto lg:mx-0">
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-1">
                 {projectsCount}+
               </div>
-              <div className="text-white/70 text-sm font-medium">
-                Projets Réalisés
-              </div>
+              <div className="text-white/70 text-sm font-medium">Projets Réalisés</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-1">
                 {yearsCount}+
               </div>
-              <div className="text-white/70 text-sm font-medium">
-                Années d'Expérience
-              </div>
+              <div className="text-white/70 text-sm font-medium">Années d'Expérience</div>
             </div>
           </div>
 
@@ -118,9 +130,9 @@ export default function AboutSection() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
             <button
               onClick={() => (window.location.href = "/Apropos")}
-              className="group relative px-6 py-3 bg-white text-[#146C2D] rounded-xl font-semibold text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden"
+              className="group relative px-6 py-3 bg-[#D59B49] text-white rounded-xl font-semibold text-base shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 overflow-hidden"
             >
-              <span className="relative flex items-center justify-center space-x-2">
+              <span className="relative flex items-center justify-center space-x-2 ">
                 <span>En savoir plus</span>
                 <svg
                   className="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
@@ -128,18 +140,13 @@ export default function AboutSection() {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </span>
             </button>
 
             <button
-              onClick={() => (window.location.href = "/projects")}
+              onClick={() => (window.location.href = "/partenaires")}
               className="group relative px-6 py-3 bg-transparent border-2 border-white text-white rounded-xl font-semibold text-base hover:bg-white/10 backdrop-blur-sm transition-all duration-300 hover:scale-105"
             >
               <span className="flex items-center justify-center space-x-2">
@@ -153,10 +160,10 @@ export default function AboutSection() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                    d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87M12 12a4 4 0 100-8 4 4 0 000 8z"
                   />
                 </svg>
-                <span>Nos réalisations</span>
+                <span>Voir nos partenaires</span>
               </span>
             </button>
           </div>

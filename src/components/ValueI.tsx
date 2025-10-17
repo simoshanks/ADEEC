@@ -4,17 +4,17 @@ import { confianceCards } from "../data/db.js"; // بدّل المسار حسب 
 const Value = () => {
   return (
     <section className="w-full px-4 py-20 bg-[#F5FCF8]">
-      <div className="flex justify-center mb-14">
+      <div className="text-center mb-12 lg:mb-14">
         <h2 className="text-4xl md:text-5xl font-extrabold text-[#146C2D] uppercase tracking-wider relative">
           NOS VALEURS
-          <span className="absolute left-1/2 -bottom-2 -translate-x-1/2 w-20 h-1 bg-[#146C2D] rounded-full"></span>
         </h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto mt-6 rounded-full"></div>
       </div>
 
-      {/* 5 دواير */}
-      <ul className="flex justify-center items-start gap-6 md:gap-10 flex-wrap">
+      {/* Grid responsive: 2 kolom f mobile, 3/4 f larger screens */}
+      <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-10 justify-items-center">
         {confianceCards.map((card, idx) => (
-          <li key={idx} className="list-none flex flex-col items-center">
+          <li key={idx} className="flex flex-col items-center">
             {/* الصورة فدايرة */}
             <div
               className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden shadow-xl 

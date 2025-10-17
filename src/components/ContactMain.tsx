@@ -98,7 +98,7 @@ ${message}
         Envoyez-nous un message
       </h3>
 
-      <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
+      <form id="rendezvous" className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
         <div className="grid sm:grid-cols-2 gap-3 sm:gap-6">
           <input
             type="text"
@@ -161,7 +161,7 @@ ${message}
 
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-[#146C2D] to-[#22A55D] text-white py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-lg hover:shadow-lg hover:scale-[1.02] transition-all duration-200 flex items-center justify-center gap-2"
+          className="w-full bg-[#146C2D]  text-white py-3 sm:py-4 rounded-lg font-semibold text-sm sm:text-lg hover:shadow-lg hover:scale-[1.02] transition-all duration-200 flex items-center justify-center gap-2"
         >
           <Send className="w-4 h-4 sm:w-5 sm:h-5" /> Envoyer
         </button>

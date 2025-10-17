@@ -20,15 +20,19 @@ export default function CoverflowSwiper() {
     <div className="bg-[#F5FCF8]">
       <div className="w-full max-w-5xl mx-auto">
        {/* Title */}
-      <div className="flex justify-center mb-12 sm:mb-16 relative z-10">
-        <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#146C2D] uppercase tracking-tight mb-3">
-            GALLERY
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto rounded-full"></div>
+        <div className="text-center mb-12 lg:mb-14">
+            <div className="inline-flex items-center px-4 py-2 bg-[#146C2D] backdrop-blur-sm rounded-full border border-white/20 mb-6">
+            <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
+            <span className="text-white font-semibold text-sm uppercase tracking-wider">
+              GALERIE
+            </span>
+          </div>
 
+          <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto mt-6 rounded-full"></div>
+          <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+            Quelques moments du parcours de l'AADEC
+          </p>
         </div>
-      </div>
 
         {/* 🎞️ Swiper */}
         <Swiper
@@ -61,7 +65,7 @@ export default function CoverflowSwiper() {
               <div
                 className="w-48 h-60 rounded-xl overflow-hidden border-4 border-white"
                 style={{
-                  boxShadow: "0 10px 25px #146C2D",
+                  boxShadow: "0 10px 25px #D59B49",
                 }}
               >
                 <img
