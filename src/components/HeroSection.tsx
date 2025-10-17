@@ -1,4 +1,4 @@
-import hero1 from '@/assets/heroAADEC.jpg';
+import hero1 from '@/assets/social.jpg'
 import hero2 from '@/assets/herofistival.jpg';
 import hero3 from '@/assets/imagehero.jpg';
 import { useState, useEffect } from 'react';
@@ -56,7 +56,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[100vh] min-h-[600px] max-h-[900px] flex items-center justify-center overflow-hidden pt-16 md:pt-24 lg:pt-28">
+    <section className="relative w-full h-[80vh] min-h-[600px] max-h-[900px] flex items-center justify-center overflow-hidden pt-16 md:pt-24 lg:pt-28">
 
       {/* Background Slides */}
       {slides.map((slide, index) => (

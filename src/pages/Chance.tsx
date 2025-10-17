@@ -6,7 +6,7 @@ import HeroActule from "@/components/HeroActule";
 import AboutActule from "@/components/AboutActule";
 import ProblemActule from "@/components/ProblemActule";
 import SolutionActule from "@/components/SolutionActule";
-import GalerieActule from "@/components/GalerieActule";
+
 
 const Chance = () => {
    const projet = projetsActuels.find(p => p.slug === "2eme-chance");
@@ -21,7 +21,7 @@ const Chance = () => {
       <AboutActule projet={projet} />
       <ProblemActule projet={projet} />
       <SolutionActule projet={projet} />
-      <GalerieActule gallery={projet.gallery} />
+
 
       <Footer />
     </div>

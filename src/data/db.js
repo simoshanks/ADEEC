@@ -16,6 +16,21 @@ import azicodeimg from "../assets/projetactuel/azicode/azicodeimg.jpg";
 import chance from "../assets/projetactuel/chance/chanceimg.jpg";
 // prisonniers
 import prisonniers from "../assets/projetactuel/prisonniers/prisonniers.jpg";
+import prison1 from "../assets/projetactuel/prisonniers/prison1.jpg";
+import prison2 from "../assets/projetactuel/prisonniers/prison2.jpg";
+import prison3 from "../assets/projetactuel/prisonniers/prison3.jpg";
+import prison4 from "../assets/projetactuel/prisonniers/prison4.jpg";
+import prison5 from "../assets/projetactuel/prisonniers/prison5.jpg";
+import prison6 from "../assets/projetactuel/prisonniers/prison6.jpg";
+import prison7 from "../assets/projetactuel/prisonniers/prison7.jpg";
+import prison8 from "../assets/projetactuel/prisonniers/prison8.jpg";
+import prison9 from "../assets/projetactuel/prisonniers/prison9.jpg";
+import prison10 from "../assets/projetactuel/prisonniers/prison10.jpg";
+import prison11 from "../assets/projetactuel/prisonniers/prison11.jpg";
+import prison12 from "../assets/projetactuel/prisonniers/prison12.jpg";
+import prison13 from "../assets/projetactuel/prisonniers/prison13.jpg";
+import prison14 from "../assets/projetactuel/prisonniers/prison14.jpg";
+import prison15 from "../assets/projetactuel/prisonniers/prison15.jpg";
 // femmes
 import femmes from "../assets/projetactuel/femmes/femms.jpg";
 
@@ -130,13 +145,8 @@ export const projetsActuels = [
     annee: 2020,
     descriptionLongue:
       "Ce projet vise à accompagner les prisonniers en leur offrant une qualification professionnelle qui facilite leur réinsertion et leur donne une nouvelle chance dans la société.",
-    image: prisonniers,
-    gallery: [
-      "/images/prisonniers/1.jpg",
-      "/images/prisonniers/2.jpg",
-      "/images/prisonniers/3.jpg",
-      "/images/prisonniers/4.jpg",
-    ],
+    image: prison7,
+    gallery: [prison1,prison2,prison3,prison4,prison5,prison6,prison7,prison8,prison9,prison10,prison11,prison12,prison13,prison14,prison15],
     problematique:
       "Les prisonniers manquent de compétences professionnelles reconnues pour réussir leur réinsertion sociale et économique.",
     problemPoints: [
