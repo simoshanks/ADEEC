@@ -14,150 +14,152 @@ const Footer = () => {
     <footer className="bg-gradient-to-br from-[#D59B49] via-[#c58c40] to-[#b37d36] text-white relative overflow-hidden">
       {/* تأثير خلفية */}
       <div className="absolute inset-0 bg-black/5"></div>
-      
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        {/* ✅ Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12 lg:mb-16">
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-16">
+        {/* Main Grid - محسّن للجوال */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-6 sm:gap-6 lg:gap-8 mb-6 sm:mb-8 lg:mb-12">
           
           {/* Logo + Description */}
-          <div className="text-center md:text-left">
-            <div className="flex justify-center md:justify-start items-center space-x-3 mb-6">
-              <div className="p-3 bg-white/10 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20">
+          <div className="text-center sm:text-left lg:col-span-1">
+            <div className="flex justify-center sm:justify-start items-center space-x-3 mb-4">
+              <div className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl shadow-lg border border-white/20">
                 <img
                   src={logo}
                   alt="Logo AADEC"
-                  className="h-12 sm:h-14 lg:h-16 w-auto object-contain filter brightness-0 invert"
+                  className="h-10 sm:h-12 lg:h-14 w-auto object-contain filter brightness-0 invert"
                 />
               </div>
             </div>
-            <h3 className="text-xl font-bold text-white mb-4">AADEC</h3>
-            <p className="text-white/90 text-sm lg:text-base leading-relaxed max-w-md mx-auto md:mx-0 font-light">
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-3">AADEC</h3>
+            <p className="text-white/90 text-xs sm:text-sm lg:text-base leading-relaxed max-w-md mx-auto sm:mx-0 font-light">
               Association Azilal pour le Développement, l'Environnement et la Communication.
               Engagée pour un avenir durable et prospère depuis 2000.
             </p>
           </div>
 
           {/* Contact Info */}
-          <div className="text-center md:text-left">
-            <h3 className="text-lg lg:text-xl font-semibold text-white mb-6 pb-2 border-b border-white/30 inline-block">
+          <div className="text-center sm:text-left lg:col-span-1">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-white mb-4 sm:mb-6 pb-2 border-b border-white/30 inline-block">
               Contact
             </h3>
-            <div className="space-y-4 text-white/90">
-              <div className="flex justify-center md:justify-start items-center space-x-3 group hover:text-white transition-colors duration-300">
-                <div className="p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
-                  <AiOutlineEnvironment className="w-5 h-5 text-white" />
+            <div className="space-y-3 sm:space-y-4 text-white/90">
+              <div className="flex justify-center sm:justify-start items-center space-x-2 sm:space-x-3 group hover:text-white transition-colors duration-300">
+                <div className="p-1.5 sm:p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
+                  <AiOutlineEnvironment className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-white" />
                 </div>
-                <span className="text-sm lg:text-base font-medium">
+                <span className="text-xs sm:text-sm lg:text-base font-medium break-words">
                   Quartier Administratif BP : 100 Azilal
                 </span>
               </div>
-              <div className="flex justify-center md:justify-start items-center space-x-3 group hover:text-white transition-colors duration-300">
-                <div className="p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
-                  <AiOutlinePhone className="w-5 h-5 text-white" />
+              <div className="flex justify-center sm:justify-start items-center space-x-2 sm:space-x-3 group hover:text-white transition-colors duration-300">
+                <div className="p-1.5 sm:p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
+                  <AiOutlinePhone className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-white" />
                 </div>
-                <span className="text-sm lg:text-base font-medium">+212 5 23 45 98 12</span>
+                <span className="text-xs sm:text-sm lg:text-base font-medium">+212 5 23 45 98 12</span>
               </div>
-              <div className="flex justify-center md:justify-start items-center space-x-3 group hover:text-white transition-colors duration-300">
-                <div className="p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
-                  <AiOutlineMail className="w-5 h-5 text-white" />
+              <div className="flex justify-center sm:justify-start items-center space-x-2 sm:space-x-3 group hover:text-white transition-colors duration-300">
+                <div className="p-1.5 sm:p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
+                  <AiOutlineMail className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-white" />
                 </div>
-                <span className="text-sm lg:text-base font-medium">
+                <span className="text-xs sm:text-sm lg:text-base font-medium break-words">
                   aadec2000@hotmail.com
                 </span>
               </div>
             </div>
           </div>
 
-          {/* Social Links */}
-          <div className="text-center md:text-left">
-            <h3 className="text-lg lg:text-xl font-semibold text-white mb-6 pb-2 border-b border-white/30 inline-block">
-              Suivez-nous
-            </h3>
-            <div className="flex justify-center md:justify-start space-x-3 mb-6">
-              <a
-                href="https://www.facebook.com/share/16rxatcupq/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group"
-              >
-                <FaFacebookF className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
-              </a>
-              <a
-                href="https://wa.me/212523459812"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group"
-              >
-                <FaWhatsapp className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
-              </a>
-              <a
-                href="#"
-                className="p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group"
-              >
-                <FaInstagram className="w-5 h-5 text-white group-hover:scale-110 transition-transform duration-300" />
-              </a>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 text-center">
-              <p className="text-white/80 text-sm font-medium">
-                Rejoignez notre communauté pour rester informé.
-              </p>
-            </div>
-          </div>
+{/* Liens Rapides */}
+<div className="text-center sm:text-left lg:col-span-1">
+  <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-white mb-4 sm:mb-6 pb-2 border-b border-white/30 inline-block">
+    Liens Rapides
+  </h3>
+
+  <ul className="space-y-2 sm:space-y-3 text-white/90 font-medium list-none">
+    {[
+      { name: "Accueil", link: "/" },
+      { name: "Activites", link: "#" },
+      { name: "Réalisations", link: "#" },
+      { name: "Partenaires", link: "/partenaires" },
+      { name: "Contact", link: "/contact" },
+    ].map((item) => (
+      <li key={item.name}>
+        <a
+          href={item.link}
+          className="inline-block text-xs sm:text-sm lg:text-base font-medium text-white/90 
+                     transition-transform transition-colors duration-300 
+                     hover:text-white hover:translate-x-1"
+        >
+          {item.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+
+
 
           {/* Morocco Map */}
-          <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-lg lg:text-xl font-semibold text-white mb-6 pb-2 border-b border-white/30 inline-block">
+          <div className="flex flex-col items-center sm:items-start lg:col-span-1">
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-white mb-4 sm:mb-6 pb-2 border-b border-white/30 inline-block">
               Localisation
             </h3>
-            <div className="relative group">
-              <div className="w-48 h-48 relative transform group-hover:scale-105 transition-transform duration-500">
-                <img
-                  src={mapMorocco}
-                  alt="Morocco map"
-                  className="w-full h-full object-contain opacity-90 filter brightness-0 invert"
-                />
-                {/* Animated point */}
-                <div
-                  className="absolute"
-                  style={{
-                    top: "36%",
-                    left: "52%",
-                  }}
-                >
-                  <span className="absolute inline-flex h-8 w-8 rounded-full bg-red-400 opacity-70 animate-ping"></span>
-                  <span className="relative flex h-3 w-3">
-                    <span className="absolute inline-flex rounded-full h-3 w-3 bg-red-500 border-2 border-white animate-pulse"></span>
-                  </span>
-                </div>
-              </div>
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 bg-white/90 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Azilal, Maroc
-              </div>
+            <div className="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-40 lg:h-40">
+              <img
+                src={mapMorocco}
+                alt="Morocco map"
+                className="w-full h-full object-contain opacity-90 filter brightness-0 invert"
+              />
+
+              <a
+                href="https://maps.app.goo.gl/2FmX1dBHBtmUPW8H7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute"
+                style={{ top: "36%", left: "52%", transform: "translate(-50%, -50%)" }}
+              >
+                <span className="absolute inline-flex h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 rounded-full bg-red-400 opacity-70 animate-ping"></span>
+                <span className="relative flex h-1.5 w-1.5 sm:h-2 sm:w-2 lg:h-3 lg:w-3">
+                  <span className="absolute inline-flex rounded-full h-1.5 w-1.5 sm:h-2 sm:w-2 lg:h-3 lg:w-3 bg-red-500 border-2 border-white animate-pulse"></span>
+                </span>
+              </a>
             </div>
           </div>
         </div>
 
-        {/* ✅ Bottom Bar */}
-        <div className="border-t border-white/30 pt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-          <div className="text-center sm:text-left">
-            <p className="text-white/80 text-sm font-medium">
-              © {currentYear} AADEC. Tous droits réservés.
-            </p>
-          </div>
-          <div className="flex space-x-6 text-white/70 text-sm">
-            <a href="#" className="hover:text-white transition-colors duration-300 font-medium">
-              Confidentialité
-            </a>
-            <a href="#" className="hover:text-white transition-colors duration-300 font-medium">
-              Conditions
-            </a>
-            <a href="#" className="hover:text-white transition-colors duration-300 font-medium">
-              Contact
-            </a>
-          </div>
-        </div>
+        {/* Bottom Bar - محسّن للجوال */}
+<div className="border-t border-white/30 pt-3 sm:pt-4 flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+  {/* Copyright */}
+  <div className="text-center sm:text-left order-2 sm:order-1">
+    <p className="text-white/80 text-xs sm:text-sm font-medium">
+      © {currentYear} AADEC. Tous droits réservés.
+    </p>
+  </div>
 
-       
+  {/* Social Links */}
+  <div className="text-center sm:text-left order-1 sm:order-2">
+    <div className="flex justify-center sm:justify-start space-x-2 sm:space-x-3 mb-2 sm:mb-0">
+      {[
+        { icon: FaFacebookF, href: "https://www.facebook.com/share/16rxatcupq/" },
+        { icon: FaWhatsapp, href: "https://wa.me/212523459812" },
+        { icon: FaInstagram, href: "#" }
+      ].map((social, index) => (
+        <a
+          key={index}
+          href={social.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-2 rounded-lg sm:rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:-translate-y-0.5 sm:hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group"
+        >
+          <social.icon className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:scale-110 transition-transform duration-300" />
+        </a>
+      ))}
+    </div>
+
+ 
+  </div>
+</div>
+
       </div>
     </footer>
   );

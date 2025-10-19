@@ -10,8 +10,21 @@ import CoverflowSwiper from '@/components/CoverflowSwiper';
 import Topbar from '@/components/Topbar';
 import VideoSection from '@/components/VideoSection';
 import PartnersCarousel from '@/components/PartnersCarousel';
+import { useEffect } from 'react';
 
 const Index = () => {
+   useEffect(() => {
+    // ملي الصفحة تتبدل، تحقق واش كاين هاش فـ URL
+    const hash = window.location.hash;
+    if (hash) {
+      const section = document.querySelector(hash);
+      if (section) {
+        setTimeout(() => {
+          section.scrollIntoView({ behavior: "smooth" });
+        }, 300); // نزيدو تأخير بسيط باش يكون كلشي محمل
+      }
+    }
+  }, []);
   return (
     <div className="min-h-screen bg-[#F5FCF8]">
       <Topbar/>

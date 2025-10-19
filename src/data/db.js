@@ -10,10 +10,34 @@ import respect from "@/assets/respect.jpg";
 
 // les projet actuel
 
+
+
 // azicode
 import azicodeimg from "../assets/projetactuel/azicode/azicodeimg.jpg";
+import azicode1 from "../assets/projetactuel/azicode/azicode1.jpg";
+import azicode2 from "../assets/projetactuel/azicode/azicode2.jpg";
+import azicode3 from "../assets/projetactuel/azicode/azicode3.jpg";
+import azicode4 from "../assets/projetactuel/azicode/azicode4.jpg";
 // chance
 import chance from "../assets/projetactuel/chance/chanceimg.jpg";
+import chance1 from "../assets/projetactuel/chance/chance1.jpg";
+import chance2 from "../assets/projetactuel/chance/chance2.jpg";
+import chance3 from "../assets/projetactuel/chance/chance3.jpg";
+import chance4 from "../assets/projetactuel/chance/chance4.jpg";
+import chance5 from "../assets/projetactuel/chance/chance5.jpg";
+import chance6 from "../assets/projetactuel/chance/chance6.jpg";
+import chance7 from "../assets/projetactuel/chance/chance7.jpg";
+import chance8 from "../assets/projetactuel/chance/chance8.jpg";
+import chance9 from "../assets/projetactuel/chance/chance9.jpg";
+import chance10 from "../assets/projetactuel/chance/chance10.jpg";
+import chance11 from "../assets/projetactuel/chance/chance11.jpg";
+import chance12 from "../assets/projetactuel/chance/chance12.jpg";
+import chance13 from "../assets/projetactuel/chance/chance13.jpg";
+import chance14 from "../assets/projetactuel/chance/chance14.jpg";
+import chance15 from "../assets/projetactuel/chance/chance15.jpg";
+import chance16 from "../assets/projetactuel/chance/chance16.jpg";
+import chance17 from "../assets/projetactuel/chance/chance17.jpg";
+import chance18 from "../assets/projetactuel/chance/chance18.jpg";
 // prisonniers
 import prisonniers from "../assets/projetactuel/prisonniers/prisonniers.jpg";
 import prison1 from "../assets/projetactuel/prisonniers/prison1.jpg";
@@ -51,7 +75,7 @@ export const projetsActuels = [
     descriptionLongue:
       "Le projet AZICODE a pour objectif de former les jeunes aux compétences numériques et à la programmation afin de faciliter leur insertion dans le marché de l’emploi digital.",
     image: azicodeimg,
-    gallery: [azicodeimg, prisonniers, femmes, chance],
+    gallery: [azicode1,azicode2,azicode3,azicode4],
     problematique:
       "De nombreux jeunes sont confrontés à un manque de compétences numériques, limitant leur insertion professionnelle dans le secteur digital.",
     problemPoints: [
@@ -96,12 +120,7 @@ export const projetsActuels = [
     descriptionLongue:
       "Cette école offre une seconde chance aux jeunes déscolarisés en leur proposant une formation pratique et professionnelle dans des métiers porteurs comme l’hôtellerie et la pâtisserie.",
     image: chance,
-    gallery: [
-      "/images/chance/1.jpg",
-      "/images/chance/2.jpg",
-      "/images/chance/3.jpg",
-      "/images/chance/4.jpg",
-    ],
+    gallery: [chance1,chance2,chance3,chance4,chance5,chance6,chance7,chance8,chance9,chance10,chance11,chance12,chance13,chance14,chance15,chance16,chance17,chance18],
     problematique:
       "Les jeunes déscolarisés ont peu d’opportunités de formation professionnelle adaptée aux besoins du marché de l’hôtellerie et de la pâtisserie.",
     problemPoints: [
@@ -144,7 +163,7 @@ export const projetsActuels = [
       "Formation professionnelle pour l’intégration des détenus dans la vie sociale",
     annee: 2020,
     descriptionLongue:
-      "Ce projet vise à accompagner les prisonniers en leur offrant une qualification professionnelle qui facilite leur réinsertion et leur donne une nouvelle chance dans la société.",
+      "Ce projet vise à accompagner les prisonniers en leur offrant une qualification professionnelle qui facilite leur réinsertion et leur donne une nouvelle chance dans la société .",
     image: prison7,
     gallery: [prison1,prison2,prison3,prison4,prison5,prison6,prison7,prison8,prison9,prison10,prison11,prison12,prison13,prison14,prison15],
     problematique:
@@ -928,6 +947,7 @@ export const categoriesPartenaires = [
       { nom: "Agence de Développement Social (ADS)", logo: BF4 },
       { nom: "Banque Mondiale", logo: BF3 },
       { nom: "Ned", logo: BF2},
+      
     ],
   },
     {
@@ -992,6 +1012,75 @@ export const documentsData = [
   },
 
 ];
+
+// gallery
+import g1 from "@/assets/gallery/g1.jpg";
+import g2 from "@/assets/gallery/g2.jpg";
+import g3 from "@/assets/gallery/g3.jpeg";
+import g4 from "@/assets/gallery/g4.jpg";
+import g5 from "@/assets/gallery/g5.jpeg";
+import g6 from "@/assets/gallery/g6.jpg";
+import g7 from "@/assets/gallery/g7.jpeg";
+import g8 from "@/assets/gallery/g8.jpg";
+import g9 from "@/assets/gallery/g9.jpg";
+import g10 from "@/assets/gallery/g10.jpg";
+
+
+
+export const galleryData = [
+  {
+    id: 1,
+    image: g1,
+    description: "Avec l'ambassadeur du Danemark au Maroc.",
+  },
+  {
+    id: 2,
+    image: g2,
+    description: "Signature de l'accord de la « deuxième chance ».",
+  },
+  {
+    id: 3,
+    image: g3,
+    description: "Spectacle du Cirque des Gones à Azilal.",
+  },
+  {
+    id: 4,
+    image: g4,
+    description: "Contribution de l’AADEC à la caravane « Route pour l’inclusion et l’égalité ».",
+  },
+  {
+    id: 5,
+    image: g5,
+    description: "Travail communautaire à l’étranger.",
+  },
+  {
+    id: 6,
+    image: g6,
+    description: "Développer l’esprit entrepreneurial chez les jeunes avec l’ADELE.",
+  },
+  {
+    id: 7,
+    image: g7,
+    description: "Une délégation de France et d’Espagne.",
+  },
+  {
+    id: 8,
+    image: g8,
+    description: "Collaboration avec l’ADFM.",
+  },
+  {
+    id: 9,
+    image: g9,
+    description: "Remise des diplômes de la première promotion de l’école de codage Azicode-62.",
+  },
+  {
+    id: 10,
+    image: g10,
+    description: "L’AADEC honore les étudiants du Second Chance Center.",
+  },
+];
+
+
 
 
 

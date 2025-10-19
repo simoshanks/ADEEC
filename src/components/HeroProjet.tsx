@@ -75,17 +75,12 @@ const HeroProjet = ({ domain, project }) => {
             </button>
 
             {/* Secondary Button */}
-<button 
-  onClick={() => {
-    const videoSection = document.getElementById("video");
-    if (videoSection) {
-      videoSection.scrollIntoView({ behavior: "smooth" });
-    }
-  }} 
+<a
+  href="/#video"
   className="group inline-flex items-center px-8 py-4 border-2 border-white/40 bg-white/5 backdrop-blur-lg text-white rounded-2xl font-semibold text-lg transition-all duration-300 hover:bg-white/10 hover:border-white/60 hover:scale-105 transform space-x-2"
 >
   <span>VIDÉO PROJET</span>
-</button>
+</a>
 
 
           </div>
