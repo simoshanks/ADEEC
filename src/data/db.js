@@ -42,7 +42,7 @@ import chance16 from "../assets/projetactuel/chance/chance16.jpg";
 import chance17 from "../assets/projetactuel/chance/chance17.jpg";
 import chance18 from "../assets/projetactuel/chance/chance18.jpg";
 // prisonniers
-import prisonniers from "../assets/projetactuel/prisonniers/prisonniers.jpg";
+
 import prison1 from "../assets/projetactuel/prisonniers/prison1.jpg";
 import prison2 from "../assets/projetactuel/prisonniers/prison2.jpg";
 import prison3 from "../assets/projetactuel/prisonniers/prison3.jpg";
@@ -58,6 +58,7 @@ import prison12 from "../assets/projetactuel/prisonniers/prison12.jpg";
 import prison13 from "../assets/projetactuel/prisonniers/prison13.jpg";
 import prison14 from "../assets/projetactuel/prisonniers/prison14.jpg";
 import prison15 from "../assets/projetactuel/prisonniers/prison15.jpg";
+import prison16 from "../assets/projetactuel/prisonniers/prison16.jpg";
 // femmes
 import femmes from "../assets/projetactuel/femmes/femms.jpg";
 import fm1 from "../assets/projetactuel/femmes/fm1.jpg";
@@ -210,7 +211,7 @@ export const projetsActuels = [
     descriptionLongue:
       "Ce projet vise à accompagner les prisonniers en leur offrant une qualification professionnelle qui facilite leur réinsertion et leur donne une nouvelle chance dans la société .",
     image: prison7,
-    gallery: [prison1,prison2,prison3,prison4,prison5,prison6,prison7,prison8,prison9,prison10,prison11,prison12,prison13,prison14,prison15],
+    gallery: [prison1,prison2,prison3,prison4,prison5,prison6,prison7,prison8,prison9,prison10,prison11,prison12,prison13,prison14,prison15,prison16],
     problematique:
       "Les prisonniers manquent de compétences professionnelles reconnues pour réussir leur réinsertion sociale et économique.",
     problemPoints: [
