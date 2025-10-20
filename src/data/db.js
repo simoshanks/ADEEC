@@ -897,6 +897,7 @@ import slide7 from "@/assets/history/jeun1.jpg";
 import slide8 from "@/assets/history/jeun2.jpg";
 import slide9 from "@/assets/history/jeun3.jpg";
 import slide10 from "@/assets/history/jeun4.jpg";
+import slide11 from "@/assets/history/jeun5.jpg";
 
 export const historyData = [
   {
@@ -913,7 +914,7 @@ export const historyData = [
   },
   {
     year: "Aujourd'hui",
-    images: [slide7, slide8, slide9,slide10],
+    images: [slide7, slide8, slide9,slide10,slide11],
     title: "développement de la jeunesse",
     desc: "Aujourd’hui, l’AADEC concentre ses efforts sur les jeunes afin de les former, de les encadrer et de les intégrer à la vie publique, car elle est le principal moteur du développement."
   }
