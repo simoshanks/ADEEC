@@ -66,7 +66,7 @@ import fm2 from "../assets/projetactuel/femmes/fm2.jpg";
 import fm3 from "../assets/projetactuel/femmes/fm3.jpg";
 import fm4 from "../assets/projetactuel/femmes/fm4.jpg";
 import fm5 from "../assets/projetactuel/femmes/fm5.jpg";
-import fm6 from "../assets/projetactuel/femmes/fm6.jpg";
+import fm24 from "../assets/projetactuel/femmes/fm24.jpg";
 import fm7 from "../assets/projetactuel/femmes/fm7.jpg";
 import fm8 from "../assets/projetactuel/femmes/fm8.jpg";
 import fm9 from "../assets/projetactuel/femmes/fm9.jpg";
@@ -261,7 +261,7 @@ export const projetsActuels = [
     descriptionLongue:
       "Ce centre a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
     image: femmes,
-    gallery: [fm1,fm2,fm3,fm4,fm5,fm6,fm7,fm8,fm9,fm10,fm11,fm12,fm13,fm14,fm15,fm16,fm17,fm18,fm19,fm20,fm21,fm22,fm23],
+    gallery: [fm1,fm2,fm3,fm4,fm5,fm24,fm7,fm8,fm9,fm10,fm11,fm12,fm13,fm14,fm15,fm16,fm17,fm18,fm19,fm20,fm21,fm22,fm23],
     problematique:
       "Les femmes ont besoin de formations pratiques pour devenir autonomes et contribuer à l’économie locale.",
     problemPoints: [
