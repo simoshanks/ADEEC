@@ -64,7 +64,7 @@ export default function CoverflowSwiper() {
                 <img
                   src={item.image}
                   alt={item.description}
-                  className="w-full h-full object-cover transform transition-transform duration-700 hover:scale-110"
+                  className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
                   loading="lazy"
                 />
 

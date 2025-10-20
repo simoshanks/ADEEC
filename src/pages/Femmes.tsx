@@ -7,6 +7,7 @@ import HeroActule from "@/components/HeroActule";
 import AboutActule from "@/components/AboutActule";
 import ProblemActule from "@/components/ProblemActule";
 import SolutionActule from "@/components/SolutionActule";
+import ContactActule from "@/components/ContactActule";
 
 
 const Femmes = () => {
@@ -21,6 +22,7 @@ const Femmes = () => {
       <AboutActule projet={projet} />
       <ProblemActule projet={projet} />
       <SolutionActule projet={projet} />
+      <ContactActule projet={projet} />
       
 
       <Footer />

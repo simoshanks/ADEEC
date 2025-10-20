@@ -135,15 +135,7 @@ const SolutionActule = ({ projet }) => {
         </motion.div>
 
         {/* Section d'appel à l'action supplémentaire */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mt-20 pt-12 border-t border-gray-200"
-        >
-          {/* Tu peux ajouter ici un bouton ou un CTA */}
-        </motion.div>
+
       </div>
     </section>
   );

@@ -18,6 +18,9 @@ import azicode1 from "../assets/projetactuel/azicode/azicode1.jpg";
 import azicode2 from "../assets/projetactuel/azicode/azicode2.jpg";
 import azicode3 from "../assets/projetactuel/azicode/azicode3.jpg";
 import azicode4 from "../assets/projetactuel/azicode/azicode4.jpg";
+import azicode5 from "../assets/projetactuel/azicode/azicode5.jpg";
+import azicode6 from "../assets/projetactuel/azicode/azicode6.jpg";
+import azicode7 from "../assets/projetactuel/azicode/azicode7.jpg";
 // chance
 import chance from "../assets/projetactuel/chance/chanceimg.jpg";
 import chance1 from "../assets/projetactuel/chance/chance1.jpg";
@@ -57,6 +60,29 @@ import prison14 from "../assets/projetactuel/prisonniers/prison14.jpg";
 import prison15 from "../assets/projetactuel/prisonniers/prison15.jpg";
 // femmes
 import femmes from "../assets/projetactuel/femmes/femms.jpg";
+import fm1 from "../assets/projetactuel/femmes/fm1.jpg";
+import fm2 from "../assets/projetactuel/femmes/fm2.jpg";
+import fm3 from "../assets/projetactuel/femmes/fm3.jpg";
+import fm4 from "../assets/projetactuel/femmes/fm4.jpg";
+import fm5 from "../assets/projetactuel/femmes/fm5.jpg";
+import fm6 from "../assets/projetactuel/femmes/fm6.jpg";
+import fm7 from "../assets/projetactuel/femmes/fm7.jpg";
+import fm8 from "../assets/projetactuel/femmes/fm8.jpg";
+import fm9 from "../assets/projetactuel/femmes/fm9.jpg";
+import fm10 from "../assets/projetactuel/femmes/fm10.jpg";
+import fm11 from "../assets/projetactuel/femmes/fm11.jpg";
+import fm12 from "../assets/projetactuel/femmes/fm12.jpg";
+import fm13 from "../assets/projetactuel/femmes/fm13.jpg";
+import fm14 from "../assets/projetactuel/femmes/fm14.jpg";
+import fm15 from "../assets/projetactuel/femmes/fm15.jpg";
+import fm16 from "../assets/projetactuel/femmes/fm16.jpg";
+import fm17 from "../assets/projetactuel/femmes/fm17.jpg";
+import fm18 from "../assets/projetactuel/femmes/fm18.jpg";
+import fm19 from "../assets/projetactuel/femmes/fm19.jpg";
+import fm20 from "../assets/projetactuel/femmes/fm20.jpg";
+import fm21 from "../assets/projetactuel/femmes/fm21.jpg";
+import fm22 from "../assets/projetactuel/femmes/fm22.jpg";
+import fm23 from "../assets/projetactuel/femmes/fm23.jpg";
 
 
 
@@ -66,49 +92,61 @@ import femmes from "../assets/projetactuel/femmes/femms.jpg";
 
 
 export const projetsActuels = [
-  {
-    id: 1,
-    slug: "Azicode-62",
-    titre: "Ecole du Codage Azicode-62",
-    description: "Une école numérique pour apprendre tout ce qui touche à la programmation",
-    annee: 2024,
-    descriptionLongue:
-      "Le projet AZICODE a pour objectif de former les jeunes aux compétences numériques et à la programmation afin de faciliter leur insertion dans le marché de l’emploi digital.",
-    image: azicodeimg,
-    gallery: [azicode1,azicode2,azicode3,azicode4],
-    problematique:
-      "De nombreux jeunes sont confrontés à un manque de compétences numériques, limitant leur insertion professionnelle dans le secteur digital.",
-    problemPoints: [
-      "Chômage élevé chez les jeunes",
-      "Manque de formation pratique en programmation",
-      "Écart entre formation académique et besoins des entreprises",
-    ],
-    solutionIntro:
-      "Une approche complète pour former les développeurs de demain et faciliter leur insertion professionnelle.",
-    solutions: [
-      {
-        title: "Formation Intensive",
-        description:
-          "Bootcamps de programmation full-stack avec technologies modernes et méthodologies agiles.",
-        color: "blue",
-        icon: "M12 6v6h4M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
-      },
-      {
-        title: "Pédagogie Pratique",
-        description:
-          "Apprentissage par projets concrets et études de cas réels pour des compétences directement applicables.",
-        color: "green",
-        icon: "M3 13h18M9 17l3 3 3-3",
-      },
-      {
-        title: "Intégration Professionnelle",
-        description:
-          "Stage sur le terrain à l'issue de la formation pour valoriser les compétences acquises.",
-        color: "purple",
-        icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
-      },
-    ],
+ {
+  id: 1,
+  slug: "Azicode-62",
+  titre: "Ecole du Codage Azicode-62",
+  linkSite:"https://www.pinterest.com/",
+  description:
+    "Une école numérique pour apprendre tout ce qui touche à la programmation",
+  annee: 2024,
+  descriptionLongue:
+    "Le projet AZICODE a pour objectif de former les jeunes aux compétences numériques et à la programmation afin de faciliter leur insertion dans le marché de l’emploi digital.",
+  image: azicodeimg,
+  gallery: [azicode1, azicode2, azicode3, azicode4,azicode5,azicode6,azicode7],
+  problematique:
+    "De nombreux jeunes sont confrontés à un manque de compétences numériques, limitant leur insertion professionnelle dans le secteur digital.",
+  problemPoints: [
+    "Chômage élevé chez les jeunes",
+    "Manque de formation pratique en programmation",
+    "Écart entre formation académique et besoins des entreprises",
+  ],
+  solutionIntro:
+    "Une approche complète pour former les développeurs de demain et faciliter leur insertion professionnelle.",
+  solutions: [
+    {
+      title: "Formation Intensive",
+      description:
+        "Bootcamps de programmation full-stack avec technologies modernes et méthodologies agiles.",
+      color: "blue",
+      icon: "M12 6v6h4M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    },
+    {
+      title: "Pédagogie Pratique",
+      description:
+        "Apprentissage par projets concrets et études de cas réels pour des compétences directement applicables.",
+      color: "green",
+      icon: "M3 13h18M9 17l3 3 3-3",
+    },
+    {
+      title: "Intégration Professionnelle",
+      description:
+        "Stage sur le terrain à l'issue de la formation pour valoriser les compétences acquises.",
+      color: "purple",
+      icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
+    },
+  ],
+
+  // 🟢 le contact doit être ici, à l’extérieur du tableau solutions
+  contact: {
+    phone: "+212 6 77 77 77 77",
+    email: "info@azicode.ma",
+    address: "Plateforme des jeunes, Azilal 22000",
+    mapEmbedSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d307.96042137396876!2d-6.566920816771647!3d31.961255428827315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda49b00746240c5%3A0x71e831d9c359307f!2z2YXZhti12Kkg2KfZhNi02KjYp9ioINij2LLZitmE2KfZhA!5e0!3m2!1sfr!2sma!4v1760925108076!5m2!1sfr!2sma",
   },
+},
+
 
   {
     id: 2,
@@ -153,6 +191,13 @@ export const projetsActuels = [
         icon: "M12 11c0-1.657 1.343-3 3-3s3 1.343 3 3v5h-6v-5z",
       },
     ],
+      contact: {
+    phone: "+212 6 77 77 77 77",
+    email: "info@azicode.ma",
+    address: "Rabat, Maroc",
+    mapEmbedSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!...",
+  },
   },
 
   {
@@ -196,6 +241,13 @@ export const projetsActuels = [
         icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
       },
     ],
+      contact: {
+    phone: "+212 6 77 77 77 77",
+    email: "info@azicode.ma",
+    address: "Rabat, Maroc",
+    mapEmbedSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!...",
+  },
   },
 
   {
@@ -208,12 +260,7 @@ export const projetsActuels = [
     descriptionLongue:
       "Ce centre a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
     image: femmes,
-    gallery: [
-      "/images/femmes/1.jpg",
-      "/images/femmes/2.jpg",
-      "/images/femmes/3.jpg",
-      "/images/femmes/4.jpg",
-    ],
+    gallery: [fm1,fm2,fm3,fm4,fm5,fm6,fm7,fm8,fm9,fm10,fm11,fm12,fm13,fm14,fm15,fm16,fm17,fm18,fm19,fm20,fm21,fm22,fm23],
     problematique:
       "Les femmes ont besoin de formations pratiques pour devenir autonomes et contribuer à l’économie locale.",
     problemPoints: [
@@ -246,6 +293,13 @@ export const projetsActuels = [
         icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
       },
     ],
+      contact: {
+    phone: "+212 6 77 77 77 77",
+    email: "info@azicode.ma",
+    address: "Rabat, Maroc",
+    mapEmbedSrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!...",
+  },
   },
 ];
 
@@ -495,6 +549,10 @@ import tourist3 from "@/assets/projetrealise/tourism/tourist3.jpg";
 import tourist4 from "@/assets/projetrealise/tourism/tourist4.jpg";
 import tourist5 from "@/assets/projetrealise/tourism/tourist5.jpg";
 import tourist6 from "@/assets/projetrealise/tourism/tourist6.jpg";
+import tourist7 from "@/assets/projetrealise/tourism/tourist7.jpg";
+import tourist8 from "@/assets/projetrealise/tourism/tourist8.jpg";
+import tourist9 from "@/assets/projetrealise/tourism/tourist9.jpg";
+import tourist10 from "@/assets/projetrealise/tourism/tourist10.jpg";
 
 import pavag1 from "@/assets/projetrealise/tourism/pavag1.jpg";
 import pavag2 from "@/assets/projetrealise/tourism/pavag2.jpg";
@@ -743,7 +801,7 @@ export const domainsData = [
         slug: "balisage",
         description: "L'AADEC a pensé à un projet de balisage du circuit touristique Aït Bouli, Aït Bougmaz et Tilougit, en passant par Zaouiat Ahansal, en collaboration avec l'association du parc « Aragona » en 2016.",
         year: 2016,
-        gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6],
+        gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6,tourist7,tourist8,tourist9,tourist10],
       },
       {
         title: "Pavage Tanaghmelt",

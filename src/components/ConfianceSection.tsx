@@ -42,7 +42,7 @@ const ConfianceSection = () => {
   return (
     <section 
       ref={sectionRef}
-      className="bg-[#F5FCF8] py-16 sm:py-20 lg:py-24 w-full relative overflow-hidden transition-all duration-1000"
+      className="bg-[#F5FCF8]  py-10 sm:py-14 lg:py-16 w-full relative overflow-hidden transition-all duration-1000"
     >
       {/* Title */}
       <div className="text-center mb-10 lg:mb-14 px-4">

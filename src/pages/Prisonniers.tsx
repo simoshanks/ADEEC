@@ -9,6 +9,7 @@ import ProblemActule from "@/components/ProblemActule";
 import SolutionActule from "@/components/SolutionActule";
 
 
+
 const Prisonniers = () => {
        const projet = projetsActuels.find(p => p.slug === "reinsertion-prisonniers");
 
@@ -21,6 +22,7 @@ const Prisonniers = () => {
       <AboutActule projet={projet} />
       <ProblemActule projet={projet} />
       <SolutionActule projet={projet} />
+      
     
 
       <Footer />

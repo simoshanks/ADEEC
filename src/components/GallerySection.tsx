@@ -107,6 +107,7 @@ const GallerySection = ({ gallery, title }) => {
               src={selectedImage}
               alt="Selected"
               className="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-2xl"
+              loading="lazy"
             />
             <button
               className="absolute top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full p-2 transition"

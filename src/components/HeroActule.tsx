@@ -49,12 +49,12 @@ const HeroActule = ({ projet }) => {
 
           <button
             onClick={() => {
-              const gallerySection = document.getElementById("galerie");
+              const gallerySection = document.getElementById("contact");
               if (gallerySection) gallerySection.scrollIntoView({ behavior: "smooth" });
             }}
             className="bg-transparent hover:bg-white/10 text-white border-2 border-white/30 px-6 py-3 rounded-xl font-semibold transition-all duration-300"
           >
-            Voir la Galerie
+            Contact
           </button>
         </div>
       </div>
