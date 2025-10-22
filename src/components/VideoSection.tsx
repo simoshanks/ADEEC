@@ -34,7 +34,7 @@ const VideoSection = () => {
         {/* Overlay top/center */}
         <div className="absolute top-0 left-0 right-0 h-full p-6 bg-gradient-to-b from-black/70 to-transparent z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center">
           <h3 className="text-2xl md:text-3xl font-bold text-white drop-shadow-2xl">
-            Projets Avec Entités Européennes
+            Projets Avec Organismes Européens
           </h3>
           <div className="flex items-center text-white/90 mt-2">
             <Mic className="w-6 h-6 text-white mr-3 drop-shadow-md" />

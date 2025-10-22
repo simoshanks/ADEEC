@@ -21,6 +21,8 @@ import azicode4 from "../assets/projetactuel/azicode/azicode4.jpg";
 import azicode5 from "../assets/projetactuel/azicode/azicode5.jpg";
 import azicode6 from "../assets/projetactuel/azicode/azicode6.jpg";
 import azicode7 from "../assets/projetactuel/azicode/azicode7.jpg";
+import azicode8 from "../assets/projetactuel/azicode/azicode8.jpg";
+import azicode9 from "../assets/projetactuel/azicode/azicode9.jpg";
 // chance
 import chance from "../assets/projetactuel/chance/chanceimg.jpg";
 import chance1 from "../assets/projetactuel/chance/chance1.jpg";
@@ -104,7 +106,7 @@ export const projetsActuels = [
   descriptionLongue:
     "Le projet AZICODE a pour objectif de former les jeunes aux compétences numériques et à la programmation afin de faciliter leur insertion dans le marché de l’emploi digital.",
   image: azicodeimg,
-  gallery: [azicode1, azicode2, azicode3, azicode4,azicode5,azicode6,azicode7],
+  gallery: [azicode1, azicode2, azicode3, azicode4,azicode5,azicode6,azicode7,azicode8,azicode9],
   problematique:
     "De nombreux jeunes sont confrontés à un manque de compétences numériques, limitant leur insertion professionnelle dans le secteur digital.",
   problemPoints: [
@@ -140,8 +142,8 @@ export const projetsActuels = [
 
   // 🟢 le contact doit être ici, à l’extérieur du tableau solutions
   contact: {
-    phone: "+212 6 77 77 77 77",
-    email: "info@azicode.ma",
+    phone: "+212 5 23453489",
+    email: "azicode62@gmail.com",
     address: "Plateforme des jeunes, Azilal 22000",
     mapEmbedSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d307.96042137396876!2d-6.566920816771647!3d31.961255428827315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda49b00746240c5%3A0x71e831d9c359307f!2z2YXZhti12Kkg2KfZhNi02KjYp9ioINij2LLZitmE2KfZhA!5e0!3m2!1sfr!2sma!4v1760925108076!5m2!1sfr!2sma",
@@ -444,6 +446,7 @@ import dialog3 from "@/assets/projetrealise/echange/dialog3.jpg";
 import dialog4 from "@/assets/projetrealise/echange/dialog4.jpg";
 import dialog5 from "@/assets/projetrealise/echange/dialog5.jpg";
 import dialog6 from "@/assets/projetrealise/echange/dialog6.jpg";
+import dialog7 from "@/assets/projetrealise/echange/dialog7.jpg";
 import dialogimg from "@/assets/projetrealise/echange/dialogimg.jpg";
 
 import tatarof1 from "@/assets/projetrealise/echange/tatarof1.jpg";
@@ -714,7 +717,7 @@ export const domainsData = [
     heroImage:echange,
     projects: [
       {
-        title: "Barbados et Espagnol/Azilal",
+        title: "Barbados et Espagne/Azilal",
         slug: "barbados-espagnols",
         description: "L'AADEC, en partenariat avec l'AIPC Pandora, a mis en place en 2016 un programme ambitieux d’échange culturel entre la jeunesse espagnole et barbadienne d’une part, et la jeunesse d’Azilal d’autre part, en accueillant 20 adolescents pendant un mois, dans le cadre de la promotion du « tourisme chez l’habitant ».",
         year: 2016,
@@ -725,14 +728,14 @@ export const domainsData = [
         slug: "extremisme",
         description: "Projet d'envergure que l'AADEC mena côte à côte avec Progetto Mondo en 2017, visant à lutter contre le radicalisme dans les écoles grâce à des psycho-socio-éducateurs formés.",
         year: 2017,
-        gallery: [tatarofimg, tatarof1, tatarof2, tatarof3, tatarof4, tatarof5],
+        gallery: [tatarofimg, tatarof1, tatarof2, tatarof3, tatarof4, tatarof5,],
       },
       {
         title: "Dialogue inter-religieux",
         slug: "dialogueb-interreligieux",
         description: "En 2018, l'AADEC a accueilli une importante délégation du Vatican qui a visité plusieurs administrations publiques, notamment la délégation provinciale des Habous et des Affaires islamiques.",
         year: 2018,
-        gallery: [dialogimg, dialog1, dialog2, dialog3, dialog4, dialog5, dialog6],
+        gallery: [dialogimg, dialog1, dialog2, dialog3, dialog4, dialog5, dialog6,dialog7],
       },
     ],
   },

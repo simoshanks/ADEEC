@@ -117,7 +117,7 @@ const Navigation = () => {
     {
       title: "Échange Culturel",
       items: [
-        { name: "Barbados et Espagnols", href: "/Realisations/échange-culturel/barbados-espagnols" },
+        { name: "Barbados et Espagne/Azilal", href: "/Realisations/échange-culturel/barbados-espagnols" },
         { name: "Combattre L'extrémisme", href: "/Realisations/échange-culturel/extremisme" },
         { name: "Dialogue inter-religieux", href: "/Realisations/échange-culturel/dialogueb-interreligieux" },
       ],
