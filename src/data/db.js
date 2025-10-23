@@ -326,6 +326,16 @@ import proget1 from "@/assets/projetrealise/environnement/proget1.jpg";
 import proget2 from "@/assets/projetrealise/environnement/proget2.jpg";
 import proget3 from "@/assets/projetrealise/environnement/proget3.jpg";
 import proget4 from "@/assets/projetrealise/environnement/proget4.png";
+import sensib1 from "@/assets/projetrealise/environnement/sensib1.jpeg";
+import sensib2 from "@/assets/projetrealise/environnement/sensib2.jpeg";
+import sensib3 from "@/assets/projetrealise/environnement/sensib3.jpeg";
+import sensib4 from "@/assets/projetrealise/environnement/sensib4.jpeg";
+import sensib5 from "@/assets/projetrealise/environnement/sensib5.jpeg";
+import sensib6 from "@/assets/projetrealise/environnement/sensib6.jpeg";
+import sensib7 from "@/assets/projetrealise/environnement/sensib7.jpeg";
+import sensib8 from "@/assets/projetrealise/environnement/sensib8.jpeg";
+import sensib9 from "@/assets/projetrealise/environnement/sensib9.jpeg";
+import sensib10 from "@/assets/projetrealise/environnement/sensib10.jpeg";
 // sante
 import coronaimg from "@/assets/projetrealise/sante/coronaimg.jpg";
 import corona1 from "@/assets/projetrealise/sante/corona1.jpg";
@@ -387,6 +397,11 @@ import tadamon5 from "@/assets/projetrealise/social/tadamon5.jpg";
 import tadamon6 from "@/assets/projetrealise/social/tadamon6.jpg";
 import tadamon7 from "@/assets/projetrealise/social/tadamon7.jpg";
 import tadamon8 from "@/assets/projetrealise/social/tadamon8.jpg";
+import tadamon9 from "@/assets/projetrealise/social/tadamon9.jpg";
+import tadamon10 from "@/assets/projetrealise/social/tadamon10.jpg";
+import tadamon11 from "@/assets/projetrealise/social/tadamon11.jpg";
+import tadamon12 from "@/assets/projetrealise/social/tadamon12.jpg";
+import tadamon13 from "@/assets/projetrealise/social/tadamon13.jpg";
 import tadamonimg from "@/assets/projetrealise/social/tadamonimg.jpg";
 // culture
 import fistival1 from "@/assets/projetrealise/cultur/fistival1.jpg";
@@ -570,6 +585,18 @@ import ouzoud1 from "@/assets/projetrealise/tourism/ouzoud1.png";
 import ouzoud2 from "@/assets/projetrealise/tourism/ouzoud2.png";
 import ouzoud3 from "@/assets/projetrealise/tourism/ouzoud3.jpg";
 import ouzoud4 from "@/assets/projetrealise/tourism/ouzoud4.jpg";
+import ouzoud5 from "@/assets/projetrealise/tourism/ouzoud5.jpeg";
+import ouzoud6 from "@/assets/projetrealise/tourism/ouzoud6.jpeg";
+import ouzoud7 from "@/assets/projetrealise/tourism/ouzoud7.jpeg";
+import ouzoud8 from "@/assets/projetrealise/tourism/ouzoud8.jpeg";
+import ouzoud9 from "@/assets/projetrealise/tourism/ouzoud9.jpeg";
+import ouzoud10 from "@/assets/projetrealise/tourism/ouzoud10.jpeg";
+import ouzoud11 from "@/assets/projetrealise/tourism/ouzoud11.jpeg";
+import ouzoud12 from "@/assets/projetrealise/tourism/ouzoud12.jpg";
+import ouzoud13 from "@/assets/projetrealise/tourism/ouzoud13.jpg";
+import ouzoud14 from "@/assets/projetrealise/tourism/ouzoud14.jpg";
+import ouzoud15 from "@/assets/projetrealise/tourism/ouzoud15.jpg";
+import ouzoud16 from "@/assets/projetrealise/tourism/ouzoud16.jpg";
 
 import envir from "@/assets/projetrealise/heroimg/envir.jpg";
 import bed from "@/assets/projetrealise/heroimg/bed.jpg";
@@ -609,7 +636,7 @@ export const domainsData = [
         slug: "sensibilisation",
         description: "L'AADEC a organisé de nombreuses journées d’étude en partenariat avec d’autres associations locales et nationales sur ce thème, notamment :\n• Journée de l’environnement (2008, Agro-Polytech)\n• Le chêne vert *Quercus ilex* en danger (2013, Mouvement Twiza)\n• Assainissement dans la ville (2002, Commune)\n• 1ère rencontre pour la jeunesse sur l’environnement (2013)",
         year: 2002,
-        gallery: [proget1, proget2, proget3, proget4],
+        gallery: [sensib5,sensib6,sensib7,sensib8,sensib9,sensib10,sensib1, sensib2, sensib3, sensib4],
       },
     ],
   },
@@ -658,7 +685,7 @@ export const domainsData = [
         slug: "caravanes-solidarite",
         description: "L'AADEC a participé aux caravanes à Al Hoceïma (2004) et à Al Haouz (2023). Elle a également organisé de nombreuses caravanes en montagne durant la période hivernale.",
         year: 2004,
-        gallery: [tadamonimg, tadamon1, tadamon2, tadamon3, tadamon4, tadamon5, tadamon6, tadamon7, tadamon8],
+        gallery: [tadamon9,tadamon10,tadamon11,tadamon12,tadamon13,tadamonimg, tadamon1, tadamon2, tadamon3, tadamon4, tadamon5, tadamon6, tadamon7, tadamon8],
       },
       {
         title: "Diagnostics Territoriaux",
@@ -819,7 +846,7 @@ export const domainsData = [
         slug: "ouzoud",
         description: "En partenariat avec l’ADS et les conseils régionaux de Tadla-Azilal et de l’Isère, l’AADEC a développé le circuit touristique d’Ouzoud, un projet visant à valoriser le patrimoine naturel et à dynamiser l’économie locale à travers un tourisme responsable et durable.",
         year: 2019,
-        gallery: [ouzoud1,ouzoud2,ouzoud3,ouzoud4],
+        gallery: [ouzoud1,ouzoud2,ouzoud3,ouzoud4,ouzoud5,ouzoud6,ouzoud7,ouzoud8,ouzoud9,ouzoud10,ouzoud11,ouzoud12,ouzoud13,ouzoud14,ouzoud15,ouzoud16],
       },
     ],
   },
@@ -1051,7 +1078,7 @@ export const categoriesPartenaires = [
 export const documentsData = [
   {
     id: 1,
-    title: "Quercus",
+    title: "Circus-silex",
     description: "تقرير الورشة حول شجر البلوط",
     date: "2014",
     size: "0.8 MB",
@@ -1070,8 +1097,16 @@ export const documentsData = [
     title: "Le résistant martyr Ahmad Ahansal ",
     description: "الشعر الأمازيغي الممجد للشهيد أحمد الحنصالي",
     date: "2013",
-    size: "1.2 MB",
-    url: "/doc/chi3r.pptx",
+    size: "0.6 MB",
+    url: "/doc/chi3r.pdf",
+  },
+  {
+    id: 4,
+    title: "Santé reproductive et infections ",
+    description: "الصحة الانجابية و التعفنات",
+    date: "2015",
+    size: "0.2 MB",
+    url: "/doc/sante.pdf",
   },
 
 ];

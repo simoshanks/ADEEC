@@ -141,7 +141,7 @@ const Footer = () => {
     <div className="flex justify-center sm:justify-start space-x-2 sm:space-x-3 mb-2 sm:mb-0">
       {[
         { icon: FaFacebookF, href: "https://www.facebook.com/share/16rxatcupq/" },
-        { icon: FaWhatsapp, href: "https://wa.me/212523459812" },
+        { icon: FaWhatsapp, href: "https://wa.me/212661791118" },
         { icon: FaInstagram, href: "#" }
       ].map((social, index) => (
         <a

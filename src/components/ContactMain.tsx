@@ -50,7 +50,7 @@ Téléphone: ${phone}
 Message:
 ${message}
 `;
-    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=mohamedaitboujanoui1998@gmail.com&su=${encodeURIComponent(
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=aadec2000@hotmail.com&su=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
     window.open(gmailLink, "_blank");

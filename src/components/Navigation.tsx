@@ -55,7 +55,7 @@ const Navigation = () => {
     { name: "Accueil", href: "/", icon: Home },
     { name: "À propos", href: "/Apropos", icon: Users },
     {
-      name: "Activites",
+      name: "Actuelles",
       dropdown: [
         { name: "Ecole Azicode-62", href: "/Activites/Azicode-62" },
         { name: "Ecole 2eme Chance", href: "/Activites/2eme-chance" },
