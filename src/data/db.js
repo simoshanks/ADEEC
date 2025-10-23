@@ -402,6 +402,7 @@ import tadamon10 from "@/assets/projetrealise/social/tadamon10.jpg";
 import tadamon11 from "@/assets/projetrealise/social/tadamon11.jpg";
 import tadamon12 from "@/assets/projetrealise/social/tadamon12.jpg";
 import tadamon13 from "@/assets/projetrealise/social/tadamon13.jpg";
+import tadamon14 from "@/assets/projetrealise/social/tadamon14.jpg";
 import tadamonimg from "@/assets/projetrealise/social/tadamonimg.jpg";
 // culture
 import fistival1 from "@/assets/projetrealise/cultur/fistival1.jpg";
@@ -409,6 +410,8 @@ import fistival2 from "@/assets/projetrealise/cultur/fistival2.jpg";
 import fistival3 from "@/assets/projetrealise/cultur/fistival3.jpg";
 import fistival4 from "@/assets/projetrealise/cultur/fistival4.jpg";
 import fistival5 from "@/assets/projetrealise/cultur/fistival5.jpg";
+import fistival6 from "@/assets/projetrealise/cultur/fistival6.jpg";
+import fistival7 from "@/assets/projetrealise/cultur/fistival7.jpg";
 import fistivalimg from "@/assets/projetrealise/cultur/fistivalimg.jpg";
 
 import ighrm1 from "@/assets/projetrealise/cultur/ighrm1.jpg";
@@ -572,6 +575,8 @@ import tourist7 from "@/assets/projetrealise/tourism/tourist7.jpg";
 import tourist8 from "@/assets/projetrealise/tourism/tourist8.jpg";
 import tourist9 from "@/assets/projetrealise/tourism/tourist9.jpg";
 import tourist10 from "@/assets/projetrealise/tourism/tourist10.jpg";
+import tourist11 from "@/assets/projetrealise/tourism/tourist11.jpg";
+import tourist12 from "@/assets/projetrealise/tourism/tourist12.jpg";
 
 import pavag1 from "@/assets/projetrealise/tourism/pavag1.jpg";
 import pavag2 from "@/assets/projetrealise/tourism/pavag2.jpg";
@@ -685,7 +690,7 @@ export const domainsData = [
         slug: "caravanes-solidarite",
         description: "L'AADEC a participé aux caravanes à Al Hoceïma (2004) et à Al Haouz (2023). Elle a également organisé de nombreuses caravanes en montagne durant la période hivernale.",
         year: 2004,
-        gallery: [tadamon9,tadamon10,tadamon11,tadamon12,tadamon13,tadamonimg, tadamon1, tadamon2, tadamon3, tadamon4, tadamon5, tadamon6, tadamon7, tadamon8],
+        gallery: [tadamon9,tadamon10,tadamon11,tadamon12,tadamon13,tadamon14,tadamonimg, tadamon1, tadamon2, tadamon3, tadamon4, tadamon5, tadamon6, tadamon7, tadamon8],
       },
       {
         title: "Diagnostics Territoriaux",
@@ -706,7 +711,7 @@ export const domainsData = [
         slug: "festival",
         description: "L'AADEC a organisé le 1er festival : « Atlas des Arts » en 2000. Elle s'engageait dans ce sens pour valoriser les trésors artistiques et patrimoniaux de la province jusqu'à la 6ème édition, en 2006, avant de le reléguer à la commune territoriale.",
         year: 2000,
-        gallery: [fistivalimg, fistival1, fistival2, fistival3, fistival4, fistival5],
+        gallery: [fistivalimg,fistival6,fistival7, fistival1, fistival2, fistival3, fistival4, fistival5],
       },
       {
         title: "Gravures Rupestres",
@@ -832,7 +837,7 @@ export const domainsData = [
         slug: "balisage",
         description: "L'AADEC a pensé à un projet de balisage du circuit touristique Aït Bouli, Aït Bougmaz et Tilougit, en passant par Zaouiat Ahansal, en collaboration avec l'association du parc « Aragona » en 2016.",
         year: 2016,
-        gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6,tourist7,tourist8,tourist9,tourist10],
+        gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6,tourist11,tourist12,tourist7,tourist8,tourist9,tourist10],
       },
       {
         title: "Pavage Tanaghmelt",
@@ -1078,7 +1083,7 @@ export const categoriesPartenaires = [
 export const documentsData = [
   {
     id: 1,
-    title: "Circus-silex",
+    title: "Quercus-ilex",
     description: "تقرير الورشة حول شجر البلوط",
     date: "2014",
     size: "0.8 MB",

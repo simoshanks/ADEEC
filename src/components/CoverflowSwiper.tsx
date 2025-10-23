@@ -20,11 +20,19 @@ export default function CoverflowSwiper() {
             </span>
           </div>
 
-          <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto mt-6 rounded-full"></div>
-          <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto mt-4">
-            Quelques moments du parcours de l'AADEC
-          </p>
-        </div>
+ <div className="w-24 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto rounded-full shadow-md"></div>
+
+  <p className="text-base lg:text-lg text-gray-700 max-w-2xl mx-auto mt-6 leading-relaxed font-medium">
+    Quelques moments du parcours de l'AADEC.
+  </p>
+
+  <p className="text-base lg:text-lg text-gray-600 max-w-3xl mx-auto mt-3 italic leading-relaxed">
+    Archive photos — <span className="font-semibold text-gray-800">MR: Lamsallak Saïd</span>, 
+    membre fondateur en <span className="text-[#146C2D] font-semibold">2000</span> et 
+    secrétaire général chargé des affaires administratives de 
+    <span className="text-[#22A55D] font-semibold"> 2010 à 2025</span>.
+  </p>
+</div>
 
         {/* 🎞️ Swiper */}
         <Swiper
