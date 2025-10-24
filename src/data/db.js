@@ -23,6 +23,8 @@ import azicode6 from "../assets/projetactuel/azicode/azicode6.jpg";
 import azicode7 from "../assets/projetactuel/azicode/azicode7.jpg";
 import azicode8 from "../assets/projetactuel/azicode/azicode8.jpg";
 import azicode9 from "../assets/projetactuel/azicode/azicode9.jpg";
+import azicode10 from "../assets/projetactuel/azicode/azicode10.jpg";
+import azicode11 from "../assets/projetactuel/azicode/azicode11.jpg";
 // chance
 import chance from "../assets/projetactuel/chance/chanceimg.jpg";
 import chance1 from "../assets/projetactuel/chance/chance1.jpg";
@@ -43,6 +45,9 @@ import chance15 from "../assets/projetactuel/chance/chance15.jpg";
 import chance16 from "../assets/projetactuel/chance/chance16.jpg";
 import chance17 from "../assets/projetactuel/chance/chance17.jpg";
 import chance18 from "../assets/projetactuel/chance/chance18.jpg";
+import chance19 from "../assets/projetactuel/chance/chance19.jpg";
+import chance20 from "../assets/projetactuel/chance/chance20.jpg";
+import chance21 from "../assets/projetactuel/chance/chance21.jpg";
 // prisonniers
 
 import prison1 from "../assets/projetactuel/prisonniers/prison1.jpg";
@@ -106,7 +111,7 @@ export const projetsActuels = [
   descriptionLongue:
     "Le projet AZICODE a pour objectif de former les jeunes aux compétences numériques et à la programmation afin de faciliter leur insertion dans le marché de l’emploi digital.",
   image: azicodeimg,
-  gallery: [azicode1, azicode2, azicode3, azicode4,azicode5,azicode6,azicode7,azicode8,azicode9],
+  gallery: [azicode1, azicode2, azicode3, azicode4,azicode5,azicode6,azicode7,azicode8,azicode9,azicode10,azicode11],
   problematique:
     "De nombreux jeunes sont confrontés à un manque de compétences numériques, limitant leur insertion professionnelle dans le secteur digital.",
   problemPoints: [
@@ -159,11 +164,11 @@ export const projetsActuels = [
       "Formation en gestion hôtelière et pâtisserie dans les villes Demnat et Azilal",
     annee: 2021,
     descriptionLongue:
-      "Cette école offre une seconde chance aux jeunes déscolarisés en leur proposant une formation pratique et professionnelle dans des métiers porteurs comme l’hôtellerie et la pâtisserie.",
+      "Cette école offre une seconde chance aux jeunes déscolarisés en leur proposant une formation pratique et professionnelle dans des métiers porteurs comme l’hôtellerie et la pâtisserie, ce projet vit le jour en 2018 à Azilal ; avant de créer un deuxième centre à Demnat en 2024.",
     image: chance,
-    gallery: [chance1,chance2,chance3,chance4,chance5,chance6,chance7,chance8,chance9,chance10,chance11,chance12,chance13,chance14,chance15,chance16,chance17,chance18],
+    gallery: [chance1,chance2,chance3,chance4,chance5,chance6,chance7,chance8,chance9,chance10,chance11,chance12,chance13,chance14,chance15,chance16,chance17,chance18,chance19,chance20,chance21],
     problematique:
-      "Les jeunes déscolarisés ont peu d’opportunités de formation professionnelle adaptée aux besoins du marché de l’hôtellerie et de la pâtisserie.",
+      "Les jeunes qui ont quitté l'école; ont peu d’opportunités de formation professionnelle adaptée aux besoins du marché. l'AADEC a opté pour deux options:l’hôtellerie et la pâtisserie; qui sont compatibles avec le caractère touristique de la région" ,
     problemPoints: [
       "Absence de formation pratique",
       "Difficulté d’insertion professionnelle",
@@ -195,11 +200,11 @@ export const projetsActuels = [
       },
     ],
       contact: {
-    phone: "+212 6 77 77 77 77",
-    email: "info@azicode.ma",
-    address: "Rabat, Maroc",
+    phone: "+212 6 33 84 24 85",
+    email: "aadec2000@hotmail.com",
+    address: "azilal,quartier administratif",
     mapEmbedSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!...",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d711.5776425621079!2d-6.568540506302083!3d31.964890375213567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda49b98effcd15d%3A0x4232c507945243b8!2z2KfZhNmF2LHZg9iyINin2YTYrNmH2YjZiiDZhNmF2YfZhiDYp9mE2KrYsdio2YrYqSDZiCDYp9mE2KrZg9mI2YrZhiDZgdix2Lkg2KPYstmK2YTYp9mE!5e0!3m2!1sfr!2sma!4v1761325695984!5m2!1sfr!2sma",
   },
   },
 
@@ -295,13 +300,20 @@ export const projetsActuels = [
         color: "purple",
         icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
       },
+           {
+        title: "prison sans récidive",
+        description:
+          "Des cours de sensibilisation et des ateliers de 'développement personnelle' sont assurés au sein de l'institution carcérale au bénéfice des prisoniers'.",
+        color: "purple",
+        icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
+      },
     ],
       contact: {
-    phone: "+212 6 77 77 77 77",
-    email: "info@azicode.ma",
-    address: "Rabat, Maroc",
+    phone: "+212 6 61 79 11 18",
+    email: "aadec2000@hotmail.com",
+    address: "azilal, hay alwahda ",
     mapEmbedSrc:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!...",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1097.357204572087!2d-6.569743312930748!3d31.968698427925528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda49b2ac445680f%3A0x33ebdfbe1228c096!2z2YXYsdmD2LIg2KrZg9mI2YrZhiDZiCDYqtij2YfZitmEINin2YTZhdix2KPYqQ!5e0!3m2!1sfr!2sma!4v1761326284973!5m2!1sfr!2sma",
   },
   },
 ];
@@ -322,6 +334,7 @@ import cop3 from "@/assets/projetrealise/environnement/cop3.jpg";
 import cop4 from "@/assets/projetrealise/environnement/cop4.jpg";
 import cop5 from "@/assets/projetrealise/environnement/cop5.jpg";
 import cop6 from "@/assets/projetrealise/environnement/cop6.jpg";
+import cop7 from "@/assets/projetrealise/environnement/cop7.jpg";
 import proget1 from "@/assets/projetrealise/environnement/proget1.jpg";
 import proget2 from "@/assets/projetrealise/environnement/proget2.jpg";
 import proget3 from "@/assets/projetrealise/environnement/proget3.jpg";
@@ -336,6 +349,11 @@ import sensib7 from "@/assets/projetrealise/environnement/sensib7.jpeg";
 import sensib8 from "@/assets/projetrealise/environnement/sensib8.jpeg";
 import sensib9 from "@/assets/projetrealise/environnement/sensib9.jpeg";
 import sensib10 from "@/assets/projetrealise/environnement/sensib10.jpeg";
+import sensib11 from "@/assets/projetrealise/environnement/sensib11.jpg";
+import sensib12 from "@/assets/projetrealise/environnement/sensib12.jpg";
+import sensib13 from "@/assets/projetrealise/environnement/sensib13.jpg";
+import sensib14 from "@/assets/projetrealise/environnement/sensib14.jpg";
+import sensib15 from "@/assets/projetrealise/environnement/sensib15.jpg";
 // sante
 import coronaimg from "@/assets/projetrealise/sante/coronaimg.jpg";
 import corona1 from "@/assets/projetrealise/sante/corona1.jpg";
@@ -412,6 +430,9 @@ import fistival4 from "@/assets/projetrealise/cultur/fistival4.jpg";
 import fistival5 from "@/assets/projetrealise/cultur/fistival5.jpg";
 import fistival6 from "@/assets/projetrealise/cultur/fistival6.jpg";
 import fistival7 from "@/assets/projetrealise/cultur/fistival7.jpg";
+import fistival8 from "@/assets/projetrealise/cultur/fistival8.jpg";
+import fistival9 from "@/assets/projetrealise/cultur/fistival9.jpg";
+import fistival10 from "@/assets/projetrealise/cultur/fistival10.jpg";
 import fistivalimg from "@/assets/projetrealise/cultur/fistivalimg.jpg";
 
 import ighrm1 from "@/assets/projetrealise/cultur/ighrm1.jpg";
@@ -551,6 +572,18 @@ import mutuelle4 from "@/assets/projetrealise/BED/mutuelle4.jpg";
 import mutuelle5 from "@/assets/projetrealise/BED/mutuelle5.jpg";
 import mutuelle6 from "@/assets/projetrealise/BED/mutuelle6.jpg";
 import mutuelle7 from "@/assets/projetrealise/BED/mutuelle7.png";
+import mutuelle8 from "@/assets/projetrealise/BED/mutuelle8.jpg";
+import mutuelle9 from "@/assets/projetrealise/BED/mutuelle9.jpg";
+import femmes1 from "@/assets/projetrealise/BED/femmes1.jpg";
+import femmes2 from "@/assets/projetrealise/BED/femmes2.jpg";
+import femmes3 from "@/assets/projetrealise/BED/femmes3.jpg";
+import femmes4 from "@/assets/projetrealise/BED/femmes4.jpg";
+import femmes5 from "@/assets/projetrealise/BED/femmes5.jpg";
+import femmes6 from "@/assets/projetrealise/BED/femmes6.jpg";
+import femmes7 from "@/assets/projetrealise/BED/femmes7.jpg";
+import femmes8 from "@/assets/projetrealise/BED/femmes8.jpg";
+import femmes9 from "@/assets/projetrealise/BED/femmes9.jpg";
+import femmes10 from "@/assets/projetrealise/BED/femmes10.jpg";
 
 // SAHARA MAROCAIN
 import watanya1 from "@/assets/projetrealise/sahara/watanya1.jpg";
@@ -577,6 +610,7 @@ import tourist9 from "@/assets/projetrealise/tourism/tourist9.jpg";
 import tourist10 from "@/assets/projetrealise/tourism/tourist10.jpg";
 import tourist11 from "@/assets/projetrealise/tourism/tourist11.jpg";
 import tourist12 from "@/assets/projetrealise/tourism/tourist12.jpg";
+import tourist13 from "@/assets/projetrealise/tourism/tourist13.jpg";
 
 import pavag1 from "@/assets/projetrealise/tourism/pavag1.jpg";
 import pavag2 from "@/assets/projetrealise/tourism/pavag2.jpg";
@@ -602,6 +636,7 @@ import ouzoud13 from "@/assets/projetrealise/tourism/ouzoud13.jpg";
 import ouzoud14 from "@/assets/projetrealise/tourism/ouzoud14.jpg";
 import ouzoud15 from "@/assets/projetrealise/tourism/ouzoud15.jpg";
 import ouzoud16 from "@/assets/projetrealise/tourism/ouzoud16.jpg";
+import ouzoud17 from "@/assets/projetrealise/tourism/ouzoud17.jpg";
 
 import envir from "@/assets/projetrealise/heroimg/envir.jpg";
 import bed from "@/assets/projetrealise/heroimg/bed.jpg";
@@ -627,7 +662,7 @@ export const domainsData = [
         slug: "cop22",
         description: "L'AADEC était au rendez-vous dans l’espace vert réservé à la société civile. Elle y a présenté son projet sur l’effet des changements climatiques sur le « genévrier thurifère » dans le Haut Atlas central à Azilal, ainsi que sur le danger d’extinction du chêne vert *Quercus ilex*.",
         year: 2016,
-        gallery: [cop1, cop2, cop3, cop4, cop5, cop6, copimg],
+        gallery: [cop1, cop2, cop3, cop4, cop5, cop6,cop7, copimg],
       },
       {
         title: "Progetto Mondo",
@@ -641,7 +676,7 @@ export const domainsData = [
         slug: "sensibilisation",
         description: "L'AADEC a organisé de nombreuses journées d’étude en partenariat avec d’autres associations locales et nationales sur ce thème, notamment :\n• Journée de l’environnement (2008, Agro-Polytech)\n• Le chêne vert *Quercus ilex* en danger (2013, Mouvement Twiza)\n• Assainissement dans la ville (2002, Commune)\n• 1ère rencontre pour la jeunesse sur l’environnement (2013)",
         year: 2002,
-        gallery: [sensib5,sensib6,sensib7,sensib8,sensib9,sensib10,sensib1, sensib2, sensib3, sensib4],
+        gallery: [sensib5,sensib6,sensib7,sensib8,sensib9,sensib10,sensib1, sensib2, sensib3, sensib4,sensib11,sensib12,sensib13,sensib14,sensib15],
       },
     ],
   },
@@ -711,7 +746,7 @@ export const domainsData = [
         slug: "festival",
         description: "L'AADEC a organisé le 1er festival : « Atlas des Arts » en 2000. Elle s'engageait dans ce sens pour valoriser les trésors artistiques et patrimoniaux de la province jusqu'à la 6ème édition, en 2006, avant de le reléguer à la commune territoriale.",
         year: 2000,
-        gallery: [fistivalimg,fistival6,fistival7, fistival1, fistival2, fistival3, fistival4, fistival5],
+        gallery: [fistivalimg,fistival6,fistival7,fistival8,fistival9,fistival10, fistival1, fistival2, fistival3, fistival4, fistival5,],
       },
       {
         title: "Gravures Rupestres",
@@ -816,7 +851,7 @@ export const domainsData = [
         slug: "mutuelle",
         description: "Ancien projet de l’AADEC mené en partenariat avec le FNUAP, portant sur la santé et la mutuelle communautaire dans le cadre du Développement humain. Ce projet visait trois communes :\n- Aït M’hamed\n- Aït Abbas\n- Zaouiat Ahansal",
         year: 2015,
-        gallery: [mutuelle1, mutuelle2, mutuelle3, mutuelle4, mutuelle5, mutuelle6,mutuelle7],
+        gallery: [mutuelle1, mutuelle2, mutuelle3, mutuelle4, mutuelle5, mutuelle6,mutuelle7,mutuelle8,mutuelle9],
       },
       {
         title: "Approvisionnement en Eau Potable – 12 Douars",
@@ -824,6 +859,13 @@ export const domainsData = [
         description: "L’AADEC a également réalisé un projet à forte dimension socio-économique, consistant à approvisionner en eau potable 12 douars situés dans trois communes montagneuses, améliorant ainsi les conditions de vie des habitants.",
         year: 2019,
         gallery: [bedimg, bed1, bed2, bed3, bed4, bed5],
+      },
+            {
+        title: "Au service de la femme rurale",
+        slug: "femmes",
+        description: " travail monumental pour les droits de la femme montagnarde: sensibilisation; forums; débats; et empowerment...",
+        year: 2005,
+        gallery: [femmes1, femmes2, femmes3, femmes4, femmes5, femmes6,femmes7,femmes8,femmes9,femmes10],
       },
     ],
   },
@@ -837,7 +879,7 @@ export const domainsData = [
         slug: "balisage",
         description: "L'AADEC a pensé à un projet de balisage du circuit touristique Aït Bouli, Aït Bougmaz et Tilougit, en passant par Zaouiat Ahansal, en collaboration avec l'association du parc « Aragona » en 2016.",
         year: 2016,
-        gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6,tourist11,tourist12,tourist7,tourist8,tourist9,tourist10],
+        gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6,tourist11,tourist12,tourist7,tourist8,tourist9,tourist10,tourist13],
       },
       {
         title: "Pavage Tanaghmelt",
@@ -851,7 +893,7 @@ export const domainsData = [
         slug: "ouzoud",
         description: "En partenariat avec l’ADS et les conseils régionaux de Tadla-Azilal et de l’Isère, l’AADEC a développé le circuit touristique d’Ouzoud, un projet visant à valoriser le patrimoine naturel et à dynamiser l’économie locale à travers un tourisme responsable et durable.",
         year: 2019,
-        gallery: [ouzoud1,ouzoud2,ouzoud3,ouzoud4,ouzoud5,ouzoud6,ouzoud7,ouzoud8,ouzoud9,ouzoud10,ouzoud11,ouzoud12,ouzoud13,ouzoud14,ouzoud15,ouzoud16],
+        gallery: [ouzoud1,ouzoud2,ouzoud3,ouzoud4,ouzoud5,ouzoud6,ouzoud7,ouzoud8,ouzoud9,ouzoud10,ouzoud11,ouzoud12,ouzoud13,ouzoud14,ouzoud15,ouzoud16,ouzoud17],
       },
     ],
   },
@@ -1112,6 +1154,14 @@ export const documentsData = [
     date: "2015",
     size: "0.2 MB",
     url: "/doc/sante.pdf",
+  },
+    {
+    id: 5,
+    title: "séisme ",
+    description: "زلزال الحسيمة و الحوز",
+    date: "2004",
+    size: "0.3 MB",
+    url: "/doc/zlzal.pdf",
   },
 
 ];

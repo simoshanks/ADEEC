@@ -127,6 +127,7 @@ const Navigation = () => {
       items: [
         { name: "La Mutuelle Communautaire", href: "/Realisations/bed/mutuelle" },
         { name: "Approvisionnement en Eau Potable 12 Douars", href: "/Realisations/bed/eau-potable" },
+        { name: "Au service de la femme rurale", href: "/Realisations/bed/femmes" },
       ],
     },
     {
