@@ -41,7 +41,7 @@ function HeroContact() {
     {
       icon: <FaPhoneAlt className="w-5 h-5 text-white" />,
       title: "Téléphone",
-      text: " +212 5 23 45 98 12  \n  +212 6 24 75 19 85 ",
+      text: " +212 6 61 79 11 18  \n  +212 6 24 75 19 85 ",
       bg: "bg-gradient-to-br from-[#22A55D] to-[#146C2D]",
       delay: 0.2
     },

@@ -248,6 +248,13 @@ export const projetsActuels = [
         color: "purple",
         icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
       },
+{
+  title: "Prison sans récidive",
+  description:
+    "Des cours de sensibilisation et des ateliers de développement personnel sont assurés au sein de l'institution carcérale au bénéfice des prisonniers.",
+  color: "orange", 
+  icon: "M12 8c1.657 0 3 1.343 3 3v5h3l-6 6-6-6h3v-5c0-1.657 1.343-3 3-3z", 
+}
     ],
       contact: {
     phone: "+212 6 77 77 77 77",
@@ -300,13 +307,7 @@ export const projetsActuels = [
         color: "purple",
         icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
       },
-           {
-        title: "prison sans récidive",
-        description:
-          "Des cours de sensibilisation et des ateliers de 'développement personnelle' sont assurés au sein de l'institution carcérale au bénéfice des prisoniers'.",
-        color: "purple",
-        icon: "M16 7a4 4 0 01-8 0M12 14v7m0 0l-3-3m3 3l3-3",
-      },
+          
     ],
       contact: {
     phone: "+212 6 61 79 11 18",
@@ -966,6 +967,7 @@ export const confianceCards = [
 import slide1 from "@/assets/history/fistivalhistory1.jpg";
 import slide2 from "@/assets/history/fistivalhistory2.jpg";
 import slide3 from "@/assets/history/fistivalhistory3.jpg";
+import slide33 from "@/assets/history/fistivalhistory4.jpg";
 import slide4 from "@/assets/history/model1.jpg";
 import slide5 from "@/assets/history/model2.jpg";
 import slide6 from "@/assets/history/model3.jpg";
@@ -976,11 +978,12 @@ import slide8 from "@/assets/history/jeun2.jpg";
 import slide9 from "@/assets/history/jeun3.jpg";
 import slide10 from "@/assets/history/jeun4.jpg";
 import slide11 from "@/assets/history/jeun5.jpg";
+import slide12 from "@/assets/history/jeun6.jpg";
 
 export const historyData = [
   {
     year: "2000",
-    images: [slide1, slide2, slide3],
+    images: [slide1,slide33, slide2, slide3],
     title: "Festival d’Azilal",
     desc: "Notre association est le principal responsable de l'organisation du Festival d'Azilal durant les six années précédentes d'existence, un événement culturel et artistique qui rassemble les habitants locaux et rencontre les talents de la région."
   },
@@ -992,7 +995,7 @@ export const historyData = [
   },
   {
     year: "Aujourd'hui",
-    images: [slide7, slide8, slide9,slide10,slide11],
+    images: [slide7, slide8, slide9,slide10,slide11,slide12],
     title: "développement de la jeunesse",
     desc: "Aujourd’hui, l’AADEC concentre ses efforts sur les jeunes afin de les former, de les encadrer et de les intégrer à la vie publique, car elle est le principal moteur du développement."
   }

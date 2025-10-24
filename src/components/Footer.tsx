@@ -55,7 +55,7 @@ const Footer = () => {
                 <div className="p-1.5 sm:p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
                   <AiOutlinePhone className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 text-white" />
                 </div>
-                <span className="text-xs sm:text-sm lg:text-base font-medium">+212 5 23 45 98 12</span>
+                <span className="text-xs sm:text-sm lg:text-base font-medium">+212 6 61 79 11 18</span>
               </div>
               <div className="flex justify-center sm:justify-start items-center space-x-2 sm:space-x-3 group hover:text-white transition-colors duration-300">
                 <div className="p-1.5 sm:p-2 bg-white/10 rounded-lg group-hover:bg-white/20 transition-colors duration-300">
@@ -142,7 +142,7 @@ const Footer = () => {
       {[
         { icon: FaFacebookF, href: "https://www.facebook.com/share/16rxatcupq/" },
         { icon: FaWhatsapp, href: "https://wa.me/212661791118" },
-        { icon: FaInstagram, href: "#" }
+        { icon: FaInstagram, href: "https://www.instagram.com/aadec_azilal/" }
       ].map((social, index) => (
         <a
           key={index}

@@ -11,7 +11,7 @@ const Topbar = () => {
         <div className="flex flex-col sm:flex-row items-center sm:space-x-4 lg:space-x-6 space-y-1 sm:space-y-0 mb-2 sm:mb-0">
           <div className="flex items-center space-x-1 sm:space-x-2">
             <HiOutlinePhone className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
-            <span className="text-xs sm:text-sm whitespace-nowrap">+212 5 23 45 98 12</span>
+            <span className="text-xs sm:text-sm whitespace-nowrap">+212 6 61 79 11 18</span>
           </div>
           <div className="hidden sm:block text-white/50">|</div>
           <div className="flex items-center space-x-1 sm:space-x-2">
@@ -41,7 +41,7 @@ const Topbar = () => {
             <FaWhatsapp className="w-3 h-3 sm:w-4 sm:h-4" />
           </a>
           <a 
-            href="#" 
+            href="https://www.instagram.com/aadec_azilal/" 
             className="hover:text-gray-200 transition-colors duration-200 p-1 rounded"
             aria-label="Instagram"
           >
