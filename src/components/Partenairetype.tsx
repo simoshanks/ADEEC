@@ -351,9 +351,9 @@ const Partenairetype = () => {
                           </div>
                         )}
                       </div>
-                      <h4 className="font-medium text-gray-700 text-xs sm:text-sm lg:text-base truncate flex-1">
-                        {partenaire.nom}
-                      </h4>
+<h4 className="font-medium text-gray-700 text-xs sm:text-sm lg:text-base flex-1 leading-snug break-words text-center">
+  {partenaire.nom}
+</h4>
                     </div>
                   ))}
                 </div>
