@@ -164,7 +164,7 @@ export const projetsActuels = [
       "Formation en gestion hôtelière et pâtisserie dans les villes Demnat et Azilal",
     annee: 2021,
     descriptionLongue:
-      "Cette école offre une seconde chance aux jeunes déscolarisés en leur proposant une formation pratique et professionnelle dans des métiers porteurs comme l’hôtellerie et la pâtisserie, ce projet vit le jour en 2018 à Azilal ; avant de créer un deuxième centre à Demnat en 2024.",
+      "Cette école offre une seconde chance aux jeunes déscolarisés en leur proposant une formation pratique et professionnelle dans des métiers importants comme l’hôtellerie et la pâtisserie, ce projet vit le jour en 2018 à Azilal ; avant de créer un deuxième centre à Demnat en 2024.",
     image: chance,
     gallery: [chance1,chance2,chance3,chance4,chance5,chance6,chance7,chance8,chance9,chance10,chance11,chance12,chance13,chance14,chance15,chance16,chance17,chance18,chance19,chance20,chance21],
     problematique:
@@ -273,7 +273,7 @@ export const projetsActuels = [
       "Former les femmes dans la cuisine et l’éducation des enfants 3 à 5 ans",
     annee: 2019,
     descriptionLongue:
-      "Ce centre a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
+      "Ce centre,fruite de partenariat avec la Fondation Mohamed 5 pour la Solidarité, a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
     image: femmes,
     gallery: [fm1,fm2,fm3,fm4,fm5,fm24,fm7,fm8,fm9,fm10,fm11,fm12,fm13,fm14,fm15,fm16,fm17,fm18,fm19,fm20,fm21,fm22,fm23],
     problematique:
@@ -366,6 +366,8 @@ import corona6 from "@/assets/projetrealise/sante/corona6.jpg";
 import corona7 from "@/assets/projetrealise/sante/corona7.jpg";
 import corona8 from "@/assets/projetrealise/sante/corona8.jpg";
 import corona9 from "@/assets/projetrealise/sante/corona9.jpg";
+import corona10 from "@/assets/projetrealise/sante/corona10.jpg";
+import corona11 from "@/assets/projetrealise/sante/corona11.jpg";
 
 import caravanimg from "@/assets/projetrealise/sante/caravanimg.jpg";
 import caravanimg2 from "@/assets/projetrealise/sante/caravanimg2.jpg";
@@ -421,7 +423,7 @@ import tadamon10 from "@/assets/projetrealise/social/tadamon10.jpg";
 import tadamon11 from "@/assets/projetrealise/social/tadamon11.jpg";
 import tadamon12 from "@/assets/projetrealise/social/tadamon12.jpg";
 import tadamon13 from "@/assets/projetrealise/social/tadamon13.jpg";
-import tadamon14 from "@/assets/projetrealise/social/tadamon14.jpg";
+
 import tadamonimg from "@/assets/projetrealise/social/tadamonimg.jpg";
 // culture
 import fistival1 from "@/assets/projetrealise/cultur/fistival1.jpg";
@@ -698,7 +700,7 @@ export const domainsData = [
         slug: "corona",
         description: "L'AADEC a réalisé un travail remarquable pendant la pandémie de Covid-19 : sensibilisation, inscription des bénéficiaires via des fiches techniques soigneusement élaborées, distribution de denrées et mise en œuvre de l’opération « Reste chez toi, je t’apporterai ce dont tu as besoin » pour limiter les déplacements et les contacts hors domicile.",
         year: 2020,
-        gallery: [coronaimg, corona1, corona2, corona3, corona4, corona5, corona6, corona7, corona8, corona9],
+        gallery: [coronaimg, corona1, corona2, corona3, corona4, corona5,corona10,corona11, corona6, corona7, corona8, corona9],
       },
       {
         title: "Relais communautaire de santé",
@@ -726,7 +728,7 @@ export const domainsData = [
         slug: "caravanes-solidarite",
         description: "L'AADEC a participé aux caravanes à Al Hoceïma (2004) et à Al Haouz (2023). Elle a également organisé de nombreuses caravanes en montagne durant la période hivernale.",
         year: 2004,
-        gallery: [tadamon9,tadamon10,tadamon11,tadamon12,tadamon13,tadamon14,tadamonimg, tadamon1, tadamon2, tadamon3, tadamon4, tadamon5, tadamon6, tadamon7, tadamon8],
+        gallery: [tadamon9,tadamon10,tadamon11,tadamon12,tadamon13,tadamonimg, tadamon1, tadamon2, tadamon3, tadamon4, tadamon5, tadamon6, tadamon7, tadamon8],
       },
       {
         title: "Diagnostics Territoriaux",
@@ -985,19 +987,19 @@ export const historyData = [
     year: "2000",
     images: [slide1,slide33, slide2, slide3],
     title: "Festival d’Azilal",
-    desc: "Notre association est le principal responsable de l'organisation du Festival d'Azilal durant les six années précédentes d'existence, un événement culturel et artistique qui rassemble les habitants locaux et rencontre les talents de la région."
+    desc: "C'est l'AADEC qui eut l'honneur d'organiser le 1 er festival de la ville «Atlas des Arts» en 2000 à 2006" 
   },
   {
     year: "2006",
     images: [slide4, slide5, slide6,slide66,slide67],
     title: "Plan stratégique",
-    desc: "Depuis 2006, une association s’est jointe aux actions de l’orienteur, permettant d’organiser simplement des animations culturelles pour apporter une réflexion plus large sur le développement communautaire et l’accompagnement de Jeunesse, parallèlement au modèle de développement de 2006."
+    desc: "Au-delà de ses instances de gouvernance, ce document sadresse à lensemble des membres actuels de lassociation et à ceux qui nous rejoindront. Notre souhait est quils se reconnaissent dans la description de notre projet et de ses perspectives, quils en fassent activement parties prenantes, et que cette vision partagée éclaire notre action de long terme, comme nos priorités immédiates."
   },
   {
     year: "Aujourd'hui",
     images: [slide7, slide8, slide9,slide10,slide11,slide12],
     title: "développement de la jeunesse",
-    desc: "Aujourd’hui, l’AADEC concentre ses efforts sur les jeunes afin de les former, de les encadrer et de les intégrer à la vie publique, car elle est le principal moteur du développement."
+    desc: "Aujourd’hui, l’AADEC concentre ses efforts sur les jeunes afin de les former, de les encadrer et de les intégrer à la vie socio-économique, car elle est le principal moteur du développement."
   }
 ];
 
@@ -1112,7 +1114,7 @@ export const categoriesPartenaires = [
   titre: "Les réseaux ",
   description: "Les réseaux de l'AADEC ",
   partenaires: [
-    { nom: "TADA (tissu associatif de développement d’Azilal créé par l’AADEC en 2002 ).",logo:R4  },
+    { nom: "TADA (tissu associatif de développement d’Azilal créé par l’AADEC. ).",logo:R4  },
     { nom: "ANARUZ ( Réseau national des centres d’écoute des femmes victimes de la violence).", logo:R3},
     { nom: "RCAM réseau des associations de la montagne. ", },
     { nom: "CCM - Coalition civile pour la Montagne- ",logo:R1  },

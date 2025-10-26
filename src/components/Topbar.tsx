@@ -32,7 +32,7 @@ const Topbar = () => {
             <FaFacebookF className="w-3 h-3 sm:w-4 sm:h-4" />
           </a>
           <a
-            href="https://wa.me/212661791118"
+            href="https://wa.me/212624751985"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-200 transition-colors duration-200 p-1 rounded"

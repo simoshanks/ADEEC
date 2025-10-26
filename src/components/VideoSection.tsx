@@ -15,7 +15,7 @@ const VideoSection = () => {
 
         <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto mt-6 rounded-full"></div>
         <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto mt-4">
-          Vidéo de nos projets avec entités européennes
+          Vidéo de nos projets avec Organismes Européens
         </p>
       </div>
 
@@ -24,7 +24,7 @@ const VideoSection = () => {
         {/* Video iframe */}
         <iframe
           className="w-full h-[500px] relative z-10 rounded-xl"
-          src="https://www.youtube.com/embed/S5aY8uFPRWw?autoplay=0"
+           src="https://www.youtube.com/embed/mtLE1lWtJO8"
           title="Notre Présentation"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -39,7 +39,7 @@ const VideoSection = () => {
           <div className="flex items-center text-white/90 mt-2">
             <Mic className="w-6 h-6 text-white mr-3 drop-shadow-md" />
             <p className="text-base md:text-lg font-medium drop-shadow-md">
-              Présenté par le professeur : Said El Msellek
+              Présenté par le professeur : Lamsallak Saïd
             </p>
           </div>
         </div>

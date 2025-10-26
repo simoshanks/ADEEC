@@ -46,7 +46,7 @@ const CustomSlider = () => {
 
           <div className="w-20 h-1 bg-[#22A55D] mx-auto mt-6 rounded-full"></div>
           <p className="text-base lg:text-lg text-gray-600 max-w-2xl mx-auto mt-4">
-            Découvrez nos projets actuels qui reflètent notre expertise et notre engagement envers l'excellence
+            Découvrez nos projets actuels qui reflètent notre engagement envers l'excellence
           </p>
         </div>
 

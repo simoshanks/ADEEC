@@ -128,7 +128,7 @@ function HeroContact() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              <a href="https://wa.me/212661791118" className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#22A55D] to-[#146C2D] text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform space-x-3">
+              <a href="https://wa.me/212624751985" className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#22A55D] to-[#146C2D] text-white rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform space-x-3">
                 <FaWhatsapp className="w-6 h-6" />
                 
                 <span>WhatsApp</span>

@@ -55,7 +55,7 @@ const ConfianceSection = () => {
 
         <div className="w-20 h-1 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto mt-6 rounded-full"></div>
         <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto mt-4 px-4">
-          Les principes fondamentaux qui guident notre engagement et notre excellence Notre engagement envers l'excellence et l'innovation
+          Les principes fondamentaux qui guident notre engagement vers l'excellence et l'innovation
         </p>
       </div>
 

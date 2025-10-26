@@ -243,7 +243,9 @@ const ProjetInfo = () => {
       <div className="w-24 h-1.5 bg-gradient-to-r from-[#146C2D] to-[#22A55D] mx-auto mb-6 rounded-full shadow-lg"></div> {/* <-- giảm mb */}
 
       <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
-        Découvrez les moments forts et les réalisations de ce projet à travers notre galerie photo
+        Découvrez les moments forts et les réalisations de ce projet à travers notre galerie photo .  <span className="block mt-1 text-[#146C2D] font-medium">
+    Cliquez sur la photo pour la découvrir
+  </span>
       </p>
 
       <GallerySection

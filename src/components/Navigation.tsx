@@ -55,7 +55,7 @@ const Navigation = () => {
     { name: "Accueil", href: "/", icon: Home },
     { name: "À propos", href: "/Apropos", icon: Users },
     {
-      name: "Actuelles",
+      name: "Activites \ actuelles",
       dropdown: [
         { name: "Ecole Azicode-62", href: "/Activites/Azicode-62" },
         { name: "Ecole 2eme Chance", href: "/Activites/2eme-chance" },
@@ -262,12 +262,13 @@ const Navigation = () => {
                       <div className="absolute inset-0 bg-gradient-to-r from-[#146C2D]/5 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500" />
                     </button>
 
-                    {/* Mega Menu محسن */}
+                    {/* Mega Menu محسن مع شريط تمرير */}
                     {isMegaOpen && (
                       <div
-                        className="absolute left-1/2 top-full transform -translate-x-1/2 mt-3 
-    bg-white shadow-2xl border border-gray-200 p-8 grid grid-cols-3 gap-6 
-    z-50 rounded-3xl max-h-[70vh] overflow-y-auto w-[90vw] max-w-6xl"
+                        className="absolute left-2 top-full transform -translate-x-1/2 mt-3 
+                          bg-white shadow-2xl border border-gray-200 p-8 grid grid-cols-3 gap-6 
+                          z-50 rounded-3xl max-h-[70vh] w-[80vw] max-w-6xl
+                          overflow-y-auto scrollbar-thin scrollbar-thumb-[#146C2D] scrollbar-track-gray-100"
                         onMouseLeave={() => {
                           setIsMegaOpen(false);
                           setActiveItem(null);

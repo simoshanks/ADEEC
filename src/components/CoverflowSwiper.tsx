@@ -27,7 +27,7 @@ export default function CoverflowSwiper() {
   </p>
 
   <p className="text-base lg:text-lg text-gray-600 max-w-3xl mx-auto mt-3 italic leading-relaxed">
-    Archive photos — <span className="font-semibold text-gray-800">MR: Lamsallak Saïd</span>, 
+    Archive photos et textes de commentaire — <span className="font-semibold text-gray-800">MR: Lamsallak Saïd</span>, 
     membre fondateur en <span className="text-[#146C2D] font-semibold">2000</span> et 
     secrétaire général chargé des affaires administratives de 
     <span className="text-[#22A55D] font-semibold"> 2010 à 2025</span>.
