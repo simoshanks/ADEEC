@@ -273,7 +273,7 @@ export const projetsActuels = [
       "Former les femmes dans la cuisine et l’éducation des enfants 3 à 5 ans",
     annee: 2019,
     descriptionLongue:
-      "Ce centre,fruite de partenariat avec la Fondation Mohamed 5 pour la Solidarité, a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
+      "Ce centre, fruit de partenariat avec la Fondation Mohamed V pour la Solidarité, a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
     image: femmes,
     gallery: [fm1,fm2,fm3,fm4,fm5,fm24,fm7,fm8,fm9,fm10,fm11,fm12,fm13,fm14,fm15,fm16,fm17,fm18,fm19,fm20,fm21,fm22,fm23],
     problematique:
@@ -677,7 +677,7 @@ export const domainsData = [
       {
         title: "Débats de sensibilisation",
         slug: "sensibilisation",
-        description: "L'AADEC a organisé de nombreuses journées d’étude en partenariat avec d’autres associations locales et nationales sur ce thème, notamment :\n• Journée de l’environnement (2008, Agro-Polytech)\n• Le chêne vert *Quercus ilex* en danger (2013, Mouvement Twiza)\n• Assainissement dans la ville (2002, Commune)\n• 1ère rencontre pour la jeunesse sur l’environnement (2013)",
+        description: "L'AADEC a organisé de nombreuses journées d’étude en partenariat avec d’autres associations locales et nationales sur ce thème, notamment :\n• Journée de l’environnement (2008, Agro-Paritech)\n• Le chêne vert *Quercus ilex* en danger (2013, Mouvement Twiza)\n• Assainissement dans la ville (2002, Commune)\n• 1ère rencontre nationale de la jeunesse sur l’environnement (2013)",
         year: 2002,
         gallery: [sensib5,sensib6,sensib7,sensib8,sensib9,sensib10,sensib1, sensib2, sensib3, sensib4,sensib11,sensib12,sensib13,sensib14,sensib15],
       },
@@ -831,7 +831,7 @@ export const domainsData = [
       {
         title: "Soutien aux étudiants doctorants",
         slug: "étudiants-africains",
-        description: "L’AADEC est venu en aide à de nombreux étudiants africains et européens, favorisant ainsi les échanges culturels et la solidarité entre les peuples.",
+        description: "L’AADEC est venue en aide à de nombreux étudiants africains et européens, favorisant ainsi les échanges culturels et la solidarité entre les peuples.",
         year: 2014,
         gallery: [africanimg,african1,african2,african3,stage1,stage2,stage3,stage4,stage5,stage6,stage7],
       },
@@ -1214,7 +1214,7 @@ export const galleryData = [
   {
     id: 6,
     image: g6,
-    description: "Développer l’esprit entrepreneurial chez les jeunes avec l’ADELE.",
+    description: "Développer l’esprit entrepreneurial chez les jeunes avec l’ADAL Expertise.",
   },
   {
     id: 7,
