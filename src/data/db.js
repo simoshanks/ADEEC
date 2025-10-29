@@ -104,7 +104,7 @@ export const projetsActuels = [
   id: 1,
   slug: "Azicode-62",
   titre: "Ecole du Codage Azicode-62",
-  linkSite:"https://www.pinterest.com/",
+  linkSite:"https://azicode62.com/",
   description:
     "Une école numérique pour apprendre tout ce qui touche à la programmation",
   annee: 2024,
