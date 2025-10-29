@@ -273,7 +273,7 @@ export const projetsActuels = [
       "Former les femmes dans la cuisine et l’éducation des enfants 3 à 5 ans",
     annee: 2019,
     descriptionLongue:
-      "Ce centre, fruit de partenariat avec la Fondation Mohamed V pour la Solidarité, a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
+      "Après de longues années de travail dans « le centre shams pour la femme et  l'enfant »; (2005-2015) contre toutes les formes de violence; Ce centre de femmes aujourd'hui , fruit de partenariat avec la Fondation Mohamed V pour la Solidarité, a pour mission de renforcer les capacités des femmes en leur offrant des formations pratiques dans la cuisine et l’éducation préscolaire afin de favoriser leur autonomie et leur intégration socio-économique.",
     image: femmes,
     gallery: [fm1,fm2,fm3,fm4,fm5,fm24,fm7,fm8,fm9,fm10,fm11,fm12,fm13,fm14,fm15,fm16,fm17,fm18,fm19,fm20,fm21,fm22,fm23],
     problematique:
@@ -521,6 +521,10 @@ import scolair6 from "@/assets/projetrealise/education/scolair6.jpeg";
 import scolair7 from "@/assets/projetrealise/education/scolair7.jpeg";
 import scolair9 from "@/assets/projetrealise/education/scolair9.jpeg";
 import scolair10 from "@/assets/projetrealise/education/scolair10.jpeg";
+
+import communautaire1 from "@/assets/projetrealise/education/communautaire1.jpg";
+import communautaire2 from "@/assets/projetrealise/education/communautaire2.jpg";
+import communautaire3 from "@/assets/projetrealise/education/communautaire3.jpg";
 
 import charte1 from "@/assets/projetrealise/education/charte1.jpg";
 import charte2 from "@/assets/projetrealise/education/charte2.jpg";
@@ -827,6 +831,13 @@ export const domainsData = [
         description: "L'AADEC supervisa deux centres créés pour assurer la scolarisation des filles rurales à Aït Atab et Ouaouizeght entre 2006 et 2011, en collaboration avec l’AFD, le CSSFR et l’Ambassade des USA.",
         year: 2006,
         gallery: [scolair1,scolair2,scolair3,scolair4,scolair5,scolair6,scolair7,scolair9,scolair10],
+      },
+            {
+        title: "Réparation communautaire",
+        slug: "communautaire",
+        description: "l'AADEC avec l'appui de l'Union Européenne et en parfaite collaboration avec *l'Instance Equité et Réconciliation* et en compatibilité avec les objectifs de l'INDH et  les principes de la Justice Transitionnelle; travaillait  cote à cote avec ses partenaires sur le projet de 'la Réparation communautaire'. ce fut une façon de réparer les torts et les exactions du passé à travers plusieurs procédures au profit des victimes des années de plomb.",
+        year: 2006,
+        gallery: [communautaire1,communautaire2,communautaire3],
       },
       {
         title: "Soutien aux étudiants doctorants",

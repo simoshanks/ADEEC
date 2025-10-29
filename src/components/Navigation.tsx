@@ -99,6 +99,7 @@ const Navigation = () => {
       title: "Education",
       items: [
         { name: "Scolarisation des filles en milieu rural", href: "/Realisations/education/scolarisation" },
+        { name: "Réparation communautaire", href: "/Realisations/education/communautaire" },
         { name: "Collaboration avec les universités nationales", href: "/Realisations/education/universites" },
         { name: "Charte de Citoyenneté", href: "/Realisations/education/charte" },
         { name: "Accueil des étudiants doctorants", href: "/Realisations/education/étudiants-africains" },
@@ -141,7 +142,7 @@ const Navigation = () => {
     {
       title: "Sahara Marocain",
       items: [
-        { name: "Forte Imlicatiers", href: "/Realisations/sahara-marocain/forte" },
+        { name: "Forte Implication", href: "/Realisations/sahara-marocain/forte" },
         { name: "Modèle de Développement", href: "/Realisations/sahara-marocain/modele-developpement" },
       ],
     },
