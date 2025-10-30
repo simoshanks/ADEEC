@@ -662,13 +662,14 @@ export const domainsData = [
   {
     title: "L'environnement",
     slug: "environnement",
-    heroImage: envir,
+    
     projects: [
       {
         title: "COP 22",
         slug: "cop22",
         description: "L'AADEC était au rendez-vous dans l’espace vert réservé à la société civile. Elle y a présenté son projet sur l’effet des changements climatiques sur le « genévrier thurifère » dans le Haut Atlas central à Azilal, ainsi que sur le danger d’extinction du chêne vert *Quercus ilex*.",
         year: 2016,
+        heroImage: cop1,
         gallery: [cop1, cop2, cop3, cop4, cop5, cop6,cop7, copimg],
       },
       {
@@ -676,6 +677,7 @@ export const domainsData = [
         slug: "progettomondo",
         description: "L'AADEC a participé à Turin en tant qu’invitée spéciale de *Progetto Mondo* dans un atelier de travail sur le thème : « L’eau inonde, la terre sèche, le feu brûle et le plastique pollue : quelles stratégies pour l’avenir ? »",
         year: 2023,
+        heroImage: proget1,
         gallery: [proget1, proget2, proget3, proget4],
       },
       {
@@ -683,6 +685,7 @@ export const domainsData = [
         slug: "sensibilisation",
         description: "L'AADEC a organisé de nombreuses journées d’étude en partenariat avec d’autres associations locales et nationales sur ce thème, notamment :\n• Journée de l’environnement (2008, Agro-Paritech)\n• Le chêne vert *Quercus ilex* en danger (2013, Mouvement Twiza)\n• Assainissement dans la ville (2002, Commune)\n• 1ère rencontre nationale de la jeunesse sur l’environnement (2013)",
         year: 2002,
+        heroImage: sensib5,
         gallery: [sensib5,sensib6,sensib7,sensib8,sensib9,sensib10,sensib1, sensib2, sensib3, sensib4,sensib11,sensib12,sensib13,sensib14,sensib15],
       },
     ],
@@ -697,6 +700,7 @@ export const domainsData = [
         slug: "campagnes-medicales",
         description: "En partenariat avec le *Lions Club International* et l’association *Sosana-Khouribga*, l’AADEC a assuré quatre grandes campagnes médicales au profit de la population démunie d’Azilal entre 2016 et 2020.",
         year: 2016,
+        heroImage: caravanimg,
         gallery: [caravanimg, caravan1, caravan2, caravan3, caravan4, caravan5, caravan6, caravan7, caravanimg2,caravan10,caravan11],
       },
       {
@@ -704,6 +708,7 @@ export const domainsData = [
         slug: "corona",
         description: "L'AADEC a réalisé un travail remarquable pendant la pandémie de Covid-19 : sensibilisation, inscription des bénéficiaires via des fiches techniques soigneusement élaborées, distribution de denrées et mise en œuvre de l’opération « Reste chez toi, je t’apporterai ce dont tu as besoin » pour limiter les déplacements et les contacts hors domicile.",
         year: 2020,
+        heroImage: corona4,
         gallery: [coronaimg, corona1, corona2, corona3, corona4, corona5,corona10,corona11, corona6, corona7, corona8, corona9],
       },
       {
@@ -711,6 +716,7 @@ export const domainsData = [
         slug: "information",
         description: "Ce projet visait à impliquer des membres formés au sein des communautés pour améliorer l’accès aux soins, la sensibilisation et l’éducation sanitaire. L’AADEC a travaillé sur 24 modules à Tabia : leishmaniose, morsures de scorpions, santé sexuelle, accidents domestiques, adolescence... en collaboration avec les structures de santé locales.",
         year: 2016,
+        heroImage: tahsis1,
         gallery: [tahsisimg, tahsis1, tahsis2, tahsis3, tahsis4, tahsis5, tahsis6, tahsis7, tahsis8, tahsis9, tahsis10],
       },
     ],
@@ -725,6 +731,7 @@ export const domainsData = [
         slug: "journalier",
         description: "L'AADEC, en partenariat avec l'INDH et le conseil communal, a mis en œuvre un projet inédit visant à valoriser une catégorie d'ouvriers en situation précaire : les ouvriers journaliers d'Azilal (Makfia). Le projet n’a malheureusement pas abouti, en raison de mentalités rigides et du poids de l’autorité patronale.",
         year: 2016,
+        heroImage: jourimg,
         gallery: [jourimg, journalier1, journalier2, journalier4, journalier5, journalier6, journalier7, journalier8, journalier9],
       },
       {
@@ -732,6 +739,7 @@ export const domainsData = [
         slug: "caravanes-solidarite",
         description: "L'AADEC a participé aux caravanes à Al Hoceïma (2004) et à Al Haouz (2023). Elle a également organisé de nombreuses caravanes en montagne durant la période hivernale.",
         year: 2004,
+        heroImage: tadamon5,
         gallery: [tadamon9,tadamon10,tadamon11,tadamon12,tadamon13,tadamonimg, tadamon1, tadamon2, tadamon3, tadamon4, tadamon5, tadamon6, tadamon7, tadamon8],
       },
       {
@@ -739,6 +747,7 @@ export const domainsData = [
         slug: "diagnostic",
         description: "Ces travaux de diagnostic réalisés par l'AADEC depuis 2006 traduisent une vision très avancée du développement durable, basée sur des enquêtes minutieuses sur le terrain de plusieurs communes de la région Tadla-Azilal.",
         year: 2006,
+        heroImage: diagnostic1,
         gallery: [diagnosticimg, diagnostic1, diagnostic2, diagnostic3, diagnostic4],
       },
     ],
@@ -753,6 +762,7 @@ export const domainsData = [
         slug: "festival",
         description: "L'AADEC a organisé le 1er festival : « Atlas des Arts » en 2000. Elle s'engageait dans ce sens pour valoriser les trésors artistiques et patrimoniaux de la province jusqu'à la 6ème édition, en 2006, avant de le reléguer à la commune territoriale.",
         year: 2000,
+        heroImage: fistival10,
         gallery: [fistivalimg,fistival6,fistival7,fistival8,fistival9,fistival10, fistival1, fistival2, fistival3, fistival4, fistival5,],
       },
       {
@@ -760,6 +770,7 @@ export const domainsData = [
         slug: "gravures",
         description: "L'AADEC a mis en exergue un patrimoine matériel très important qui a été menacé de disparaître : 'gravures de Tizi N'Targhist'. Et ce à travers des débats, des exposés et des partenariats, surtout avec l'Université Ibn Zohr d'Agadir depuis 2014.",
         year: 2014,
+        heroImage: no9och5,
         gallery: [no9ochimg, no9och2, no9och3, no9och4, no9och5],
       },
       {
@@ -767,6 +778,7 @@ export const domainsData = [
         slug: "hommage",
         description: "L'AADEC rendit hommage à plusieurs combattants d'Azilal relégués aux oubliettes à travers des jubilés et lors des fêtes nationales.",
         year: 2013,
+        heroImage: mo9awamaimg,
         gallery: [mo9awamaimg, mo9awama1, mo9awama2, mo9awama3, mo9awama4],
       },
       {
@@ -774,6 +786,7 @@ export const domainsData = [
         slug: "ighrem",
         description: "Dans le but de sauvegarder le patrimoine architectural de quelques anciennes habitations ancestrales, l'AADEC, en partenariat avec Tétraktys, l'INDH et d'autres départements ministériels du Royaume, a veillé à la restauration du grenier de Megdaz et celui d'Ibaklioun, entre autres.",
         year: 2013,
+        heroImage: ighrm6,
         gallery: [ighrmimg, ighrm1, ighrm2, ighrm3, ighrm4, ighrm5, ighrm6, ighrm7, ighrm8],
       },
       {
@@ -781,6 +794,7 @@ export const domainsData = [
         slug: "livre-cinema",
         description: "L'AADEC a organisé à maintes reprises des cérémonies de signature d'ouvrages (2004-2013) : littéraires, philosophiques et historiques (El Kadiri, Boumeshouli ...).",
         year: 2014,
+        heroImage: livreimg,
         gallery: [livreimg, livre1, livre2, livre3, livre4, livre5,livre6,livre7,livre8,livre9,livre10,livre11],
       },
     ],
@@ -795,6 +809,7 @@ export const domainsData = [
         slug: "barbados-espagnols",
         description: "L'AADEC, en partenariat avec l'AIPC Pandora, a mis en place en 2016 un programme ambitieux d’échange culturel entre la jeunesse espagnole et barbadienne d’une part, et la jeunesse d’Azilal d’autre part, en accueillant 20 adolescents pendant un mois, dans le cadre de la promotion du « tourisme chez l’habitant ».",
         year: 2016,
+        heroImage: barbadosimg,
         gallery: [barbadosimg, barbados1, barbados2, barbados3, barbados4, barbados5, barbados6,barbados8],
       },
       {
@@ -802,6 +817,7 @@ export const domainsData = [
         slug: "extremisme",
         description: "Projet d'envergure que l'AADEC mena côte à côte avec Progetto Mondo en 2017, visant à lutter contre le radicalisme dans les écoles grâce à des psycho-socio-éducateurs formés.",
         year: 2017,
+        heroImage: tatarofimg,
         gallery: [tatarofimg, tatarof1, tatarof2, tatarof3, tatarof4, tatarof5,],
       },
       {
@@ -809,6 +825,7 @@ export const domainsData = [
         slug: "dialogueb-interreligieux",
         description: "En 2018, l'AADEC a accueilli une importante délégation du Vatican qui a visité plusieurs administrations publiques, notamment la délégation provinciale des Habous et des Affaires islamiques.",
         year: 2018,
+        heroImage: dialogimg,
         gallery: [dialogimg, dialog1, dialog2, dialog3, dialog4, dialog5, dialog6,dialog7],
       },
     ],
@@ -823,6 +840,7 @@ export const domainsData = [
         slug: "charte",
         description: "L'AADEC a mené en 2006 un projet intéressant intitulé : « Charte de citoyenneté dans les établissements de la ville ».",
         year: 2006,
+        heroImage: charte12,
         gallery: [charte1,charte2,charte3,charte4,charte5,charte6,charte7,charte8,charte9,charte10,charte11,charte12,charte13],
       },
       {
@@ -830,6 +848,7 @@ export const domainsData = [
         slug: "scolarisation",
         description: "L'AADEC supervisa deux centres créés pour assurer la scolarisation des filles rurales à Aït Atab et Ouaouizeght entre 2006 et 2011, en collaboration avec l’AFD, le CSSFR et l’Ambassade des USA.",
         year: 2006,
+        heroImage: scolair1,
         gallery: [scolair1,scolair2,scolair3,scolair4,scolair5,scolair6,scolair7,scolair9,scolair10],
       },
             {
@@ -837,6 +856,7 @@ export const domainsData = [
         slug: "communautaire",
         description: "l'AADEC avec l'appui de l'Union Européenne et en parfaite collaboration avec *l'Instance Equité et Réconciliation* et en compatibilité avec les objectifs de l'INDH et  les principes de la Justice Transitionnelle; travaillait  cote à cote avec ses partenaires sur le projet de 'la Réparation communautaire'. ce fut une façon de réparer les torts et les exactions du passé à travers plusieurs procédures au profit des victimes des années de plomb.",
         year: 2006,
+        heroImage: communautaire2,
         gallery: [communautaire1,communautaire2,communautaire3],
       },
       {
@@ -844,6 +864,7 @@ export const domainsData = [
         slug: "étudiants-africains",
         description: "L’AADEC est venue en aide à de nombreux étudiants africains et européens, favorisant ainsi les échanges culturels et la solidarité entre les peuples.",
         year: 2014,
+        heroImage: africanimg,
         gallery: [africanimg,african1,african2,african3,stage1,stage2,stage3,stage4,stage5,stage6,stage7],
       },
       {
@@ -851,6 +872,7 @@ export const domainsData = [
         slug: "universites",
         description: "Elle s’est intéressée à solidifier les bases de coopération et de collaboration avec plusieurs universités et instituts :\n- Université Mohamed VI (Rabat)\n- Ibn Zohr (Agadir)\n- OCP (Khouribga)\n- Lycée Descartes (Rabat)\n- Université Cadi Ayyad (Marrakech)",
         year: 2014,
+        heroImage: talaba9,
         gallery: [talaba1,talaba2,talaba3,talaba4,talaba5,talaba6,talaba7,talaba8,talaba9,talaba10,prof1,prof2,prof3,prof4,prof5,prof6,prof7, dicart1,dicart2,dicart3,dicart4,dicart5],
       },
     ],
@@ -865,6 +887,7 @@ export const domainsData = [
         slug: "mutuelle",
         description: "Ancien projet de l’AADEC mené en partenariat avec le FNUAP, portant sur la santé et la mutuelle communautaire dans le cadre du Développement humain. Ce projet visait trois communes :\n- Aït M’hamed\n- Aït Abbas\n- Zaouiat Ahansal",
         year: 2015,
+        heroImage: mutuelle1,
         gallery: [mutuelle1, mutuelle2, mutuelle3, mutuelle4, mutuelle5, mutuelle6,mutuelle7,mutuelle8,mutuelle9],
       },
       {
@@ -872,6 +895,7 @@ export const domainsData = [
         slug: "eau-potable",
         description: "L’AADEC a également réalisé un projet à forte dimension socio-économique, consistant à approvisionner en eau potable 12 douars situés dans trois communes montagneuses, améliorant ainsi les conditions de vie des habitants.",
         year: 2019,
+        heroImage: bedimg,
         gallery: [bedimg, bed1, bed2, bed3, bed4, bed5],
       },
             {
@@ -879,6 +903,7 @@ export const domainsData = [
         slug: "femmes",
         description: " travail monumental pour les droits de la femme montagnarde: sensibilisation; forums; débats; et empowerment...",
         year: 2005,
+        heroImage: femmes4,
         gallery: [femmes1, femmes2, femmes3, femmes4, femmes5, femmes6,femmes7,femmes8,femmes9,femmes10],
       },
     ],
@@ -893,6 +918,7 @@ export const domainsData = [
         slug: "balisage",
         description: "L'AADEC a pensé à un projet de balisage du circuit touristique Aït Bouli, Aït Bougmaz et Tilougit, en passant par Zaouiat Ahansal, en collaboration avec l'association du parc « Aragona » en 2016.",
         year: 2016,
+        heroImage: tourist12,
         gallery: [tourist1,tourist2,tourist3,tourist4,tourist5,tourist6,tourist11,tourist12,tourist7,tourist8,tourist9,tourist10,tourist13],
       },
       {
@@ -900,6 +926,7 @@ export const domainsData = [
         slug: "pavage",
         description: "Dans la continuité du partenariat avec l’ADS et les conseils régionaux de Tadla-Azilal et de l’Isère, l’AADEC a supervisé le pavage du village de Tanaghmelt afin d’améliorer les infrastructures locales et de renforcer l’attractivité touristique du site.",
         year: 2019,
+        heroImage: pavagimg,
         gallery: [pavagimg,pavag1,pavag2,pavag3,pavag4,pavag5,pavag6,pavag7],
       },
       {
@@ -907,6 +934,7 @@ export const domainsData = [
         slug: "ouzoud",
         description: "En partenariat avec l’ADS et les conseils régionaux de Tadla-Azilal et de l’Isère, l’AADEC a développé le circuit touristique d’Ouzoud, un projet visant à valoriser le patrimoine naturel et à dynamiser l’économie locale à travers un tourisme responsable et durable.",
         year: 2019,
+        heroImage: ouzoud17,
         gallery: [ouzoud1,ouzoud2,ouzoud3,ouzoud4,ouzoud5,ouzoud6,ouzoud7,ouzoud8,ouzoud9,ouzoud10,ouzoud11,ouzoud12,ouzoud13,ouzoud14,ouzoud15,ouzoud16,ouzoud17],
       },
     ],
@@ -921,6 +949,7 @@ export const domainsData = [
         slug: "forte",
         description: "L'AADEC a participé à de nombreuses manifestations nationales : la Marche Verte, et la mobilisation contre les fake news de la presse espagnole en 2011...",
         year: 2001,
+        heroImage: watanya8,
         gallery: [watanya1, watanya2, watanya3, watanya4, watanya5, watanya6, watanya7, watanya8],
       },
             {
@@ -928,6 +957,7 @@ export const domainsData = [
         slug: "modele-developpement",
         description: "participation de l'AADEC aux discussions et au débat sur le nouveau modèle de développement NMD lors de la réunion au siège de la chambre de l'agriculture d'Azilal à l'occasion de la rencontre organisée par la commission du NMD avec la société civile locale ",
         year: 2001,
+        heroImage: bnmous,
         gallery: [bnmous,bnmous2],
       },
     ],

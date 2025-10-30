@@ -16,7 +16,7 @@ const HeroProjet = ({ domain, project }) => {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black/20 z-10"></div>
         <img
-          src={domain.heroImage}
+          src={project.heroImage}
           alt={project.title}
           className="w-full h-full object-cover scale-110 transform transition-transform duration-7000 ease-out hover:scale-105"
         />
